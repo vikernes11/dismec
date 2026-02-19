@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DISMEC Ingeniería - Especialistas en ingeniería mecánica, civil, hidráulica y eléctrica en Colombia y Latinoamérica. Diseño de planos, simulaciones CFD, HVAC, P&ID, recipientes a presión ASME, paneles solares, estructuras y más.">
+  <title>DISMEC – Diseño Mecánico Industrial | Ingeniería de Precisión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0a1628;
+      --primary-light: #1a2d4a;
+      --accent: #f97316;
+      --accent-hover: #ea580c;
+      --accent-glow: rgba(249, 115, 22, 0.3);
+      --blue: #3b82f6;
+      --blue-dark: #1e40af;
+      --blue-glow: rgba(59, 130, 246, 0.2);
+      --surface: #ffffff;
+      --surface-alt: #f8fafc;
+      --surface-dark: #0f172a;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --text-white: #f1f5f9;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+      --shadow-lg: 0 20px 50px -12px rgba(0,0,0,0.15);
+      --shadow-xl: 0 25px 60px -15px rgba(0,0,0,0.25);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --font: 'Inter', system-ui, sans-serif;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-family: var(--font); scroll-behavior: smooth; font-size: 16px; }
+    body { background: var(--surface); color: var(--text); line-height: 1.7; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    img { max-width: 100%; display: block; }
+    button { cursor: pointer; font-family: var(--font); }
+
+    .preloader { position: fixed; inset: 0; background: var(--primary); z-index: 99999; display: flex; align-items: center; justify-content: center; transition: opacity 0.6s, visibility 0.6s; }
+    .preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .preloader-inner { text-align: center; color: #fff; }
+    .preloader-logo { width: 120px; margin: 0 auto 1.5rem; animation: pulse 1.5s ease-in-out infinite; }
+    .preloader-bar { width: 200px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; margin: 0 auto; }
+    .preloader-bar::after { content: ''; display: block; width: 40%; height: 100%; background: var(--accent); border-radius: 3px; animation: loading 1.2s ease-in-out infinite; }
+    @keyframes loading { 0% { transform: translateX(-100%); } 100% { transform: translateX(350%); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.7; transform: scale(0.95); } }
+
+    header { position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; background: rgba(10, 22, 40, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); transition: var(--transition); }
+    header.scrolled { background: rgba(10, 22, 40, 0.97); box-shadow: 0 4px 30px rgba(0,0,0,0.3); }
+    .container { width: 90%; max-width: 1240px; margin: 0 auto; }
+    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 0; }
+    .logo img { height: 50px; width: auto; transition: var(--transition); }
+    header.scrolled .logo img { height: 42px; }
+    nav ul { display: flex; gap: 0.25rem; align-items: center; }
+    nav a { color: rgba(255,255,255,0.75); font-weight: 500; font-size: 0.875rem; padding: 0.5rem 0.9rem; transition: var(--transition); border-radius: 8px; letter-spacing: 0.01em; }
+    nav a:hover, nav a.active { color: #fff; background: rgba(255,255,255,0.1); }
+    .menu-toggle { display: none; font-size: 1.4rem; color: #fff; background: none; border: none; padding: 0.5rem; }
+
+    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--primary); }
+    .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(10,22,40,0.7) 50%, rgba(10,22,40,0.85) 100%); z-index: 1; }
+    .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+    .hero-particles { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+    .hero-content { position: relative; z-index: 3; text-align: center; color: #fff; max-width: 850px; padding: 0 1rem; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.3); padding: 0.4rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; color: var(--accent); margin-bottom: 1.5rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    .hero-badge i { font-size: 0.7rem; }
+    .hero-content h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-content h1 span { background: linear-gradient(135deg, var(--accent) 0%, #fbbf24 100%); -webkit-background-clip: text; background-clip: text; }
+    .hero-content p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 2.5rem; max-width: 650px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 0.85rem 2rem; font-weight: 600; border-radius: 10px; font-size: 0.95rem; transition: var(--transition); display: inline-flex; align-items: center; gap: 0.5rem; border: none; }
+    .btn-primary { background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%); color: #fff; box-shadow: 0 4px 15px var(--accent-glow); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px var(--accent-glow); }
+    .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); transform: translateY(-2px); }
+    .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 3; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; animation: bounce 2s infinite; }
+    .hero-scroll i { display: block; font-size: 1.2rem; margin-top: 0.3rem; }
+    @keyframes bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-8px); } }
+
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s, transform 0.8s; }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s, transform 0.8s; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    section { padding: 6rem 0; }
+    .section-header { text-align: center; margin-bottom: 4rem; }
+    .section-tag { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
+    .section-tag i { font-size: 0.6rem; }
+    .section-header h2 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; color: var(--primary); line-height: 1.2; margin-bottom: 1rem; }
+    .section-header p { font-size: 1.05rem; color: var(--text-light); max-width: 600px; margin: 0 auto; line-height: 1.8; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .about-content h2 { font-size: 2.2rem; font-weight: 800; color: var(--primary); margin-bottom: 1.5rem; line-height: 1.2; }
+    .about-content p { color: var(--text-light); margin-bottom: 1rem; }
+    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    .stat-item { text-align: center; }
+    .stat-number { font-size: 2.5rem; font-weight: 800; color: var(--accent); font-family: 'JetBrains Mono', monospace; }
+    .stat-label { font-size: 0.8rem; color: var(--text-light); font-weight: 500; margin-top: 0.25rem; }
+    .about-visual { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .about-visual img { border-radius: var(--radius); object-fit: cover; height: 200px; width: 100%; box-shadow: var(--shadow); }
+    .about-visual img:first-child { grid-row: 1 / 3; height: 100%; }
+    .about-accent-box { position: absolute; bottom: -1rem; right: -1rem; background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%); color: #fff; padding: 1.2rem 1.5rem; border-radius: var(--radius); box-shadow: 0 8px 25px var(--accent-glow); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+
+    .services-section { background: var(--surface-alt); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .service-card { background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); cursor: pointer; border: 1px solid var(--border); position: relative; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: var(--accent); }
+    .service-card-img { height: 190px; overflow: hidden; position: relative; }
+    .service-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    .service-card:hover .service-card-img img { transform: scale(1.08); }
+    .service-card-img .service-icon { position: absolute; bottom: -1.2rem; left: 1.5rem; width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.1rem; box-shadow: 0 4px 12px var(--blue-glow); border: 3px solid var(--surface); }
+    .service-card-body { padding: 1.8rem 1.5rem 1.5rem; }
+    .service-card-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    .service-card-body p { font-size: 0.875rem; color: var(--text-light); line-height: 1.6; margin-bottom: 1rem; }
+    .service-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color: var(--accent); transition: var(--transition); }
+    .service-link:hover { gap: 0.7rem; }
+    .service-link i { font-size: 0.75rem; transition: var(--transition); }
+
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); z-index: 10000; opacity: 0; visibility: hidden; transition: var(--transition); display: flex; align-items: center; justify-content: center; padding: 2rem; }
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+    .modal { background: var(--surface); border-radius: var(--radius-lg); max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; transform: translateY(30px) scale(0.95); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: var(--shadow-xl); }
+    .modal-overlay.active .modal { transform: translateY(0) scale(1); }
+    .modal-header { position: relative; height: 280px; overflow: hidden; }
+    .modal-header img { width: 100%; height: 100%; object-fit: cover; }
+    .modal-header::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--surface) 0%, transparent 60%); }
+    .modal-close { position: absolute; top: 1rem; right: 1rem; z-index: 2; width: 40px; height: 40px; border-radius: 50%; border: none; background: rgba(0,0,0,0.5); color: #fff; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: var(--transition); backdrop-filter: blur(10px); }
+    .modal-close:hover { background: rgba(0,0,0,0.7); transform: rotate(90deg); }
+    .modal-body { padding: 0 2.5rem 2.5rem; margin-top: -3rem; position: relative; }
+    .modal-tag { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(59,130,246,0.1); color: var(--blue); padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.75rem; }
+    .modal-body h2 { font-size: 1.8rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; line-height: 1.2; }
+    .modal-body .modal-desc { color: var(--text-light); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; }
+    .modal-features { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 2rem; }
+    .modal-feature { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.875rem; }
+    .modal-feature i { color: var(--accent); margin-top: 0.2rem; font-size: 0.8rem; flex-shrink: 0; }
+    .modal-tools { margin-bottom: 1.5rem; }
+    .modal-tools h4 { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .tools-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tool-badge { background: var(--surface-alt); border: 1px solid var(--border); padding: 0.3rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 500; color: var(--text-light); }
+    .modal-norms { margin-bottom: 1.5rem; }
+    .modal-norms h4 { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .norms-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .norm-badge { background: rgba(249,115,22,0.08); border: 1px solid rgba(249,115,22,0.2); padding: 0.3rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; color: var(--accent); }
+    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+
+    .stats-band { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); padding: 4rem 0; position: relative; overflow: hidden; }
+    .stats-band::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative; z-index: 1; }
+    .stat-card { text-align: center; color: #fff; }
+    .stat-card .stat-icon { width: 56px; height: 56px; border-radius: 14px; margin: 0 auto 1rem; background: rgba(249,115,22,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--accent); }
+    .stat-card .stat-num { font-size: 2.8rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; line-height: 1; }
+    .stat-card .stat-suffix { font-size: 1.5rem; }
+    .stat-card .stat-desc { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem; font-weight: 500; }
+
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .feature-card { padding: 2.5rem 2rem; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--border); transition: var(--transition); text-align: center; }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--blue); }
+    .feature-card .feature-icon { width: 64px; height: 64px; border-radius: 16px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--blue); background: linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(59,130,246,0.05) 100%); }
+    .feature-card h4 { font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem; }
+    .feature-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
+
+    .portfolio-section { background: var(--surface-alt); }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+    .portfolio-item { border-radius: var(--radius-lg); overflow: hidden; position: relative; cursor: pointer; aspect-ratio: 4/3; }
+    .portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+    .portfolio-item:hover img { transform: scale(1.08); }
+    .portfolio-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,40,0.9) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; color: #fff; opacity: 0; transition: opacity 0.4s; }
+    .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+    .portfolio-overlay h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .portfolio-overlay p { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; }
+    .team-card { text-align: center; background: var(--surface); border-radius: var(--radius-lg); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: var(--transition); position: relative; }
+    .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .team-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.2rem; border: 4px solid var(--surface-alt); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .team-card h5 { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 0.2rem; }
+    .team-card small { color: var(--accent); font-weight: 600; font-size: 0.8rem; }
+    .team-card .team-role-badge { display: inline-block; background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%); color: #fff; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .team-card .team-socials { margin-top: 1rem; display: flex; gap: 0.5rem; justify-content: center; }
+    .team-card .team-socials a { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--surface-alt); color: var(--text-light); font-size: 0.85rem; transition: var(--transition); }
+    .team-card .team-socials a:hover { background: var(--primary); color: #fff; }
+
+    .faq-section { background: var(--surface-alt); }
+    .faq-grid { max-width: 750px; margin: 0 auto; }
+    .faq-item { margin-bottom: 0.75rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--surface); transition: var(--transition); }
+    .faq-item.active { border-color: var(--blue); box-shadow: 0 4px 15px var(--blue-glow); }
+    .faq-question { padding: 1.2rem 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-weight: 600; font-size: 0.95rem; color: var(--primary); transition: var(--transition); background: none; border: none; width: 100%; text-align: left; font-family: var(--font); }
+    .faq-question:hover { color: var(--blue); }
+    .faq-icon { width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; background: var(--surface-alt); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: var(--text-light); transition: var(--transition); }
+    .faq-item.active .faq-icon { background: var(--blue); color: #fff; transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .faq-answer-inner { padding: 0 1.5rem 1.2rem; color: var(--text-light); font-size: 0.9rem; line-height: 1.8; }
+    .faq-item.active .faq-answer { max-height: 300px; }
+
+    .cta-band { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); padding: 5rem 0; text-align: center; position: relative; overflow: hidden; }
+    .cta-band::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); }
+    .cta-band h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); color: #fff; font-weight: 800; margin-bottom: 1rem; position: relative; }
+    .cta-band p { color: rgba(255,255,255,0.7); max-width: 550px; margin: 0 auto 2rem; font-size: 1.05rem; position: relative; }
+    .cta-band .btn { position: relative; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: start; }
+    .contact-info h3 { font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; }
+    .contact-info > p { color: var(--text-light); margin-bottom: 2rem; }
+    .contact-detail { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+    .contact-detail .detail-icon { width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; background: rgba(59,130,246,0.1); display: flex; align-items: center; justify-content: center; color: var(--blue); font-size: 1rem; }
+    .contact-detail h5 { font-weight: 700; font-size: 0.9rem; color: var(--primary); margin-bottom: 0.15rem; }
+    .contact-detail p { font-size: 0.875rem; color: var(--text-light); }
+    .contact-detail a { color: var(--text-light); transition: var(--transition); }
+    .contact-detail a:hover { color: var(--accent); }
+    .contact-form { background: var(--surface); padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border: 1px solid var(--border); }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--primary); margin-bottom: 0.4rem; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.8rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; font-size: 0.9rem; font-family: var(--font); transition: var(--transition); background: var(--surface-alt); }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-glow); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    footer { background: var(--surface-dark); color: var(--text-white); padding: 4rem 0 0; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand p { color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-top: 1rem; line-height: 1.7; }
+    .footer-brand img { height: 44px; margin-bottom: 0.5rem; }
+    .footer-col h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1.2rem; color: rgba(255,255,255,0.9); }
+    .footer-col a { display: block; color: rgba(255,255,255,0.5); font-size: 0.875rem; padding: 0.3rem 0; transition: var(--transition); }
+    .footer-col a:hover { color: var(--accent); transform: translateX(3px); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+    .footer-bottom .social-links a { color: rgba(255,255,255,0.4); margin-left: 1rem; font-size: 1rem; transition: var(--transition); }
+    .footer-bottom .social-links a:hover { color: var(--accent); }
+
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 9999; width: 60px; height: 60px; border-radius: 50%; background: #25d366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: whatsappPulse 2s infinite; }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
+    @keyframes whatsappPulse { 0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 4px 30px rgba(37,211,102,0.6), 0 0 0 10px rgba(37,211,102,0.1); } }
+
+    .back-to-top { position: fixed; bottom: 2rem; left: 2rem; z-index: 9999; width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--primary); color: #fff; font-size: 1rem; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: var(--transition); box-shadow: var(--shadow); }
+    .back-to-top.visible { opacity: 1; visibility: visible; }
+    .back-to-top:hover { background: var(--accent); transform: translateY(-3px); }
+
+    @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-grid { grid-template-columns: 1fr 1fr; } .stats-grid { grid-template-columns: repeat(2, 1fr); } .features-grid { grid-template-columns: 1fr 1fr; } .contact-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .menu-toggle { display: block; } nav ul { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--primary); flex-direction: column; padding: 5rem 2rem 2rem; transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: -10px 0 40px rgba(0,0,0,0.3); } nav ul.show { right: 0; } nav a { padding: 0.8rem 1rem; font-size: 1rem; display: block; } .mobile-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; } .features-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; } .modal-features { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; } section { padding: 4rem 0; } }
+    @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr 1fr; } .hero-buttons { flex-direction: column; align-items: center; } }
+  </style>
+</head>
+<body>
+  <div class="preloader" id="preloader"><div class="preloader-inner"><img src="assets/dismec_logo.png" alt="DISMEC" class="preloader-logo"><div class="preloader-bar"></div></div></div>
+
+  <header id="header">
+    <div class="container navbar">
+      <a href="#inicio" class="logo"><img src="assets/dismec_logo.png" alt="DISMEC Ingeniería"></a>
+      <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+      <nav>
+        <ul id="navMenu">
+          <button class="mobile-close" id="mobileClose" style="display:none;"><i class="fas fa-times"></i></button>
+          <li><a href="#inicio" data-nav>Inicio</a></li>
+          <li><a href="#nosotros" data-nav>Nosotros</a></li>
+          <li><a href="#servicios" data-nav>Servicios</a></li>
+          <li><a href="#ventajas" data-nav>Ventajas</a></li>
+          <li><a href="#portfolio" data-nav>Proyectos</a></li>
+          <li><a href="#equipo" data-nav>Equipo</a></li>
+          <li><a href="#faq" data-nav>FAQ</a></li>
+          <li><a href="#contacto" class="btn btn-primary" style="padding:0.5rem 1.2rem; font-size:0.85rem;">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <video class="hero-video" autoplay muted loop playsinline><source src="assets/hero-video.mp4" type="video/mp4"></video>
+    <canvas class="hero-particles" id="particles"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fas fa-circle"></i> Ingeniería de clase mundial</div>
+      <h1>Soluciones de <span>ingeniería</span> que transforman la industria</h1>
+      <p>Diseño mecánico, civil, eléctrico e hidráulico con tecnología de punta. Planos, simulaciones CFD, modelos BIM y consultoría técnica para Colombia y Latinoamérica.</p>
+      <div class="hero-buttons">
+        <a href="#servicios" class="btn btn-primary"><i class="fas fa-compass"></i> Explorar Servicios</a>
+        <a href="#contacto" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Cotizar Proyecto</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span>Desliza</span><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <section id="nosotros" style="padding-top:7rem;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal-left">
+          <div class="section-tag"><i class="fas fa-circle"></i> Sobre Nosotros</div>
+          <h2>Ingeniería multidisciplinaria con precisión y compromiso</h2>
+          <p>DISMEK nace como una empresa independiente dedicada a la ingeniería y el diseño mecánico e industrial. Nuestro propósito es brindar consultoría y documentación técnica de alta calidad para proyectos en diversos sectores industriales.</p>
+          <p>Nuestro equipo de ingenieros mecánicos, civiles y eléctricos transforma ideas técnicas en soluciones de ingeniería y documentación gráfica de alto nivel, usando herramientas de CAD, BIM, simulación y análisis.</p>
+          <div class="about-stats">
+            <div class="stat-item"><div class="stat-number" data-count="50">0</div><div class="stat-label">Proyectos Realizados</div></div>
+            <div class="stat-item"><div class="stat-number" data-count="16" data-suffix="+">0</div><div class="stat-label">Servicios Especializados</div></div>
+            <div class="stat-item"><div class="stat-number" data-count="4">0</div><div class="stat-label">Ingenieros Cofundadores</div></div>
+          </div>
+        </div>
+        <div class="about-visual reveal-right">
+          <img src="assets/port1.png" alt="Proyecto DISMEC">
+          <img src="assets/structures.png" alt="Estructuras metálicas">
+          <img src="assets/energy.png" alt="Diseño energético">
+          <div class="about-accent-box"><i class="fas fa-shield-halved"></i> Normas ASME, API, NSR-10</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-drafting-compass"></i></div><div class="stat-num"><span data-count="16">0</span></div><div class="stat-desc">Líneas de Servicio</div></div>
+        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-building"></i></div><div class="stat-num"><span data-count="50">0</span><span class="stat-suffix">+</span></div><div class="stat-desc">Proyectos Entregados</div></div>
+        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-globe-americas"></i></div><div class="stat-num"><span data-count="5">0</span></div><div class="stat-desc">Departamentos Atendidos</div></div>
+        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-handshake"></i></div><div class="stat-num"><span data-count="100">0</span><span class="stat-suffix">%</span></div><div class="stat-desc">Satisfacción del Cliente</div></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Nuestros Servicios</div><h2>Soluciones integrales de ingeniería</h2><p>Desde el diseño conceptual hasta la documentación final, cubrimos todas las disciplinas que su proyecto necesita.</p></div>
+      <div class="servicios-grid" id="serviciosGrid"></div>
+    </div>
+  </section>
+
+  <section id="ventajas">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Por Qué Elegirnos</div><h2>Ventajas competitivas que nos distinguen</h2><p>Combinamos especialización técnica con herramientas de última generación para entregar resultados excepcionales.</p></div>
+      <div class="features-grid">
+        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-drafting-compass"></i></div><h4>Especialización Multidisciplinaria</h4><p>Ingenieros mecánicos, civiles y eléctricos trabajando de forma integrada para entregar soluciones completas.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-globe-americas"></i></div><h4>Alcance Regional</h4><p>Servicios en toda Colombia y Latinoamérica, con capacidad de respuesta rápida y soporte técnico permanente.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-microchip"></i></div><h4>Tecnología de Punta</h4><p>Modelado 3D, BIM, simulaciones CFD y análisis estructural con software de última generación para máxima precisión.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Portafolio</div><h2>Proyectos que hablan por nosotros</h2><p>Cada proyecto refleja nuestro compromiso con la calidad, la precisión y la innovación en ingeniería.</p></div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal"><img src="assets/recipiente_2.png" alt="Recipiente a Presión ASME"><div class="portfolio-overlay"><h4>Recipiente a Presión</h4><p>Diseño ASME Sección VIII</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/solar2.png" alt="Sistema Solar Fotovoltaico"><div class="portfolio-overlay"><h4>Sistema Solar Fotovoltaico</h4><p>Energía renovable – Ley 1715</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/port1.png" alt="Equipo Industrial"><div class="portfolio-overlay"><h4>Equipo Industrial</h4><p>Planos de fabricación</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/port2_new.png" alt="Diseño HVAC y BIM"><div class="portfolio-overlay"><h4>Diseño HVAC y BIM</h4><p>Coordinación de sistemas</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/port3.png" alt="Subestación Eléctrica"><div class="portfolio-overlay"><h4>Subestación Eléctrica</h4><p>Diseño de potencia</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/project_sopladores.png" alt="Edificio Sopladores"><div class="portfolio-overlay"><h4>Edificio Sopladores</h4><p>Ptar Río de Oro</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/modulo_d_metalica_malaga.png" alt="Estructura Metálica"><div class="portfolio-overlay"><h4>Estructura Metálica</h4><p>Hospital de Málaga, Santander</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_san_andres.png" alt="Gases Medicinales"><div class="portfolio-overlay"><h4>Gases Medicinales</h4><p>Hospital San Andrés, Santander</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_coromoro.png" alt="Red de Gases"><div class="portfolio-overlay"><h4>Red de Gases</h4><p>Hospital de Coromoro</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/iluminacion_vivienda_bucaramanga.png" alt="Iluminación Bucaramanga"><div class="portfolio-overlay"><h4>Propuesta de Iluminación</h4><p>Viviendas en Bucaramanga</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band"><div class="container reveal"><h2>¿Tiene un proyecto de ingeniería en mente?</h2><p>Permítanos convertir su idea en una solución técnica precisa. Solicite una cotización sin compromiso.</p><a href="#contacto" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Solicitar Cotización</a></div></div>
+
+  <section id="equipo">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Nuestro Equipo</div><h2>Los ingenieros detrás de DISMEK</h2><p>Un equipo multidisciplinario de profesionales comprometidos con la excelencia técnica.</p></div>
+      <div class="team-grid">
+        <div class="team-card reveal"><img src="assets/daniel_mendez.png" alt="Daniel Méndez" loading="lazy"><div class="team-role-badge">CEO</div><h5>Daniel Méndez</h5><small>Ing. Mecánico – CEO & Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/fabian_rondon.png" alt="Fabián Rondón" loading="lazy"><h5>Fabián Rondón</h5><small>Ing. Civil – Cofundador</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/daniel_torres.png" alt="Daniel Torres" loading="lazy"><h5>Daniel Torres</h5><small>Ing. Mecánico – Cofundador</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/sergio_ramirez.png" alt="Sergio Ramírez" loading="lazy"><h5>Sergio Ramírez</h5><small>Ing. Electricista – Cofundador</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Preguntas Frecuentes</div><h2>Resolvemos tus dudas</h2><p>Las consultas más comunes de nuestros clientes respondidas de forma clara y directa.</p></div>
+      <div class="faq-grid">
+        <div class="faq-item reveal"><button class="faq-question">¿Cuánto tarda un plano mecánico completo?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">El tiempo depende de la complejidad del proyecto, pero suele oscilar entre 2 y 8 semanas desde la recepción de la información técnica. Proyectos urgentes pueden acelerarse con coordinación directa.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-question">¿Diseñan recipientes a presión bajo ASME?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Diseñamos recipientes a presión conforme al código ASME BPVC Sección VIII Divisiones 1 y 2, incluyendo cálculos de espesor, boquillas, silletas, faldones y toda la documentación técnica requerida (MDMT, MAWP, memorias de cálculo y planos de fabricación).</div></div></div>
+        <div class="faq-item reveal"><button class="faq-question">¿Realizan diseños de paneles solares fotovoltaicos?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Diseñamos sistemas solares fotovoltaicos On-Grid y Off-Grid conforme a la Ley 1715 de 2014 (actualizada por Ley 2099 de 2021), el RETIE, las normas NTC 2050 y NTC 5899. Incluimos dimensionamiento, selección de equipos, planos eléctricos, memorias de cálculo y trámites ante el operador de red.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-question">¿Pueden diseñar para normativas internacionales?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Trabajamos conforme a normativas locales e internacionales (ASME, API, ASHRAE, NSR-10, IEC, NEC, RETIE, entre otras) y adaptamos los planos a las exigencias específicas de cada proyecto y jurisdicción.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-question">¿Ofrecen servicios de consultoría remota?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Atendemos clientes en toda Colombia y Latinoamérica de forma remota. Utilizamos herramientas digitales para reuniones, revisión de planos y entrega de documentación técnica en tiempo real.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-question">¿Qué software y herramientas utilizan?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Trabajamos con AutoCAD, SolidWorks, Inventor, Revit (BIM), ANSYS, ETABS, SAP2000, Dialux, Compress, PV Elite, PVsyst, Helioscope y otras herramientas especializadas según la disciplina del proyecto.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Contacto</div><h2>Hablemos de su proyecto</h2><p>Estamos listos para ayudarle a materializar su próximo proyecto de ingeniería.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Información de contacto</h3>
+          <p>Escríbanos o llámenos directamente. Respondemos en menos de 24 horas hábiles.</p>
+          <div class="contact-detail"><div class="detail-icon"><i class="fas fa-location-dot"></i></div><div><h5>Ubicación</h5><p>Bucaramanga, Santander, Colombia</p></div></div>
+          <div class="contact-detail"><div class="detail-icon"><i class="fas fa-phone"></i></div><div><h5>Teléfono / WhatsApp</h5><p><a href="tel:+573156637925">+57 315 663 7925</a></p></div></div>
+          <div class="contact-detail"><div class="detail-icon"><i class="fas fa-envelope"></i></div><div><h5>Email</h5><p><a href="mailto:contacto.dismec@gmail.com">contacto.dismec@gmail.com</a></p></div></div>
+          <div class="contact-detail"><div class="detail-icon"><i class="fab fa-instagram"></i></div><div><h5>Instagram</h5><p><a href="https://www.instagram.com/dis_mec" target="_blank" rel="noopener">@dis_mec</a></p></div></div>
+        </div>
+        <div class="contact-form reveal-right">
+          <form action="https://formsubmit.co/contacto.dismec@gmail.com" method="POST" id="contactForm">
+            <input type="hidden" name="_subject" value="Nuevo contacto desde DISMEC Web">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="#">
+            <div class="form-row">
+              <div class="form-group"><label for="nombre">Nombre completo</label><input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required></div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="juan@empresa.com" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000"></div>
+              <div class="form-group"><label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio">
+                  <option value="">Seleccione un servicio</option>
+                  <option>Planos de Maquinaria</option>
+                  <option>Recipientes a Presión (ASME)</option>
+                  <option>Paneles Solares Fotovoltaicos</option>
+                  <option>Sistemas HVAC</option>
+                  <option>Tuberías P&ID</option>
+                  <option>Diseño Energético</option>
+                  <option>Estructuras Metálicas</option>
+                  <option>Diseños Eléctricos</option>
+                  <option>Simulaciones CFD</option>
+                  <option>Hidrosanitario y Gas</option>
+                  <option>Concreto Reforzado</option>
+                  <option>Contención y Taludes</option>
+                  <option>Obras de Arte</option>
+                  <option>Reconocimientos de Vivienda</option>
+                  <option>Patologías Estructurales</option>
+                  <option>Vulnerabilidad Sísmica</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group"><label for="mensaje">Cuéntenos sobre su proyecto</label><textarea id="mensaje" name="mensaje" rows="5" placeholder="Describa brevemente su proyecto, alcance y plazos esperados..." required></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="assets/dismec_logo.png" alt="DISMEC"><p>Empresa de ingeniería y diseño mecánico, civil y eléctrico. Transformamos necesidades técnicas en soluciones de precisión para la industria colombiana y latinoamericana.</p></div>
+        <div class="footer-col"><h4>Servicios</h4>
+          <a href="#" onclick="openServiceModal(0);return false;">Planos de Maquinaria</a>
+          <a href="#" onclick="openServiceModal(1);return false;">Recipientes a Presión</a>
+          <a href="#" onclick="openServiceModal(2);return false;">Paneles Solares</a>
+          <a href="#" onclick="openServiceModal(3);return false;">Sistemas HVAC</a>
+          <a href="#" onclick="openServiceModal(5);return false;">Diseño Energético</a>
+          <a href="#" onclick="openServiceModal(6);return false;">Estructuras Metálicas</a>
+        </div>
+        <div class="footer-col"><h4>Ingeniería Civil</h4>
+          <a href="#" onclick="openServiceModal(10);return false;">Concreto Reforzado</a>
+          <a href="#" onclick="openServiceModal(11);return false;">Contención</a>
+          <a href="#" onclick="openServiceModal(12);return false;">Obras de Arte</a>
+          <a href="#" onclick="openServiceModal(14);return false;">Patologías</a>
+          <a href="#" onclick="openServiceModal(15);return false;">Vulnerabilidad Sísmica</a>
+        </div>
+        <div class="footer-col"><h4>Empresa</h4>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#portfolio">Proyectos</a>
+          <a href="#equipo">Equipo</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 DISMEK Ingeniería. Todos los derechos reservados.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/dis_mec" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573156637925?text=Hola%20DISMEC%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20ingenier%C3%ADa." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <div class="modal-overlay" id="serviceModal">
+    <div class="modal">
+      <div class="modal-header"><img id="modalImg" src="" alt=""><button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button></div>
+      <div class="modal-body">
+        <div class="modal-tag" id="modalTag"></div>
+        <h2 id="modalTitle"></h2>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-features" id="modalFeatures"></div>
+        <div class="modal-norms" id="modalNormsWrap" style="display:none;"><h4>Normativas Aplicables</h4><div class="norms-list" id="modalNorms"></div></div>
+        <div class="modal-tools" id="modalToolsWrap"><h4>Herramientas y Software</h4><div class="tools-list" id="modalTools"></div></div>
+        <div class="modal-cta">
+          <a href="#contacto" class="btn btn-primary" onclick="closeModal()"><i class="fas fa-paper-plane"></i> Solicitar Cotización</a>
+          <a href="https://wa.me/573156637925" target="_blank" class="btn btn-outline" style="border-color:var(--border);color:var(--text);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const services = [
+      {
+        title: "Planos de Maquinaria y Equipos", tag: "Ingeniería Mecánica", icon: "fas fa-cogs",
+        img: "https://th.bing.com/th/id/R.9433cfb62219efc51e590881b9eb478f?rik=8UErJ5YO0biX0g&riu=http%3a%2f%2fstatic8.depositphotos.com%2f1035123%2f921%2fi%2f950%2fdepositphotos_9214449-stock-photo-mechanical-engineering.jpg&ehk=HjXmMVt035f%2bIJ45%2fhfwniMYw8RVa%2fVF%2fpnxlxAAbDk%3d",
+        short: "Diseño de planos 2D y 3D para maquinaria y equipos industriales con memoria de cálculo.",
+        desc: "Desarrollamos documentación técnica completa para la fabricación y montaje de maquinaria industrial. Desde el concepto inicial hasta los planos de detalle, incluyendo despieces, listas de materiales (BOM), tolerancias y memorias de cálculo. Nuestros planos cumplen con estándares ASME e ISO.",
+        features: ["Planos de fabricación 2D (AutoCAD)", "Modelado 3D paramétrico", "Memoria de cálculo estructural y mecánico", "Despieces y listas de materiales (BOM)", "Planos de montaje y ensamblaje", "Revisión de normativa ASME / ISO"],
+        tools: ["AutoCAD", "SolidWorks", "Inventor", "Autodesk Vault"], norms: []
+      },
+      {
+        title: "Diseño de Recipientes a Presión", tag: "Ingeniería de Presión · ASME", icon: "fas fa-flask-vial",
+        img: "assets/recipiente.png",
+        short: "Diseño, cálculo y documentación de recipientes a presión conforme a ASME BPVC Sección VIII y normativas complementarias.",
+        desc: "Realizamos el diseño integral de recipientes a presión para la industria petrolera, petroquímica, farmacéutica, alimentaria y de generación de energía. Nuestro alcance abarca desde la definición de condiciones de diseño hasta la producción de planos de fabricación, memorias de cálculo detalladas y hojas de datos. Trabajamos bajo ASME BPVC Sección VIII División 1 y 2, integrando normativas complementarias. Cada diseño incluye verificación de espesores de carcasa, tapas, boquillas con refuerzo, silletas o faldones, anillos rigidizadores, análisis de MDMT y cálculo de MAWP. Entregamos un Data Book completo listo para inspección y certificación.",
+        features: ["Cálculo de espesores de carcasa y tapas (ASME VIII Div. 1 y 2)", "Diseño de boquillas con refuerzo por área de reemplazo", "Análisis de silletas (Zick) y faldones para recipientes verticales", "Cálculo de MDMT y curvas de exención de impacto", "Determinación de MAWP en condición nueva y corroída", "Diseño de anillos rigidizadores para vacío y presión externa", "Análisis de cargas en boquillas (WRC 107 / WRC 537)", "Selección de materiales según ASME II Parte D", "Planos de fabricación y detalle de soldadura (WPS/PQR)", "Data Book completo para certificación e inspección"],
+        tools: ["Compress (Codeware)", "PV Elite", "SolidWorks", "AutoCAD", "Inventor", "Excel (hojas de cálculo ASME)", "ANSYS Mechanical"],
+        norms: ["ASME BPVC Sección VIII Div. 1", "ASME BPVC Sección VIII Div. 2", "ASME BPVC Sección II Parte D", "ASME B16.5 (Bridas)", "ASME B16.9 (Accesorios)", "ASME B31.3 (Tuberías de proceso)", "API 510 (Inspección en servicio)", "API 572 (Inspección de recipientes)", "API 650 (Tanques atmosféricos)", "TEMA (Intercambiadores de calor)", "WRC 107 / WRC 537 (Cargas en boquillas)", "AWS D1.1 (Soldadura estructural)", "NTC / Resolución 181495 (Colombia)"]
+      },
+      {
+        title: "Paneles Solares Fotovoltaicos", tag: "Energía Renovable · Solar", icon: "fas fa-solar-panel",
+        img: "assets/solar1.png",
+        short: "Diseño de sistemas solares fotovoltaicos On-Grid y Off-Grid conforme a la Ley 1715 de 2014, Ley 2099 de 2021 y RETIE.",
+        desc: "Diseñamos sistemas de generación solar fotovoltaica para proyectos residenciales, comerciales e industriales en Colombia. Nuestro servicio abarca el dimensionamiento completo del sistema (paneles, inversores, estructuras de montaje, protecciones y cableado), los planos eléctricos de conexión, memorias de cálculo, análisis de sombreado, simulación de producción energética y la documentación técnica necesaria para la conexión a la red ante el operador (trámite de autogeneración). Trabajamos bajo el marco de la Ley 1715 de 2014 (Regulación de energías renovables no convencionales), actualizada por la Ley 2099 de 2021 (que amplía incentivos tributarios y promueve la transición energética), y el Reglamento Técnico de Instalaciones Eléctricas (RETIE), que garantiza la seguridad técnica de la instalación. Todos nuestros diseños cumplen con las normas NTC 2050 (Código Eléctrico Colombiano), NTC 5899 (Sistemas fotovoltaicos) y las resoluciones CREG aplicables para autogeneración a pequeña escala y generación distribuida. Garantizamos que cada proyecto cuente con certificación de producto de los equipos seleccionados y cumpla con los estándares internacionales IEC 61215 (módulos) e IEC 61730 (seguridad).",
+        features: ["Dimensionamiento de sistemas On-Grid y Off-Grid", "Selección de paneles, inversores y optimizadores", "Diseño de estructuras de montaje (techo y suelo)", "Planos eléctricos unifilares y de conexión", "Análisis de sombreado y orientación óptima", "Simulación de producción energética anual (kWh)", "Memoria de cálculo de protecciones y cableado", "Documentación para trámite de autogeneración ante operador de red", "Análisis de retorno de inversión y beneficios tributarios (Ley 1715)", "Coordinación con instaladores y supervisión técnica"],
+        tools: ["PVsyst", "Helioscope", "AutoCAD Electrical", "SketchUp", "Google Earth Pro", "Homer Energy", "Excel (dimensionamiento)", "Dialux"],
+        norms: ["Ley 1715 de 2014 (Energías renovables no convencionales)", "Ley 2099 de 2021 (Transición energética)", "RETIE (Reglamento Técnico de Instalaciones Eléctricas)", "NTC 2050 (Código Eléctrico Colombiano)", "NTC 5899 (Sistemas fotovoltaicos)", "Resolución CREG 030 de 2018 (Autogeneración)", "Resolución CREG 174 de 2021 (Generación distribuida)", "IEC 61215 (Módulos fotovoltaicos – Diseño)", "IEC 61730 (Módulos fotovoltaicos – Seguridad)", "IEC 62109 (Seguridad de inversores)", "NTC 4405 (Eficiencia energética)", "Decreto 2469 de 2014 (Incentivos tributarios)"]
+      },
+      {
+        title: "Sistemas HVAC", tag: "Climatización", icon: "fas fa-wind", img: "assets/hvac.png",
+        short: "Sistemas de aire acondicionado, ventilación y calefacción con eficiencia energética.",
+        desc: "Diseñamos sistemas completos de climatización para edificaciones comerciales, hospitalarias e industriales. Realizamos cálculos de carga térmica, selección de equipos, diseño de ductos y tuberías, coordinación BIM con otras disciplinas y especificaciones técnicas.",
+        features: ["Cálculo de cargas térmicas", "Diseño de ductería y tuberías", "Selección de equipos y especificaciones", "Coordinación BIM multidisciplinaria", "Eficiencia energética y sostenibilidad", "Cumplimiento normativo ASHRAE"],
+        tools: ["Revit MEP", "AutoCAD MEP", "HAP (Carrier)", "Navisworks"], norms: []
+      },
+      {
+        title: "Tuberías e Instrumentación (P&ID)", tag: "Procesos Industriales", icon: "fas fa-project-diagram", img: "assets/pid.png",
+        short: "Diagramas P&ID, isométricos y layout de plantas con especificaciones completas.",
+        desc: "Creamos diagramas de tuberías e instrumentación (P&ID) para plantas industriales, refinerías, plantas de tratamiento y proyectos de proceso. Incluimos isométricos de tubería, layouts de planta, especificaciones de materiales, listas de líneas y hojas de datos de equipos.",
+        features: ["Diagramas P&ID según ISA S5.1", "Isométricos de tubería", "Layout de equipos y plantas", "Listas de líneas y materiales", "Hojas de datos de equipos", "Normas ASME B31 y API"],
+        tools: ["AutoCAD P&ID", "SmartPlant", "SolidWorks Routing", "Excel"], norms: []
+      },
+      {
+        title: "Diseño Energético", tag: "Energía y Potencia", icon: "fas fa-bolt", img: "assets/energy.png",
+        short: "Planos de generación, transmisión y distribución eléctrica, subestaciones y control.",
+        desc: "Diseñamos sistemas eléctricos de potencia para proyectos industriales y comerciales, incluyendo subestaciones, transformadores, tableros de distribución, sistemas de control y protección.",
+        features: ["Diseño de subestaciones eléctricas", "Coordinación de protecciones", "Estudios de cortocircuito", "Tableros y centros de control de motores", "Diagramas unifilares y trifilares", "Cumplimiento RETIE y NEC"],
+        tools: ["ETAP", "AutoCAD Electrical", "Dialux", "SKM PowerTools"], norms: []
+      },
+      {
+        title: "Estructuras Metálicas", tag: "Ingeniería Estructural", icon: "fas fa-warehouse", img: "assets/structures.png",
+        short: "Modelado, diseño y detallado de estructuras de acero para proyectos industriales.",
+        desc: "Desarrollamos el diseño completo de estructuras metálicas: desde el modelado 3D hasta los planos de fabricación y montaje. Realizamos análisis estructural, diseño de conexiones, planos de taller con despieces y listas de corte.",
+        features: ["Modelado 3D de estructuras", "Análisis y diseño estructural", "Planos de taller y detallado", "Diseño de conexiones soldadas y apernadas", "Listas de corte y materiales", "Normas NSR-10, AISC, AWS"],
+        tools: ["Tekla Structures", "SAP2000", "ETABS", "AutoCAD", "IDEA StatiCa"], norms: []
+      },
+      {
+        title: "Diseños Eléctricos", tag: "Ingeniería Eléctrica", icon: "fas fa-plug", img: "assets/design_electrico.png",
+        short: "Instalaciones eléctricas industriales: tableros, subestaciones y sistemas de potencia.",
+        desc: "Planificamos y diseñamos instalaciones eléctricas para edificaciones e industrias. Incluimos diagramas unifilares, cuadros de carga, diseño de iluminación, rutas de cables, puestas a tierra y sistemas de protección contra rayos.",
+        features: ["Diagramas unifilares y cuadros de carga", "Diseño de iluminación interior y exterior", "Sistemas de puesta a tierra", "Protección contra rayos (SIPRA)", "Rutas de cables y canalizaciones", "Cumplimiento RETIE y NTC"],
+        tools: ["AutoCAD Electrical", "Dialux", "ETAP", "Revit MEP"], norms: []
+      },
+      {
+        title: "Simulaciones CFD", tag: "Simulación Avanzada", icon: "fas fa-atom", img: "assets/simulaciones_cfd.png",
+        short: "Modelado y simulación de fluidos y transferencia de calor para optimizar diseños.",
+        desc: "Realizamos simulaciones computacionales de dinámica de fluidos (CFD) y análisis térmico para optimizar el rendimiento de productos, sistemas de ventilación, equipos de proceso y componentes mecánicos.",
+        features: ["Simulación de flujos internos y externos", "Análisis de transferencia de calor", "Optimización de diseño mediante CFD", "Validación de sistemas de ventilación", "Análisis de esfuerzos térmicos", "Reportes técnicos con visualización 3D"],
+        tools: ["ANSYS Fluent", "ANSYS CFX", "SolidWorks Flow Simulation", "OpenFOAM"], norms: []
+      },
+      {
+        title: "Diseño Hidrosanitario y Gas", tag: "Ingeniería Hidráulica", icon: "fas fa-faucet-drip", img: "assets/hidraulico_sanitario_gas.png",
+        short: "Redes hidráulicas, sanitarias y de gas para edificaciones e instalaciones industriales.",
+        desc: "Diseñamos redes completas de agua potable, aguas residuales, aguas lluvias y gas natural para edificaciones residenciales, comerciales e industriales.",
+        features: ["Red de agua potable y distribución", "Sistema de aguas residuales y lluvias", "Red de gas natural domiciliario", "Dimensionamiento hidráulico completo", "Memorias de cálculo normativas", "Planos de instalación detallados"],
+        tools: ["AutoCAD", "EPANET", "Revit MEP", "HEC-RAS"], norms: []
+      },
+      {
+        title: "Estructuras de Concreto Reforzado", tag: "Ingeniería Civil", icon: "fas fa-building", img: "assets/estructural_concreto.png",
+        short: "Cálculo y diseño de vigas, columnas, losas y cimentaciones en concreto reforzado.",
+        desc: "Desarrollamos el diseño estructural completo en concreto reforzado para edificaciones y obras industriales. Realizamos modelado estructural, análisis sísmico, diseño de elementos y producción de planos estructurales de detalle.",
+        features: ["Modelado y análisis estructural", "Diseño sismorresistente NSR-10", "Diseño de cimentaciones", "Planos de detalle con despieces", "Memoria de cálculo completa", "Cumplimiento ACI 318"],
+        tools: ["ETABS", "SAP2000", "SAFE", "AutoCAD", "Revit Structure"], norms: []
+      },
+      {
+        title: "Estructuras de Contención", tag: "Geotecnia", icon: "fas fa-mountain", img: "assets/contencion.png",
+        short: "Muros de contención, taludes y obras de estabilización con estudios geotécnicos.",
+        desc: "Analizamos y diseñamos estructuras de contención para estabilización de taludes y excavaciones. Incluimos muros en voladizo, muros de gravedad, tierra armada, pantallas ancladas y sistemas de drenaje.",
+        features: ["Muros de contención en voladizo", "Análisis de estabilidad de taludes", "Tierra armada y muros anclados", "Sistemas de subdrenaje", "Integración de estudios geotécnicos", "Cumplimiento NSR-10 Título H"],
+        tools: ["GEO5", "SLOPE/W", "PLAXIS", "AutoCAD", "Excel"], norms: []
+      },
+      {
+        title: "Obras de Arte e Infraestructura", tag: "Infraestructura Vial", icon: "fas fa-road", img: "assets/obras_arte.png",
+        short: "Alcantarillas, box culverts, puentes menores y estructuras hidráulicas especiales.",
+        desc: "Diseñamos obras de arte menores y mayores para proyectos de infraestructura vial y drenaje. Incluimos alcantarillas de cajón, circulares y de arco, box culverts, cabezales, aletones, disipadores de energía y puentes menores.",
+        features: ["Diseño de alcantarillas y box culverts", "Puentes menores y pontones", "Cabezales, aletones y disipadores", "Análisis hidrológico e hidráulico", "Planos constructivos detallados", "Especificaciones técnicas para licitación"],
+        tools: ["HEC-HMS", "HEC-RAS", "AutoCAD Civil 3D", "SAP2000"], norms: []
+      },
+      {
+        title: "Reconocimientos de Vivienda", tag: "Legalización", icon: "fas fa-house-circle-check", img: "assets/reconocimiento.png",
+        short: "Evaluación técnica de viviendas para certificación, legalización y diagnóstico.",
+        desc: "Realizamos reconocimientos técnicos de viviendas y edificaciones existentes conforme al Decreto 1077 de 2015 y normativa municipal. Evaluamos el estado estructural, arquitectónico y de cumplimiento normativo para procesos de legalización ante curadurías urbanas.",
+        features: ["Inspección técnica de vivienda", "Verificación de cumplimiento normativo", "Informe para legalización ante curaduría", "Evaluación estructural y arquitectónica", "Registro fotográfico detallado", "Concepto de ingeniero civil matriculado"],
+        tools: ["Equipos de medición", "AutoCAD", "Office", "Registro fotográfico"], norms: []
+      },
+      {
+        title: "Patologías Estructurales", tag: "Diagnóstico", icon: "fas fa-magnifying-glass", img: "assets/patologias.png",
+        short: "Diagnóstico de daños en estructuras, identificación de causas y propuestas de reparación.",
+        desc: "Diagnosticamos patologías en estructuras de concreto, acero y mampostería. Identificamos las causas de fisuras, asentamientos, corrosión, humedades y otros daños, y proponemos soluciones de reparación, refuerzo o rehabilitación.",
+        features: ["Inspección y diagnóstico de daños", "Identificación de causas raíz", "Ensayos no destructivos", "Propuestas de reparación y refuerzo", "Informes técnicos con fotografías", "Seguimiento post-intervención"],
+        tools: ["Esclerómetro", "Ultrasonido", "Pachómetro", "AutoCAD", "Excel"], norms: []
+      },
+      {
+        title: "Vulnerabilidad Sísmica", tag: "Sismorresistencia", icon: "fas fa-house-crack", img: "assets/vulnerabilidad.png",
+        short: "Evaluación de vulnerabilidad sísmica para cumplimiento de normativas sismorresistentes.",
+        desc: "Evaluamos la vulnerabilidad sísmica de estructuras nuevas y existentes conforme a la NSR-10 y la Ley 400 de 1997. Realizamos modelado estructural, análisis dinámico, evaluación de la capacidad de la estructura frente a demandas sísmicas y formulación de un plan de reforzamiento.",
+        features: ["Modelado y análisis dinámico", "Evaluación de capacidad vs demanda", "Calificación de vulnerabilidad NSR-10", "Plan de reforzamiento estructural", "Informe técnico normativo", "Cumplimiento Ley 400/1997"],
+        tools: ["ETABS", "SAP2000", "AutoCAD", "Excel", "SAFE"], norms: []
+      }
+    ];
+
+    const grid = document.getElementById('serviciosGrid');
+    services.forEach((s, i) => {
+      grid.innerHTML += `<article class="service-card reveal" onclick="openServiceModal(${i})"><div class="service-card-img"><img src="${s.img}" alt="${s.title}" loading="lazy"><div class="service-icon"><i class="${s.icon}"></i></div></div><div class="service-card-body"><h3>${s.title}</h3><p>${s.short}</p><span class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></span></div></article>`;
+    });
+
+    const modalOverlay = document.getElementById('serviceModal');
+    function openServiceModal(i) {
+      const s = services[i];
+      document.getElementById('modalImg').src = s.img;
+      document.getElementById('modalImg').alt = s.title;
+      document.getElementById('modalTag').innerHTML = `<i class="${s.icon}"></i> ${s.tag}`;
+      document.getElementById('modalTitle').textContent = s.title;
+      document.getElementById('modalDesc').textContent = s.desc;
+      document.getElementById('modalFeatures').innerHTML = s.features.map(f => `<div class="modal-feature"><i class="fas fa-check-circle"></i><span>${f}</span></div>`).join('');
+      document.getElementById('modalTools').innerHTML = s.tools.map(t => `<span class="tool-badge">${t}</span>`).join('');
+      const normsWrap = document.getElementById('modalNormsWrap');
+      if (s.norms && s.norms.length > 0) { normsWrap.style.display = 'block'; document.getElementById('modalNorms').innerHTML = s.norms.map(n => `<span class="norm-badge">${n}</span>`).join(''); } else { normsWrap.style.display = 'none'; }
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() { modalOverlay.classList.remove('active'); document.body.style.overflow = ''; }
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    window.addEventListener('load', () => { setTimeout(() => document.getElementById('preloader').classList.add('hidden'), 800); });
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+
+    const toggle = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    toggle.addEventListener('click', () => { navMenu.classList.add('show'); mobileClose.style.display = 'block'; });
+    mobileClose.addEventListener('click', () => { navMenu.classList.remove('show'); mobileClose.style.display = 'none'; });
+    document.querySelectorAll('[data-nav]').forEach(a => { a.addEventListener('click', () => { navMenu.classList.remove('show'); mobileClose.style.display = 'none'; }); });
+
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => { const y = window.scrollY + 100; sections.forEach(sec => { const top = sec.offsetTop; const h = sec.offsetHeight; const id = sec.getAttribute('id'); const link = document.querySelector(`nav a[href="#${id}"]`); if (link) link.classList.toggle('active', y >= top && y < top + h); }); });
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const revealObs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }}); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    const counters = document.querySelectorAll('[data-count]');
+    const counterObs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { const el = e.target; const target = parseInt(el.dataset.count); const suffix = el.dataset.suffix || ''; let current = 0; const step = Math.max(1, Math.floor(target / 40)); const timer = setInterval(() => { current += step; if (current >= target) { current = target; clearInterval(timer); } el.textContent = current + suffix; }, 30); counterObs.unobserve(el); } }); }, { threshold: 0.5 });
+    counters.forEach(c => counterObs.observe(c));
+
+    document.querySelectorAll('.faq-question').forEach(btn => { btn.addEventListener('click', () => { const item = btn.parentElement; const wasActive = item.classList.contains('active'); document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active')); if (!wasActive) item.classList.add('active'); }); });
+
+    const btt = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 500));
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    function resizeCanvas() { canvas.width = canvas.parentElement.offsetWidth; canvas.height = canvas.parentElement.offsetHeight; }
+    resizeCanvas(); window.addEventListener('resize', resizeCanvas);
+    for (let i = 0; i < 50; i++) { particles.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4, r: Math.random() * 2 + 0.5, a: Math.random() * 0.3 + 0.1 }); }
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.x += p.vx; p.y += p.vy; if (p.x < 0 || p.x > canvas.width) p.vx *= -1; if (p.y < 0 || p.y > canvas.height) p.vy *= -1; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(249,115,22,${p.a})`; ctx.fill(); });
+      for (let i = 0; i < particles.length; i++) { for (let j = i + 1; j < particles.length; j++) { const dx = particles[i].x - particles[j].x; const dy = particles[i].y - particles[j].y; const dist = Math.sqrt(dx * dx + dy * dy); if (dist < 120) { ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y); ctx.strokeStyle = `rgba(249,115,22,${0.08 * (1 - dist / 120)})`; ctx.lineWidth = 0.5; ctx.stroke(); } } }
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      const btn = this.querySelector('button[type="submit"]');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+      btn.disabled = true;
+    });
+  </script>
+</body>
+</html>
