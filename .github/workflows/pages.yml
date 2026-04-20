@@ -1,0 +1,46 @@
+name: Deploy DISMEK Site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare static site
+        run: |
+          mkdir -p dist
+          cp "web-dismec/WEB DISMEK/index.html" dist/
+          cp "web-dismec/WEB DISMEK/robots.txt" "web-dismec/WEB DISMEK/sitemap.xml" "web-dismec/WEB DISMEK/site.webmanifest" "web-dismec/WEB DISMEK/favicon.ico" "web-dismec/WEB DISMEK/favicon-16x16.png" "web-dismec/WEB DISMEK/favicon-32x32.png" "web-dismec/WEB DISMEK/apple-touch-icon.png" "web-dismec/WEB DISMEK/android-chrome-192x192.png" "web-dismec/WEB DISMEK/android-chrome-512x512.png" dist/
+          cp -r "web-dismec/WEB DISMEK/assets" dist/assets
+          cp -r "web-dismec/WEB DISMEK/servicios" dist/servicios
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

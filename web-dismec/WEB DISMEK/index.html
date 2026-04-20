@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DISMEC Ingeniería - Especialistas en ingeniería mecánica, civil, hidráulica y eléctrica en Colombia y Latinoamérica. Diseño de planos, simulaciones CFD, HVAC, P&ID, recipientes a presión ASME, paneles solares, estructuras y más.">
-  <title>DISMEC – Diseño Mecánico Industrial | Ingeniería de Precisión</title>
+  <title>DISMEK Ingeniería en Bucaramanga | Ingeniería mecánica, eléctrica, civil e industrial</title>
+  <meta name="description" content="DISMEK Ingeniería en Bucaramanga, Santander. Servicios de ingeniería mecánica, eléctrica, civil, hidráulica, HVAC, solar fotovoltaica, recipientes a presión ASME, P&ID, estructuras y simulaciones CFD en Colombia.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="author" content="DISMEK Ingeniería">
+  <meta name="theme-color" content="#0a1628">
+  <link rel="canonical" href="https://vikernes11.github.io/dismec/">
+  <link rel="alternate" hreflang="es-CO" href="https://vikernes11.github.io/dismec/">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="DISMEK Ingeniería">
+  <meta property="og:title" content="DISMEK Ingeniería en Bucaramanga | Ingeniería mecánica, eléctrica, civil e industrial">
+  <meta property="og:description" content="Servicios de ingeniería para industria, energía, hospitales, edificaciones e infraestructura en Bucaramanga, Santander y Colombia.">
+  <meta property="og:url" content="https://vikernes11.github.io/dismec/">
+  <meta property="og:image" content="https://vikernes11.github.io/dismec/assets/structures.png">
+  <meta property="og:image:alt" content="Proyecto estructural de DISMEK Ingeniería">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DISMEK Ingeniería en Bucaramanga">
+  <meta name="twitter:description" content="Ingeniería mecánica, eléctrica, civil, hidráulica, HVAC, solar y estructural para proyectos en Colombia.">
+  <meta name="twitter:image" content="https://vikernes11.github.io/dismec/assets/structures.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -122,6 +145,13 @@
     .service-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color: var(--accent); transition: var(--transition); }
     .service-link:hover { gap: 0.7rem; }
     .service-link i { font-size: 0.75rem; transition: var(--transition); }
+    .service-pages-links { margin-top: 2rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+    .service-pages-links h3 { font-size: 1.05rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .service-pages-links p { font-size: 0.92rem; color: var(--text-light); margin-bottom: 1rem; }
+    .service-pages-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; }
+    .service-page-link { display: block; padding: 0.95rem 1rem; border-radius: 14px; border: 1px solid var(--border); background: var(--surface-alt); font-weight: 600; color: var(--primary); transition: var(--transition); }
+    .service-page-link:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow); }
+    .seo-note { margin-top: 1.5rem; font-size: 0.92rem; color: var(--text-light); }
 
     .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); z-index: 10000; opacity: 0; visibility: hidden; transition: var(--transition); display: flex; align-items: center; justify-content: center; padding: 2rem; }
     .modal-overlay.active { opacity: 1; visibility: visible; }
@@ -240,16 +270,57 @@
     .back-to-top:hover { background: var(--accent); transform: translateY(-3px); }
 
     @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-grid { grid-template-columns: 1fr 1fr; } .stats-grid { grid-template-columns: repeat(2, 1fr); } .features-grid { grid-template-columns: 1fr 1fr; } .contact-grid { grid-template-columns: 1fr; } }
-    @media (max-width: 768px) { .menu-toggle { display: block; } nav ul { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--primary); flex-direction: column; padding: 5rem 2rem 2rem; transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: -10px 0 40px rgba(0,0,0,0.3); } nav ul.show { right: 0; } nav a { padding: 0.8rem 1rem; font-size: 1rem; display: block; } .mobile-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; } .features-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; } .modal-features { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; } section { padding: 4rem 0; } }
+    @media (max-width: 768px) { .menu-toggle { display: block; } nav ul { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--primary); flex-direction: column; padding: 5rem 2rem 2rem; transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: -10px 0 40px rgba(0,0,0,0.3); } nav ul.show { right: 0; } nav a { padding: 0.8rem 1rem; font-size: 1rem; display: block; } .mobile-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; } .features-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; } .modal-features { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; } .service-pages-grid { grid-template-columns: 1fr; } section { padding: 4rem 0; } }
     @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr 1fr; } .hero-buttons { flex-direction: column; align-items: center; } }
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://vikernes11.github.io/dismec/#business",
+      "name": "DISMEK Ingeniería",
+      "url": "https://vikernes11.github.io/dismec/",
+      "image": "https://vikernes11.github.io/dismec/assets/dismec_logo.png",
+      "logo": "https://vikernes11.github.io/dismec/assets/dismec_logo.png",
+      "telephone": "+57 315 663 7925",
+      "email": "contacto.dismec@gmail.com",
+      "description": "Empresa de ingeniería en Bucaramanga especializada en servicios mecánicos, eléctricos, civiles, hidráulicos, HVAC, solar fotovoltaica, P&ID, recipientes a presión ASME, estructuras y simulaciones CFD.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bucaramanga",
+        "addressRegion": "Santander",
+        "addressCountry": "CO"
+      },
+      "areaServed": [
+        "Bucaramanga",
+        "Santander",
+        "Colombia",
+        "Latinoamérica"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/dis_mec"
+      ],
+      "knowsAbout": [
+        "Ingeniería mecánica",
+        "Ingeniería eléctrica",
+        "Ingeniería civil",
+        "Diseño de recipientes a presión ASME",
+        "Paneles solares fotovoltaicos",
+        "Sistemas HVAC",
+        "Tuberías e instrumentación P&ID",
+        "Estructuras metálicas",
+        "Diseño hidrosanitario y gas",
+        "Simulaciones CFD"
+      ]
+    }
+  </script>
 </head>
 <body>
-  <div class="preloader" id="preloader"><div class="preloader-inner"><img src="assets/dismec_logo.png" alt="DISMEC" class="preloader-logo"><div class="preloader-bar"></div></div></div>
+  <div class="preloader" id="preloader"><div class="preloader-inner"><img src="assets/dismec_logo.png" alt="DISMEK" class="preloader-logo"><div class="preloader-bar"></div></div></div>
 
   <header id="header">
     <div class="container navbar">
-      <a href="#inicio" class="logo"><img src="assets/dismec_logo.png" alt="DISMEC Ingeniería"></a>
+      <a href="#inicio" class="logo"><img src="assets/dismec_logo.png" alt="DISMEK Ingeniería"></a>
       <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
       <nav>
         <ul id="navMenu">
@@ -271,9 +342,9 @@
     <video class="hero-video" autoplay muted loop playsinline><source src="assets/hero-video.mp4" type="video/mp4"></video>
     <canvas class="hero-particles" id="particles"></canvas>
     <div class="hero-content">
-      <div class="hero-badge"><i class="fas fa-circle"></i> Ingeniería de clase mundial</div>
-      <h1>Soluciones de <span>ingeniería</span> que transforman la industria</h1>
-      <p>Diseño mecánico, civil, eléctrico e hidráulico con tecnología de punta. Planos, simulaciones CFD, modelos BIM y consultoría técnica para Colombia y Latinoamérica.</p>
+      <div class="hero-badge"><i class="fas fa-circle"></i> Ingeniería en Bucaramanga para Colombia</div>
+      <h1><span>Ingeniería</span> mecánica, eléctrica, civil e industrial para proyectos en Colombia</h1>
+      <p>DISMEK desarrolla diseño mecánico, civil, eléctrico e hidráulico con enfoque técnico y normativo. Planos, simulaciones CFD, modelos BIM y consultoría para Bucaramanga, Santander y todo Colombia.</p>
       <div class="hero-buttons">
         <a href="#servicios" class="btn btn-primary"><i class="fas fa-compass"></i> Explorar Servicios</a>
         <a href="#contacto" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Cotizar Proyecto</a>
@@ -297,7 +368,7 @@
           </div>
         </div>
         <div class="about-visual reveal-right">
-          <img src="assets/port1.png" alt="Proyecto DISMEC">
+          <img src="assets/port1.png" alt="Proyecto DISMEK">
           <img src="assets/structures.png" alt="Estructuras metálicas">
           <img src="assets/energy.png" alt="Diseño energético">
           <div class="about-accent-box"><i class="fas fa-shield-halved"></i> Normas ASME, API, NSR-10</div>
@@ -321,6 +392,19 @@
     <div class="container">
       <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Nuestros Servicios</div><h2>Soluciones integrales de ingeniería</h2><p>Desde el diseño conceptual hasta la documentación final, cubrimos todas las disciplinas que su proyecto necesita.</p></div>
       <div class="servicios-grid" id="serviciosGrid"></div>
+      <div class="service-pages-links reveal">
+        <h3>Servicios destacados con páginas especializadas</h3>
+        <p>Para mejorar la visibilidad en Google, DISMEK ahora cuenta con páginas internas enfocadas en búsquedas técnicas y comerciales de alto valor.</p>
+        <div class="service-pages-grid">
+          <a class="service-page-link" href="servicios/recipientes-presion-asme.html">Diseño de recipientes a presión ASME</a>
+          <a class="service-page-link" href="servicios/energia-solar-fotovoltaica.html">Diseño de sistemas solares fotovoltaicos</a>
+          <a class="service-page-link" href="servicios/sistemas-hvac-y-mep.html">Diseño HVAC y coordinación MEP</a>
+          <a class="service-page-link" href="servicios/diseno-electrico-y-energia.html">Diseño eléctrico y de potencia</a>
+          <a class="service-page-link" href="servicios/estructuras-metalicas-y-diseno-estructural.html">Estructuras metálicas y diseño estructural</a>
+          <a class="service-page-link" href="servicios/">Ver índice completo de servicios</a>
+        </div>
+        <p class="seo-note">Estas URLs ayudan a posicionar mejor términos como ingeniería en Bucaramanga, recipientes a presión ASME, diseño solar fotovoltaico, HVAC y diseño eléctrico industrial.</p>
+      </div>
     </div>
   </section>
 
@@ -395,7 +479,7 @@
         </div>
         <div class="contact-form reveal-right">
           <form action="https://formsubmit.co/contacto.dismec@gmail.com" method="POST" id="contactForm">
-            <input type="hidden" name="_subject" value="Nuevo contacto desde DISMEC Web">
+            <input type="hidden" name="_subject" value="Nuevo contacto desde DISMEK Web">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="#">
             <div class="form-row">
@@ -438,7 +522,7 @@
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><img src="assets/dismec_logo.png" alt="DISMEC"><p>Empresa de ingeniería y diseño mecánico, civil y eléctrico. Transformamos necesidades técnicas en soluciones de precisión para la industria colombiana y latinoamericana.</p></div>
+        <div class="footer-brand"><img src="assets/dismec_logo.png" alt="DISMEK"><p>Empresa de ingeniería y diseño mecánico, civil y eléctrico. Transformamos necesidades técnicas en soluciones de precisión para la industria colombiana y latinoamericana.</p></div>
         <div class="footer-col"><h4>Servicios</h4>
           <a href="#" onclick="openServiceModal(0);return false;">Planos de Maquinaria</a>
           <a href="#" onclick="openServiceModal(1);return false;">Recipientes a Presión</a>
@@ -473,7 +557,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/573156637925?text=Hola%20DISMEC%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20ingenier%C3%ADa." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20ingenier%C3%ADa." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
   <button class="back-to-top" id="backToTop" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
 
   <div class="modal-overlay" id="serviceModal">
