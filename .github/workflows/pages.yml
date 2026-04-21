@@ -29,7 +29,7 @@ jobs:
         run: |
           mkdir -p dist
           cp "web-dismec/WEB DISMEK/index.html" dist/
-          cp "web-dismec/WEB DISMEK/robots.txt" "web-dismec/WEB DISMEK/sitemap.xml" "web-dismec/WEB DISMEK/site.webmanifest" "web-dismec/WEB DISMEK/favicon.ico" "web-dismec/WEB DISMEK/favicon-16x16.png" "web-dismec/WEB DISMEK/favicon-32x32.png" "web-dismec/WEB DISMEK/apple-touch-icon.png" "web-dismec/WEB DISMEK/android-chrome-192x192.png" "web-dismec/WEB DISMEK/android-chrome-512x512.png" dist/
+          cp "web-dismec/WEB DISMEK/robots.txt" "web-dismec/WEB DISMEK/sitemap.xml" "web-dismec/WEB DISMEK/site.webmanifest" "web-dismec/WEB DISMEK/favicon.ico" "web-dismec/WEB DISMEK/favicon-16x16.png" "web-dismec/WEB DISMEK/favicon-32x32.png" "web-dismec/WEB DISMEK/apple-touch-icon.png" "web-dismec/WEB DISMEK/android-chrome-192x192.png" "web-dismec/WEB DISMEK/android-chrome-512x512.png" "web-dismec/WEB DISMEK/google4d0b07b534ff4f86.html" dist/
           cp -r "web-dismec/WEB DISMEK/assets" dist/assets
           cp -r "web-dismec/WEB DISMEK/servicios" dist/servicios
 
