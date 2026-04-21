@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vikernes11.github.io/dismec/sitemap.xml
+Sitemap: https://dismek.co/sitemap.xml
