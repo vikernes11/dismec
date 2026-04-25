@@ -132,7 +132,7 @@
     .about-accent-box { position: absolute; bottom: -1rem; right: -1rem; background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%); color: #fff; padding: 1.2rem 1.5rem; border-radius: var(--radius); box-shadow: 0 8px 25px var(--accent-glow); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
 
     .services-section { background: var(--surface-alt); }
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .services-grid, .servicios-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
     .service-card { background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); cursor: pointer; border: 1px solid var(--border); position: relative; }
     .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: var(--accent); }
     .service-card-img { height: 190px; overflow: hidden; position: relative; }
@@ -142,9 +142,12 @@
     .service-card-body { padding: 1.8rem 1.5rem 1.5rem; }
     .service-card-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
     .service-card-body p { font-size: 0.875rem; color: var(--text-light); line-height: 1.6; margin-bottom: 1rem; }
+    .service-card-actions { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
     .service-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color: var(--accent); transition: var(--transition); }
     .service-link:hover { gap: 0.7rem; }
     .service-link i { font-size: 0.75rem; transition: var(--transition); }
+    .service-whatsapp-link { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 36px; padding: 0.45rem 0.8rem; border-radius: 10px; background: rgba(37,211,102,0.1); color: #128c4a; font-size: 0.78rem; font-weight: 700; border: 1px solid rgba(37,211,102,0.24); transition: var(--transition); }
+    .service-whatsapp-link:hover { background: #25d366; color: #fff; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(37,211,102,0.25); }
     .service-pages-links { margin-top: 2rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); }
     .service-pages-links h3 { font-size: 1.05rem; color: var(--primary); margin-bottom: 0.5rem; }
     .service-pages-links p { font-size: 0.92rem; color: var(--text-light); margin-bottom: 1rem; }
@@ -574,7 +577,7 @@
         <div class="modal-tools" id="modalToolsWrap"><h4>Herramientas y Software</h4><div class="tools-list" id="modalTools"></div></div>
         <div class="modal-cta">
           <a href="#contacto" class="btn btn-primary" onclick="closeModal()"><i class="fas fa-paper-plane"></i> Solicitar Cotización</a>
-          <a href="https://wa.me/573156637925" target="_blank" class="btn btn-outline" style="border-color:var(--border);color:var(--text);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://wa.me/573156637925" target="_blank" rel="noopener" class="btn btn-outline" id="modalWhatsApp" style="border-color:var(--border);color:var(--text);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
         </div>
       </div>
     </div>
@@ -701,9 +704,34 @@
       }
     ];
 
+    const WHATSAPP_NUMBER = '573156637925';
+    const quoteLabels = {
+      "Planos de Maquinaria y Equipos": "Cotizar maquinaria",
+      "Diseño de Recipientes a Presión": "Cotizar recipientes ASME",
+      "Paneles Solares Fotovoltaicos": "Cotizar energía solar",
+      "Sistemas HVAC": "Cotizar HVAC",
+      "Tuberías e Instrumentación (P&ID)": "Cotizar P&ID",
+      "Diseño Energético": "Cotizar diseño energético",
+      "Estructuras Metálicas": "Cotizar estructura metálica",
+      "Diseños Eléctricos": "Cotizar diseño eléctrico",
+      "Simulaciones CFD": "Cotizar simulación CFD",
+      "Diseño Hidrosanitario y Gas": "Cotizar hidrosanitario",
+      "Estructuras de Concreto Reforzado": "Cotizar concreto reforzado",
+      "Estructuras de Contención": "Cotizar contención",
+      "Obras de Arte e Infraestructura": "Cotizar infraestructura",
+      "Reconocimientos de Vivienda": "Cotizar reconocimiento",
+      "Patologías Estructurales": "Cotizar diagnóstico estructural",
+      "Vulnerabilidad Sísmica": "Cotizar vulnerabilidad sísmica"
+    };
+    function getQuoteLabel(service) { return quoteLabels[service.title] || 'Cotizar servicio'; }
+    function getWhatsAppUrl(service) {
+      const message = `Hola DISMEK, vi en dismek.co el servicio de ${service.title} y quiero cotizarlo. Mi proyecto es: `;
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    }
+
     const grid = document.getElementById('serviciosGrid');
     services.forEach((s, i) => {
-      grid.innerHTML += `<article class="service-card reveal" onclick="openServiceModal(${i})"><div class="service-card-img"><img src="${s.img}" alt="${s.title}" loading="lazy"><div class="service-icon"><i class="${s.icon}"></i></div></div><div class="service-card-body"><h3>${s.title}</h3><p>${s.short}</p><span class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></span></div></article>`;
+      grid.innerHTML += `<article class="service-card reveal" onclick="openServiceModal(${i})"><div class="service-card-img"><img src="${s.img}" alt="${s.title}" loading="lazy"><div class="service-icon"><i class="${s.icon}"></i></div></div><div class="service-card-body"><h3>${s.title}</h3><p>${s.short}</p><div class="service-card-actions"><span class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></span><a class="service-whatsapp-link" href="${getWhatsAppUrl(s)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="${getQuoteLabel(s)} por WhatsApp"><i class="fab fa-whatsapp"></i> ${getQuoteLabel(s)}</a></div></div></article>`;
     });
 
     const modalOverlay = document.getElementById('serviceModal');
@@ -716,6 +744,9 @@
       document.getElementById('modalDesc').textContent = s.desc;
       document.getElementById('modalFeatures').innerHTML = s.features.map(f => `<div class="modal-feature"><i class="fas fa-check-circle"></i><span>${f}</span></div>`).join('');
       document.getElementById('modalTools').innerHTML = s.tools.map(t => `<span class="tool-badge">${t}</span>`).join('');
+      const modalWhatsApp = document.getElementById('modalWhatsApp');
+      modalWhatsApp.href = getWhatsAppUrl(s);
+      modalWhatsApp.innerHTML = `<i class="fab fa-whatsapp"></i> ${getQuoteLabel(s)}`;
       const normsWrap = document.getElementById('modalNormsWrap');
       if (s.norms && s.norms.length > 0) { normsWrap.style.display = 'block'; document.getElementById('modalNorms').innerHTML = s.norms.map(n => `<span class="norm-badge">${n}</span>`).join(''); } else { normsWrap.style.display = 'none'; }
       modalOverlay.classList.add('active');
