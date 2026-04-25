@@ -205,7 +205,7 @@
     .portfolio-overlay h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem; }
     .portfolio-overlay p { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
 
-    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
     .team-card { text-align: center; background: var(--surface); border-radius: var(--radius-lg); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: var(--transition); position: relative; }
     .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
     .team-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.2rem; border: 4px solid var(--surface-alt); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
@@ -271,7 +271,7 @@
 
     @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-grid { grid-template-columns: 1fr 1fr; } .stats-grid { grid-template-columns: repeat(2, 1fr); } .features-grid { grid-template-columns: 1fr 1fr; } .contact-grid { grid-template-columns: 1fr; } }
     @media (max-width: 768px) { .menu-toggle { display: block; } nav ul { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--primary); flex-direction: column; padding: 5rem 2rem 2rem; transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: -10px 0 40px rgba(0,0,0,0.3); } nav ul.show { right: 0; } nav a { padding: 0.8rem 1rem; font-size: 1rem; display: block; } .mobile-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; } .features-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; } .modal-features { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; } .service-pages-grid { grid-template-columns: 1fr; } section { padding: 4rem 0; } }
-    @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr 1fr; } .hero-buttons { flex-direction: column; align-items: center; } }
+    @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr 1fr; } .team-grid { grid-template-columns: 1fr; } .hero-buttons { flex-direction: column; align-items: center; } }
   </style>
   <script type="application/ld+json">
     {
@@ -360,11 +360,11 @@
           <div class="section-tag"><i class="fas fa-circle"></i> Sobre Nosotros</div>
           <h2>Ingeniería multidisciplinaria con precisión y compromiso</h2>
           <p>DISMEK nace como una empresa independiente dedicada a la ingeniería y el diseño mecánico e industrial. Nuestro propósito es brindar consultoría y documentación técnica de alta calidad para proyectos en diversos sectores industriales.</p>
-          <p>Nuestro equipo de ingenieros mecánicos, civiles y eléctricos transforma ideas técnicas en soluciones de ingeniería y documentación gráfica de alto nivel, usando herramientas de CAD, BIM, simulación y análisis.</p>
+          <p>Nuestro equipo de ingenieros mecánicos, civiles, eléctricos, electrónicos y mecatrónicos transforma ideas técnicas en soluciones de ingeniería y documentación gráfica de alto nivel, usando herramientas de CAD, BIM, simulación y análisis.</p>
           <div class="about-stats">
             <div class="stat-item"><div class="stat-number" data-count="50">0</div><div class="stat-label">Proyectos Realizados</div></div>
             <div class="stat-item"><div class="stat-number" data-count="16" data-suffix="+">0</div><div class="stat-label">Servicios Especializados</div></div>
-            <div class="stat-item"><div class="stat-number" data-count="4">0</div><div class="stat-label">Ingenieros Cofundadores</div></div>
+            <div class="stat-item"><div class="stat-number" data-count="3">0</div><div class="stat-label">Ingenieros Cofundadores</div></div>
           </div>
         </div>
         <div class="about-visual reveal-right">
@@ -412,7 +412,7 @@
     <div class="container">
       <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Por Qué Elegirnos</div><h2>Ventajas competitivas que nos distinguen</h2><p>Combinamos especialización técnica con herramientas de última generación para entregar resultados excepcionales.</p></div>
       <div class="features-grid">
-        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-drafting-compass"></i></div><h4>Especialización Multidisciplinaria</h4><p>Ingenieros mecánicos, civiles y eléctricos trabajando de forma integrada para entregar soluciones completas.</p></div>
+        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-drafting-compass"></i></div><h4>Especialización Multidisciplinaria</h4><p>Ingenieros mecánicos, civiles, eléctricos, electrónicos y mecatrónicos trabajando de forma integrada para entregar soluciones completas.</p></div>
         <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-globe-americas"></i></div><h4>Alcance Regional</h4><p>Servicios en toda Colombia y Latinoamérica, con capacidad de respuesta rápida y soporte técnico permanente.</p></div>
         <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-microchip"></i></div><h4>Tecnología de Punta</h4><p>Modelado 3D, BIM, simulaciones CFD y análisis estructural con software de última generación para máxima precisión.</p></div>
       </div>
@@ -444,9 +444,11 @@
       <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Nuestro Equipo</div><h2>Los ingenieros detrás de DISMEK</h2><p>Un equipo multidisciplinario de profesionales comprometidos con la excelencia técnica.</p></div>
       <div class="team-grid">
         <div class="team-card reveal"><img src="assets/daniel_mendez.png" alt="Daniel Méndez" loading="lazy"><div class="team-role-badge">CEO</div><h5>Daniel Méndez</h5><small>Ing. Mecánico – CEO & Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/fabian_rondon.png" alt="Fabián Rondón" loading="lazy"><h5>Fabián Rondón</h5><small>Ing. Civil – Cofundador</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/deyner_alvarado.png" alt="Deyner Alvarado" loading="lazy"><h5>Deyner Alvarado</h5><small>Ing. Electrónico – Cofundador</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
         <div class="team-card reveal"><img src="assets/daniel_torres.png" alt="Daniel Torres" loading="lazy"><h5>Daniel Torres</h5><small>Ing. Mecánico – Cofundador</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/sergio_ramirez.png" alt="Sergio Ramírez" loading="lazy"><h5>Sergio Ramírez</h5><small>Ing. Electricista – Cofundador</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/fabian_rondon.png" alt="Fabián Rondón" loading="lazy"><h5>Fabián Rondón</h5><small>Ing. Civil</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/sergio_ramirez.png" alt="Sergio Ramírez" loading="lazy"><h5>Sergio Ramírez</h5><small>Ing. Electricista</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/edisson_rangel.png" alt="Edisson Rangel" loading="lazy"><h5>Edisson Rangel</h5><small>Ing. Mecatrónico</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
       </div>
     </div>
   </section>
