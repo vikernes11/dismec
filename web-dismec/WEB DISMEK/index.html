@@ -156,6 +156,22 @@
     .service-page-link:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow); }
     .seo-note { margin-top: 1.5rem; font-size: 0.92rem; color: var(--text-light); }
 
+    .brochure-section { position: relative; overflow: hidden; background: var(--primary); color: #fff; padding: 6rem 0; }
+    .brochure-section { scroll-margin-top: 86px; }
+    .brochure-section::before { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 48px 48px; }
+    .brochure-layout { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 380px); gap: 3rem; align-items: center; }
+    .brochure-copy .section-tag { color: #fb923c; }
+    .brochure-copy h2 { font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 800; line-height: 1.1; margin-bottom: 1rem; color: #fff; }
+    .brochure-copy > p { color: rgba(255,255,255,0.76); font-size: 1.05rem; max-width: 720px; margin-bottom: 1.6rem; }
+    .brochure-list { display: grid; gap: 0.9rem; margin-bottom: 2rem; }
+    .brochure-list li { display: flex; gap: 0.75rem; color: rgba(255,255,255,0.82); font-size: 0.95rem; }
+    .brochure-list i { color: var(--accent); margin-top: 0.25rem; flex-shrink: 0; }
+    .brochure-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .brochure-preview { display: block; padding: 0.85rem; border: 1px solid rgba(255,255,255,0.24); border-radius: 8px; background: rgba(255,255,255,0.96); box-shadow: 0 25px 60px -15px rgba(0,0,0,0.45); transform: rotate(1.2deg); transition: var(--transition); }
+    .brochure-preview:hover { transform: translateY(-6px) rotate(0deg); box-shadow: 0 35px 70px -18px rgba(0,0,0,0.55); }
+    .brochure-preview span { display: flex; align-items: center; gap: 0.45rem; color: var(--primary); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0; margin: 0.35rem 0 0.85rem; }
+    .brochure-preview img { width: 100%; aspect-ratio: 7 / 9; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); }
+
     .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); z-index: 10000; opacity: 0; visibility: hidden; transition: var(--transition); display: flex; align-items: center; justify-content: center; padding: 2rem; }
     .modal-overlay.active { opacity: 1; visibility: visible; }
     .modal { background: var(--surface); border-radius: var(--radius-lg); max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; transform: translateY(30px) scale(0.95); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: var(--shadow-xl); }
@@ -275,6 +291,9 @@
     @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-grid { grid-template-columns: 1fr 1fr; } .stats-grid { grid-template-columns: repeat(2, 1fr); } .features-grid { grid-template-columns: 1fr 1fr; } .contact-grid { grid-template-columns: 1fr; } }
     @media (max-width: 768px) { .menu-toggle { display: block; } nav ul { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--primary); flex-direction: column; padding: 5rem 2rem 2rem; transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: -10px 0 40px rgba(0,0,0,0.3); } nav ul.show { right: 0; } nav a { padding: 0.8rem 1rem; font-size: 1rem; display: block; } .mobile-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; } .features-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; } .modal-features { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; } .service-pages-grid { grid-template-columns: 1fr; } section { padding: 4rem 0; } }
     @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr 1fr; } .team-grid { grid-template-columns: 1fr; } .hero-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; } .hero-buttons .btn { width: 100%; justify-content: center; padding: 0.75rem 0.6rem; font-size: 0.86rem; } }
+    @media (max-width: 1024px) { .brochure-layout { grid-template-columns: 1fr; } .brochure-preview { max-width: 360px; transform: none; } }
+    @media (max-width: 768px) { .brochure-section { padding: 4.5rem 0; } .brochure-actions { display: grid; grid-template-columns: 1fr; } .brochure-actions .btn { justify-content: center; width: 100%; } }
+    @media (max-width: 480px) { .brochure-list li { font-size: 0.9rem; } .brochure-preview { max-width: 310px; } }
   </style>
   <script type="application/ld+json">
     {
@@ -331,6 +350,7 @@
           <li><a href="#inicio" data-nav>Inicio</a></li>
           <li><a href="#nosotros" data-nav>Nosotros</a></li>
           <li><a href="#servicios" data-nav>Servicios</a></li>
+          <li><a href="#brochure" data-nav>Brochure</a></li>
           <li><a href="#ventajas" data-nav>Ventajas</a></li>
           <li><a href="#portfolio" data-nav>Proyectos</a></li>
           <li><a href="#equipo" data-nav>Equipo</a></li>
@@ -410,6 +430,29 @@
         </div>
         <p class="seo-note">Estas URLs ayudan a posicionar mejor términos como ingeniería en Bucaramanga, recipientes a presión ASME, diseño solar fotovoltaico, HVAC y diseño eléctrico industrial.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="brochure-section" id="brochure">
+    <div class="container brochure-layout">
+      <div class="brochure-copy reveal-left">
+        <div class="section-tag"><i class="fas fa-circle"></i> Brochure</div>
+        <h2>Brochure DISMEK</h2>
+        <p>Descargue una presentación corporativa en PDF con el portafolio técnico de DISMEK: servicios, metodología, entregables, criterios de calidad, software especializado y canales de contacto.</p>
+        <ul class="brochure-list">
+          <li><i class="fas fa-check-circle"></i><span>Resumen comercial para clientes de industria, energía, salud, construcción e infraestructura.</span></li>
+          <li><i class="fas fa-check-circle"></i><span>Alcances por disciplina, entregables esperados y enfoque de trabajo verificable.</span></li>
+          <li><i class="fas fa-check-circle"></i><span>Archivo PDF listo para revisar, compartir o anexar a una solicitud de cotización.</span></li>
+        </ul>
+        <div class="brochure-actions">
+          <a class="btn btn-primary" href="assets/brochure-dismek-servicios.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Ver PDF</a>
+          <a class="btn btn-outline" href="assets/brochure-dismek-servicios.pdf" download="Brochure_DISMEK_Servicios.pdf"><i class="fas fa-download"></i> Descargar PDF</a>
+        </div>
+      </div>
+      <a class="brochure-preview reveal-right" href="assets/brochure-dismek-servicios.pdf" target="_blank" rel="noopener" aria-label="Ver brochure DISMEK en PDF">
+        <span><i class="fas fa-eye"></i> Vista previa del PDF</span>
+        <img src="assets/brochure-dismek-cover.png" alt="Portada del brochure de servicios DISMEK" loading="lazy">
+      </a>
     </div>
   </section>
 
@@ -547,6 +590,7 @@
         </div>
         <div class="footer-col"><h4>Empresa</h4>
           <a href="#nosotros">Nosotros</a>
+          <a href="#brochure">Brochure</a>
           <a href="#portfolio">Proyectos</a>
           <a href="#equipo">Equipo</a>
           <a href="#faq">FAQ</a>
@@ -763,6 +807,20 @@
 
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+
+    function scrollToBrochure(event) {
+      if (event) event.preventDefault();
+      const target = document.getElementById('brochure');
+      if (!target) return;
+      const offset = (header ? header.offsetHeight : 72) + 18;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      if (location.hash !== '#brochure') history.pushState(null, '', '#brochure');
+      window.scrollTo({ top, behavior: event ? 'smooth' : 'auto' });
+    }
+    document.querySelectorAll('a[href="#brochure"]').forEach((link) => link.addEventListener('click', scrollToBrochure));
+    window.addEventListener('load', () => {
+      if (location.hash === '#brochure') setTimeout(() => scrollToBrochure(), 120);
+    });
 
     const toggle = document.querySelector('.menu-toggle');
     const navMenu = document.getElementById('navMenu');
