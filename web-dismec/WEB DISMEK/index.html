@@ -22,16 +22,18 @@
   <meta property="og:title" content="DISMEK Ingeniería en Bucaramanga | Ingeniería mecánica, eléctrica, civil e industrial">
   <meta property="og:description" content="Servicios de ingeniería para industria, energía, hospitales, edificaciones e infraestructura en Bucaramanga, Santander y Colombia.">
   <meta property="og:url" content="https://dismek.co/">
-  <meta property="og:image" content="https://dismek.co/assets/structures.png">
+  <meta property="og:image" content="https://dismek.co/assets/og-structures.jpg">
   <meta property="og:image:alt" content="Proyecto estructural de DISMEK Ingeniería">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DISMEK Ingeniería en Bucaramanga">
   <meta name="twitter:description" content="Ingeniería mecánica, eléctrica, civil, hidráulica, HVAC, solar y estructural para proyectos en Colombia.">
-  <meta name="twitter:image" content="https://dismek.co/assets/structures.png">
+  <meta name="twitter:image" content="https://dismek.co/assets/og-structures.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <style>
     :root {
       --primary: #0a1628;
@@ -338,11 +340,11 @@
   </script>
 </head>
 <body>
-  <div class="preloader" id="preloader"><div class="preloader-inner"><img src="assets/dismec_logo.png" alt="DISMEK" class="preloader-logo"><div class="preloader-bar"></div></div></div>
+  <div class="preloader" id="preloader"><div class="preloader-inner"><img src="assets/dismec_logo.webp" alt="DISMEK" class="preloader-logo" width="420" height="196"><div class="preloader-bar"></div></div></div>
 
   <header id="header">
     <div class="container navbar">
-      <a href="#inicio" class="logo"><img src="assets/dismec_logo.png" alt="DISMEK Ingeniería"></a>
+      <a href="#inicio" class="logo"><img src="assets/dismec_logo.webp" alt="DISMEK Ingeniería" width="420" height="196" fetchpriority="high"></a>
       <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
       <nav>
         <ul id="navMenu">
@@ -362,7 +364,7 @@
   </header>
 
   <section class="hero" id="inicio">
-    <video class="hero-video" autoplay muted loop playsinline><source src="assets/hero-video.mp4" type="video/mp4"></video>
+    <video class="hero-video" muted loop playsinline preload="none" poster="assets/hero-poster.webp"><source data-src="assets/hero-video-lite.mp4" type="video/mp4"></video>
     <canvas class="hero-particles" id="particles"></canvas>
     <div class="hero-content">
       <div class="hero-badge"><i class="fas fa-circle"></i> Ingeniería en Bucaramanga para Colombia</div>
@@ -393,9 +395,9 @@
           </div>
         </div>
         <div class="about-visual reveal-right">
-          <img src="assets/port1.png" alt="Proyecto DISMEK">
-          <img src="assets/structures.png" alt="Estructuras metálicas">
-          <img src="assets/energy.png" alt="Diseño energético">
+          <img src="assets/port1.webp" alt="Proyecto DISMEK" loading="lazy" decoding="async">
+          <img src="assets/structures.webp" alt="Estructuras metálicas" loading="lazy" decoding="async">
+          <img src="assets/energy.webp" alt="Diseño energético" loading="lazy" decoding="async">
           <div class="about-accent-box"><i class="fas fa-shield-halved"></i> Normas ASME, API, NSR-10</div>
         </div>
       </div>
@@ -451,7 +453,7 @@
       </div>
       <a class="brochure-preview reveal-right" href="assets/brochure-dismek-servicios.pdf" target="_blank" rel="noopener" aria-label="Ver brochure DISMEK en PDF">
         <span><i class="fas fa-eye"></i> Vista previa del PDF</span>
-        <img src="assets/brochure-dismek-cover.png" alt="Portada del brochure de servicios DISMEK" loading="lazy">
+        <img src="assets/brochure-dismek-cover.webp" alt="Portada del brochure de servicios DISMEK" loading="lazy" decoding="async">
       </a>
     </div>
   </section>
@@ -471,16 +473,16 @@
     <div class="container">
       <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Portafolio</div><h2>Proyectos que hablan por nosotros</h2><p>Cada proyecto refleja nuestro compromiso con la calidad, la precisión y la innovación en ingeniería.</p></div>
       <div class="portfolio-grid">
-        <div class="portfolio-item reveal"><img src="assets/recipiente_2.png" alt="Recipiente a Presión ASME"><div class="portfolio-overlay"><h4>Recipiente a Presión</h4><p>Diseño ASME Sección VIII</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/solar2.png" alt="Sistema Solar Fotovoltaico"><div class="portfolio-overlay"><h4>Sistema Solar Fotovoltaico</h4><p>Energía renovable – Ley 1715</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/port1.png" alt="Equipo Industrial"><div class="portfolio-overlay"><h4>Equipo Industrial</h4><p>Planos de fabricación</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/port2_new.png" alt="Diseño HVAC y BIM"><div class="portfolio-overlay"><h4>Diseño HVAC y BIM</h4><p>Coordinación de sistemas</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/port3.png" alt="Subestación Eléctrica"><div class="portfolio-overlay"><h4>Subestación Eléctrica</h4><p>Diseño de potencia</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/project_sopladores.png" alt="Edificio Sopladores"><div class="portfolio-overlay"><h4>Edificio Sopladores</h4><p>Ptar Río de Oro</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/modulo_d_metalica_malaga.png" alt="Estructura Metálica"><div class="portfolio-overlay"><h4>Estructura Metálica</h4><p>Hospital de Málaga, Santander</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_san_andres.png" alt="Gases Medicinales"><div class="portfolio-overlay"><h4>Gases Medicinales</h4><p>Hospital San Andrés, Santander</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_coromoro.png" alt="Red de Gases"><div class="portfolio-overlay"><h4>Red de Gases</h4><p>Hospital de Coromoro</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/iluminacion_vivienda_bucaramanga.png" alt="Iluminación Bucaramanga"><div class="portfolio-overlay"><h4>Propuesta de Iluminación</h4><p>Viviendas en Bucaramanga</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/recipiente_2.webp" alt="Recipiente a Presión ASME" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Recipiente a Presión</h4><p>Diseño ASME Sección VIII</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/solar2.webp" alt="Sistema Solar Fotovoltaico" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Sistema Solar Fotovoltaico</h4><p>Energía renovable – Ley 1715</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/port1.webp" alt="Equipo Industrial" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Equipo Industrial</h4><p>Planos de fabricación</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/port2_new.webp" alt="Diseño HVAC y BIM" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Diseño HVAC y BIM</h4><p>Coordinación de sistemas</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/port3.webp" alt="Subestación Eléctrica" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Subestación Eléctrica</h4><p>Diseño de potencia</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/project_sopladores.webp" alt="Edificio Sopladores" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Edificio Sopladores</h4><p>Ptar Río de Oro</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/modulo_d_metalica_malaga.webp" alt="Estructura Metálica" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Estructura Metálica</h4><p>Hospital de Málaga, Santander</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_san_andres.webp" alt="Gases Medicinales" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Gases Medicinales</h4><p>Hospital San Andrés, Santander</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_coromoro.webp" alt="Red de Gases" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Red de Gases</h4><p>Hospital de Coromoro</p></div></div>
+        <div class="portfolio-item reveal"><img src="assets/iluminacion_vivienda_bucaramanga.webp" alt="Iluminación Bucaramanga" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Propuesta de Iluminación</h4><p>Viviendas en Bucaramanga</p></div></div>
       </div>
     </div>
   </section>
@@ -491,12 +493,12 @@
     <div class="container">
       <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Nuestro Equipo</div><h2>Los ingenieros detrás de DISMEK</h2><p>Un equipo multidisciplinario de profesionales comprometidos con la excelencia técnica.</p></div>
       <div class="team-grid">
-        <div class="team-card reveal"><img src="assets/daniel_mendez.png" alt="Daniel Méndez" loading="lazy"><div class="team-role-badge">CEO</div><h5>Daniel Méndez</h5><small>Ing. Mecánico – CEO & Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/deyner_alvarado.png" alt="Dayner Alvarado" loading="lazy"><h5>Dayner Alvarado</h5><small>Ing. Electrónico – Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/dayner-alvarado-770a82158/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/daniel_torres.png" alt="Daniel Torres" loading="lazy"><h5>Daniel Torres</h5><small>Ing. Mecánico – Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-torres-94023623b/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/fabian_rondon.png" alt="Fabián Rondón" loading="lazy"><h5>Fabián Rondón</h5><small>Ing. Civil</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/sergio_ramirez.png" alt="Sergio Ramírez" loading="lazy"><h5>Sergio Ramírez</h5><small>Ing. Electricista</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/edisson_rangel.png" alt="Edisson Rangel" loading="lazy"><h5>Edisson Rangel</h5><small>Ing. Mecatrónico</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/daniel_mendez.webp" alt="Daniel Méndez" loading="lazy" decoding="async"><div class="team-role-badge">CEO</div><h5>Daniel Méndez</h5><small>Ing. Mecánico – CEO & Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/deyner_alvarado.webp" alt="Dayner Alvarado" loading="lazy" decoding="async"><h5>Dayner Alvarado</h5><small>Ing. Electrónico – Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/dayner-alvarado-770a82158/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/daniel_torres.webp" alt="Daniel Torres" loading="lazy" decoding="async"><h5>Daniel Torres</h5><small>Ing. Mecánico – Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-torres-94023623b/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/fabian_rondon.webp" alt="Fabián Rondón" loading="lazy" decoding="async"><h5>Fabián Rondón</h5><small>Ing. Civil</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/sergio_ramirez.webp" alt="Sergio Ramírez" loading="lazy" decoding="async"><h5>Sergio Ramírez</h5><small>Ing. Electricista</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+        <div class="team-card reveal"><img src="assets/edisson_rangel.webp" alt="Edisson Rangel" loading="lazy" decoding="async"><h5>Edisson Rangel</h5><small>Ing. Mecatrónico</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
       </div>
     </div>
   </section>
@@ -572,7 +574,7 @@
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><img src="assets/dismec_logo.png" alt="DISMEK"><p>Empresa de ingeniería y diseño mecánico, civil y eléctrico. Transformamos necesidades técnicas en soluciones de precisión para la industria colombiana y latinoamericana.</p></div>
+        <div class="footer-brand"><img src="assets/dismec_logo.webp" alt="DISMEK" loading="lazy" decoding="async"><p>Empresa de ingeniería y diseño mecánico, civil y eléctrico. Transformamos necesidades técnicas en soluciones de precisión para la industria colombiana y latinoamericana.</p></div>
         <div class="footer-col"><h4>Servicios</h4>
           <a href="#" onclick="openServiceModal(0);return false;">Planos de Maquinaria</a>
           <a href="#" onclick="openServiceModal(1);return false;">Recipientes a Presión</a>
@@ -633,7 +635,7 @@
     const services = [
       {
         title: "Planos de Maquinaria y Equipos", tag: "Ingeniería Mecánica", icon: "fas fa-cogs",
-        img: "assets/diseno-maquinaria-planos.png",
+        img: "assets/diseno-maquinaria-planos.webp",
         short: "Diseño de planos 2D y 3D para maquinaria y equipos industriales con memoria de cálculo.",
         desc: "Desarrollamos documentación técnica completa para la fabricación y montaje de maquinaria industrial. Desde el concepto inicial hasta los planos de detalle, incluyendo despieces, listas de materiales (BOM), tolerancias y memorias de cálculo. Nuestros planos cumplen con estándares ASME e ISO.",
         features: ["Planos de fabricación 2D (AutoCAD)", "Modelado 3D paramétrico", "Memoria de cálculo estructural y mecánico", "Despieces y listas de materiales (BOM)", "Planos de montaje y ensamblaje", "Revisión de normativa ASME / ISO"],
@@ -641,7 +643,7 @@
       },
       {
         title: "Diseño de Recipientes a Presión", tag: "Ingeniería de Presión · ASME", icon: "fas fa-flask-vial",
-        img: "assets/recipiente.png",
+        img: "assets/recipiente.webp",
         short: "Diseño, cálculo y documentación de recipientes a presión conforme a ASME BPVC Sección VIII y normativas complementarias.",
         desc: "Realizamos el diseño integral de recipientes a presión para la industria petrolera, petroquímica, farmacéutica, alimentaria y de generación de energía. Nuestro alcance abarca desde la definición de condiciones de diseño hasta la producción de planos de fabricación, memorias de cálculo detalladas y hojas de datos. Trabajamos bajo ASME BPVC Sección VIII División 1 y 2, integrando normativas complementarias. Cada diseño incluye verificación de espesores de carcasa, tapas, boquillas con refuerzo, silletas o faldones, anillos rigidizadores, análisis de MDMT y cálculo de MAWP. Entregamos un Data Book completo listo para inspección y certificación.",
         features: ["Cálculo de espesores de carcasa y tapas (ASME VIII Div. 1 y 2)", "Diseño de boquillas con refuerzo por área de reemplazo", "Análisis de silletas (Zick) y faldones para recipientes verticales", "Cálculo de MDMT y curvas de exención de impacto", "Determinación de MAWP en condición nueva y corroída", "Diseño de anillos rigidizadores para vacío y presión externa", "Análisis de cargas en boquillas (WRC 107 / WRC 537)", "Selección de materiales según ASME II Parte D", "Planos de fabricación y detalle de soldadura (WPS/PQR)", "Data Book completo para certificación e inspección"],
@@ -650,7 +652,7 @@
       },
       {
         title: "Paneles Solares Fotovoltaicos", tag: "Energía Renovable · Solar", icon: "fas fa-solar-panel",
-        img: "assets/solar1.png",
+        img: "assets/solar1.webp",
         short: "Diseño de sistemas solares fotovoltaicos On-Grid y Off-Grid conforme a la Ley 1715 de 2014, Ley 2099 de 2021 y RETIE.",
         desc: "Diseñamos sistemas de generación solar fotovoltaica para proyectos residenciales, comerciales e industriales en Colombia. Nuestro servicio abarca el dimensionamiento completo del sistema (paneles, inversores, estructuras de montaje, protecciones y cableado), los planos eléctricos de conexión, memorias de cálculo, análisis de sombreado, simulación de producción energética y la documentación técnica necesaria para la conexión a la red ante el operador (trámite de autogeneración). Trabajamos bajo el marco de la Ley 1715 de 2014 (Regulación de energías renovables no convencionales), actualizada por la Ley 2099 de 2021 (que amplía incentivos tributarios y promueve la transición energética), y el Reglamento Técnico de Instalaciones Eléctricas (RETIE), que garantiza la seguridad técnica de la instalación. Todos nuestros diseños cumplen con las normas NTC 2050 (Código Eléctrico Colombiano), NTC 5899 (Sistemas fotovoltaicos) y las resoluciones CREG aplicables para autogeneración a pequeña escala y generación distribuida. Garantizamos que cada proyecto cuente con certificación de producto de los equipos seleccionados y cumpla con los estándares internacionales IEC 61215 (módulos) e IEC 61730 (seguridad).",
         features: ["Dimensionamiento de sistemas On-Grid y Off-Grid", "Selección de paneles, inversores y optimizadores", "Diseño de estructuras de montaje (techo y suelo)", "Planos eléctricos unifilares y de conexión", "Análisis de sombreado y orientación óptima", "Simulación de producción energética anual (kWh)", "Memoria de cálculo de protecciones y cableado", "Documentación para trámite de autogeneración ante operador de red", "Análisis de retorno de inversión y beneficios tributarios (Ley 1715)", "Coordinación con instaladores y supervisión técnica"],
@@ -658,91 +660,91 @@
         norms: ["Ley 1715 de 2014 (Energías renovables no convencionales)", "Ley 2099 de 2021 (Transición energética)", "RETIE (Reglamento Técnico de Instalaciones Eléctricas)", "NTC 2050 (Código Eléctrico Colombiano)", "NTC 5899 (Sistemas fotovoltaicos)", "Resolución CREG 030 de 2018 (Autogeneración)", "Resolución CREG 174 de 2021 (Generación distribuida)", "IEC 61215 (Módulos fotovoltaicos – Diseño)", "IEC 61730 (Módulos fotovoltaicos – Seguridad)", "IEC 62109 (Seguridad de inversores)", "NTC 4405 (Eficiencia energética)", "Decreto 2469 de 2014 (Incentivos tributarios)"]
       },
       {
-        title: "Sistemas HVAC", tag: "Climatización", icon: "fas fa-wind", img: "assets/hvac.png",
+        title: "Sistemas HVAC", tag: "Climatización", icon: "fas fa-wind", img: "assets/hvac.webp",
         short: "Sistemas de aire acondicionado, ventilación y calefacción con eficiencia energética.",
         desc: "Diseñamos sistemas completos de climatización para edificaciones comerciales, hospitalarias e industriales. Realizamos cálculos de carga térmica, selección de equipos, diseño de ductos y tuberías, coordinación BIM con otras disciplinas y especificaciones técnicas.",
         features: ["Cálculo de cargas térmicas", "Diseño de ductería y tuberías", "Selección de equipos y especificaciones", "Coordinación BIM multidisciplinaria", "Eficiencia energética y sostenibilidad", "Cumplimiento normativo ASHRAE"],
         tools: ["Revit MEP", "AutoCAD MEP", "HAP (Carrier)", "Navisworks"], norms: []
       },
       {
-        title: "Tuberías e Instrumentación (P&ID)", tag: "Procesos Industriales", icon: "fas fa-project-diagram", img: "assets/pid.png",
+        title: "Tuberías e Instrumentación (P&ID)", tag: "Procesos Industriales", icon: "fas fa-project-diagram", img: "assets/pid.webp",
         short: "Diagramas P&ID, isométricos y layout de plantas con especificaciones completas.",
         desc: "Creamos diagramas de tuberías e instrumentación (P&ID) para plantas industriales, refinerías, plantas de tratamiento y proyectos de proceso. Incluimos isométricos de tubería, layouts de planta, especificaciones de materiales, listas de líneas y hojas de datos de equipos.",
         features: ["Diagramas P&ID según ISA S5.1", "Isométricos de tubería", "Layout de equipos y plantas", "Listas de líneas y materiales", "Hojas de datos de equipos", "Normas ASME B31 y API"],
         tools: ["AutoCAD P&ID", "SmartPlant", "SolidWorks Routing", "Excel"], norms: []
       },
       {
-        title: "Diseño Energético", tag: "Energía y Potencia", icon: "fas fa-bolt", img: "assets/energy.png",
+        title: "Diseño Energético", tag: "Energía y Potencia", icon: "fas fa-bolt", img: "assets/energy.webp",
         short: "Planos de generación, transmisión y distribución eléctrica, subestaciones y control.",
         desc: "Diseñamos sistemas eléctricos de potencia para proyectos industriales y comerciales, incluyendo subestaciones, transformadores, tableros de distribución, sistemas de control y protección.",
         features: ["Diseño de subestaciones eléctricas", "Coordinación de protecciones", "Estudios de cortocircuito", "Tableros y centros de control de motores", "Diagramas unifilares y trifilares", "Cumplimiento RETIE y NEC"],
         tools: ["ETAP", "AutoCAD Electrical", "Dialux", "SKM PowerTools"], norms: []
       },
       {
-        title: "Estructuras Metálicas", tag: "Ingeniería Estructural", icon: "fas fa-warehouse", img: "assets/structures.png",
+        title: "Estructuras Metálicas", tag: "Ingeniería Estructural", icon: "fas fa-warehouse", img: "assets/structures.webp",
         short: "Modelado, diseño y detallado de estructuras de acero para proyectos industriales.",
         desc: "Desarrollamos el diseño completo de estructuras metálicas: desde el modelado 3D hasta los planos de fabricación y montaje. Realizamos análisis estructural, diseño de conexiones, planos de taller con despieces y listas de corte.",
         features: ["Modelado 3D de estructuras", "Análisis y diseño estructural", "Planos de taller y detallado", "Diseño de conexiones soldadas y apernadas", "Listas de corte y materiales", "Normas NSR-10, AISC, AWS"],
         tools: ["Tekla Structures", "SAP2000", "ETABS", "AutoCAD", "IDEA StatiCa"], norms: []
       },
       {
-        title: "Diseños Eléctricos", tag: "Ingeniería Eléctrica", icon: "fas fa-plug", img: "assets/design_electrico.png",
+        title: "Diseños Eléctricos", tag: "Ingeniería Eléctrica", icon: "fas fa-plug", img: "assets/design_electrico.webp",
         short: "Instalaciones eléctricas industriales: tableros, subestaciones y sistemas de potencia.",
         desc: "Planificamos y diseñamos instalaciones eléctricas para edificaciones e industrias. Incluimos diagramas unifilares, cuadros de carga, diseño de iluminación, rutas de cables, puestas a tierra y sistemas de protección contra rayos.",
         features: ["Diagramas unifilares y cuadros de carga", "Diseño de iluminación interior y exterior", "Sistemas de puesta a tierra", "Protección contra rayos (SIPRA)", "Rutas de cables y canalizaciones", "Cumplimiento RETIE y NTC"],
         tools: ["AutoCAD Electrical", "Dialux", "ETAP", "Revit MEP"], norms: []
       },
       {
-        title: "Simulaciones CFD", tag: "Simulación Avanzada", icon: "fas fa-atom", img: "assets/simulaciones_cfd.png",
+        title: "Simulaciones CFD", tag: "Simulación Avanzada", icon: "fas fa-atom", img: "assets/simulaciones_cfd.webp",
         short: "Modelado y simulación de fluidos y transferencia de calor para optimizar diseños.",
         desc: "Realizamos simulaciones computacionales de dinámica de fluidos (CFD) y análisis térmico para optimizar el rendimiento de productos, sistemas de ventilación, equipos de proceso y componentes mecánicos.",
         features: ["Simulación de flujos internos y externos", "Análisis de transferencia de calor", "Optimización de diseño mediante CFD", "Validación de sistemas de ventilación", "Análisis de esfuerzos térmicos", "Reportes técnicos con visualización 3D"],
         tools: ["ANSYS Fluent", "ANSYS CFX", "SolidWorks Flow Simulation", "OpenFOAM"], norms: []
       },
       {
-        title: "Diseño Hidrosanitario y Gas", tag: "Ingeniería Hidráulica", icon: "fas fa-faucet-drip", img: "assets/hidraulico_sanitario_gas.png",
+        title: "Diseño Hidrosanitario y Gas", tag: "Ingeniería Hidráulica", icon: "fas fa-faucet-drip", img: "assets/hidraulico_sanitario_gas.webp",
         short: "Redes hidráulicas, sanitarias y de gas para edificaciones e instalaciones industriales.",
         desc: "Diseñamos redes completas de agua potable, aguas residuales, aguas lluvias y gas natural para edificaciones residenciales, comerciales e industriales.",
         features: ["Red de agua potable y distribución", "Sistema de aguas residuales y lluvias", "Red de gas natural domiciliario", "Dimensionamiento hidráulico completo", "Memorias de cálculo normativas", "Planos de instalación detallados"],
         tools: ["AutoCAD", "EPANET", "Revit MEP", "HEC-RAS"], norms: []
       },
       {
-        title: "Estructuras de Concreto Reforzado", tag: "Ingeniería Civil", icon: "fas fa-building", img: "assets/estructural_concreto.png",
+        title: "Estructuras de Concreto Reforzado", tag: "Ingeniería Civil", icon: "fas fa-building", img: "assets/estructural_concreto.webp",
         short: "Cálculo y diseño de vigas, columnas, losas y cimentaciones en concreto reforzado.",
         desc: "Desarrollamos el diseño estructural completo en concreto reforzado para edificaciones y obras industriales. Realizamos modelado estructural, análisis sísmico, diseño de elementos y producción de planos estructurales de detalle.",
         features: ["Modelado y análisis estructural", "Diseño sismorresistente NSR-10", "Diseño de cimentaciones", "Planos de detalle con despieces", "Memoria de cálculo completa", "Cumplimiento ACI 318"],
         tools: ["ETABS", "SAP2000", "SAFE", "AutoCAD", "Revit Structure"], norms: []
       },
       {
-        title: "Estructuras de Contención", tag: "Geotecnia", icon: "fas fa-mountain", img: "assets/contencion.png",
+        title: "Estructuras de Contención", tag: "Geotecnia", icon: "fas fa-mountain", img: "assets/contencion.webp",
         short: "Muros de contención, taludes y obras de estabilización con estudios geotécnicos.",
         desc: "Analizamos y diseñamos estructuras de contención para estabilización de taludes y excavaciones. Incluimos muros en voladizo, muros de gravedad, tierra armada, pantallas ancladas y sistemas de drenaje.",
         features: ["Muros de contención en voladizo", "Análisis de estabilidad de taludes", "Tierra armada y muros anclados", "Sistemas de subdrenaje", "Integración de estudios geotécnicos", "Cumplimiento NSR-10 Título H"],
         tools: ["GEO5", "SLOPE/W", "PLAXIS", "AutoCAD", "Excel"], norms: []
       },
       {
-        title: "Obras de Arte e Infraestructura", tag: "Infraestructura Vial", icon: "fas fa-road", img: "assets/obras_arte.png",
+        title: "Obras de Arte e Infraestructura", tag: "Infraestructura Vial", icon: "fas fa-road", img: "assets/obras_arte.webp",
         short: "Alcantarillas, box culverts, puentes menores y estructuras hidráulicas especiales.",
         desc: "Diseñamos obras de arte menores y mayores para proyectos de infraestructura vial y drenaje. Incluimos alcantarillas de cajón, circulares y de arco, box culverts, cabezales, aletones, disipadores de energía y puentes menores.",
         features: ["Diseño de alcantarillas y box culverts", "Puentes menores y pontones", "Cabezales, aletones y disipadores", "Análisis hidrológico e hidráulico", "Planos constructivos detallados", "Especificaciones técnicas para licitación"],
         tools: ["HEC-HMS", "HEC-RAS", "AutoCAD Civil 3D", "SAP2000"], norms: []
       },
       {
-        title: "Reconocimientos de Vivienda", tag: "Legalización", icon: "fas fa-house-circle-check", img: "assets/reconocimiento.png",
+        title: "Reconocimientos de Vivienda", tag: "Legalización", icon: "fas fa-house-circle-check", img: "assets/reconocimiento.webp",
         short: "Evaluación técnica de viviendas para certificación, legalización y diagnóstico.",
         desc: "Realizamos reconocimientos técnicos de viviendas y edificaciones existentes conforme al Decreto 1077 de 2015 y normativa municipal. Evaluamos el estado estructural, arquitectónico y de cumplimiento normativo para procesos de legalización ante curadurías urbanas.",
         features: ["Inspección técnica de vivienda", "Verificación de cumplimiento normativo", "Informe para legalización ante curaduría", "Evaluación estructural y arquitectónica", "Registro fotográfico detallado", "Concepto de ingeniero civil matriculado"],
         tools: ["Equipos de medición", "AutoCAD", "Office", "Registro fotográfico"], norms: []
       },
       {
-        title: "Patologías Estructurales", tag: "Diagnóstico", icon: "fas fa-magnifying-glass", img: "assets/patologias.png",
+        title: "Patologías Estructurales", tag: "Diagnóstico", icon: "fas fa-magnifying-glass", img: "assets/patologias.webp",
         short: "Diagnóstico de daños en estructuras, identificación de causas y propuestas de reparación.",
         desc: "Diagnosticamos patologías en estructuras de concreto, acero y mampostería. Identificamos las causas de fisuras, asentamientos, corrosión, humedades y otros daños, y proponemos soluciones de reparación, refuerzo o rehabilitación.",
         features: ["Inspección y diagnóstico de daños", "Identificación de causas raíz", "Ensayos no destructivos", "Propuestas de reparación y refuerzo", "Informes técnicos con fotografías", "Seguimiento post-intervención"],
         tools: ["Esclerómetro", "Ultrasonido", "Pachómetro", "AutoCAD", "Excel"], norms: []
       },
       {
-        title: "Vulnerabilidad Sísmica", tag: "Sismorresistencia", icon: "fas fa-house-crack", img: "assets/vulnerabilidad.png",
+        title: "Vulnerabilidad Sísmica", tag: "Sismorresistencia", icon: "fas fa-house-crack", img: "assets/vulnerabilidad.webp",
         short: "Evaluación de vulnerabilidad sísmica para cumplimiento de normativas sismorresistentes.",
         desc: "Evaluamos la vulnerabilidad sísmica de estructuras nuevas y existentes conforme a la NSR-10 y la Ley 400 de 1997. Realizamos modelado estructural, análisis dinámico, evaluación de la capacidad de la estructura frente a demandas sísmicas y formulación de un plan de reforzamiento.",
         features: ["Modelado y análisis dinámico", "Evaluación de capacidad vs demanda", "Calificación de vulnerabilidad NSR-10", "Plan de reforzamiento estructural", "Informe técnico normativo", "Cumplimiento Ley 400/1997"],
@@ -803,7 +805,21 @@
     modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    window.addEventListener('load', () => { setTimeout(() => document.getElementById('preloader').classList.add('hidden'), 800); });
+    const hidePreloader = () => document.getElementById('preloader').classList.add('hidden');
+    setTimeout(hidePreloader, 500);
+    window.addEventListener('load', hidePreloader);
+
+    const heroVideo = document.querySelector('.hero-video');
+    function loadHeroVideo() {
+      const source = heroVideo && heroVideo.querySelector('source[data-src]');
+      if (!source) return;
+      source.src = source.dataset.src;
+      source.removeAttribute('data-src');
+      heroVideo.load();
+      heroVideo.play().catch(() => {});
+    }
+    if (document.readyState === 'complete') { loadHeroVideo(); }
+    else { window.addEventListener('load', () => setTimeout(loadHeroVideo, 200)); }
 
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
