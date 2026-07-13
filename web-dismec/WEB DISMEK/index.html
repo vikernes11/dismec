@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DISMEK Ingeniería en Bucaramanga | Ingeniería mecánica, eléctrica, civil e industrial</title>
-  <meta name="description" content="DISMEK Ingeniería en Bucaramanga, Santander. Servicios de ingeniería mecánica, eléctrica, civil, hidráulica, HVAC, solar fotovoltaica, recipientes a presión ASME, P&ID, estructuras y simulaciones CFD en Colombia.">
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-  <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="description" content="DISMEK desarrolla diseño mecánico, civil, eléctrico, energético e industrial con planos, cálculos, simulación, BIM y documentación técnica para proyectos en Colombia.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
   <meta name="author" content="DISMEK Ingeniería">
-  <meta name="theme-color" content="#0a1628">
+  <meta name="theme-color" content="#0b1f33">
   <link rel="canonical" href="https://dismek.co/">
   <link rel="alternate" hreflang="es-CO" href="https://dismek.co/">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -16,871 +15,356 @@
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="assets/hero-poster.webp" type="image/webp" fetchpriority="high">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CO">
   <meta property="og:site_name" content="DISMEK Ingeniería">
   <meta property="og:title" content="DISMEK Ingeniería en Bucaramanga | Ingeniería mecánica, eléctrica, civil e industrial">
-  <meta property="og:description" content="Servicios de ingeniería para industria, energía, hospitales, edificaciones e infraestructura en Bucaramanga, Santander y Colombia.">
+  <meta property="og:description" content="DISMEK desarrolla diseño mecánico, civil, eléctrico, energético e industrial con planos, cálculos, simulación, BIM y documentación técnica para proyectos en Colombia.">
   <meta property="og:url" content="https://dismek.co/">
-  <meta property="og:image" content="https://dismek.co/assets/og-structures.jpg">
-  <meta property="og:image:alt" content="Proyecto estructural de DISMEK Ingeniería">
+  <meta property="og:image" content="https://dismek.co/assets/hero-poster.webp">
+  <meta property="og:image:alt" content="DISMEK Ingeniería - DISMEK Ingeniería en Bucaramanga | Ingeniería mecánica, eléctrica, civil e industrial">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DISMEK Ingeniería en Bucaramanga">
-  <meta name="twitter:description" content="Ingeniería mecánica, eléctrica, civil, hidráulica, HVAC, solar y estructural para proyectos en Colombia.">
-  <meta name="twitter:image" content="https://dismek.co/assets/og-structures.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-  <style>
-    :root {
-      --primary: #0a1628;
-      --primary-light: #1a2d4a;
-      --accent: #f97316;
-      --accent-hover: #ea580c;
-      --accent-glow: rgba(249, 115, 22, 0.3);
-      --blue: #3b82f6;
-      --blue-dark: #1e40af;
-      --blue-glow: rgba(59, 130, 246, 0.2);
-      --surface: #ffffff;
-      --surface-alt: #f8fafc;
-      --surface-dark: #0f172a;
-      --text: #1e293b;
-      --text-light: #64748b;
-      --text-white: #f1f5f9;
-      --border: #e2e8f0;
-      --radius: 12px;
-      --radius-lg: 20px;
-      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
-      --shadow-lg: 0 20px 50px -12px rgba(0,0,0,0.15);
-      --shadow-xl: 0 25px 60px -15px rgba(0,0,0,0.25);
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --font: 'Inter', system-ui, sans-serif;
-    }
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { font-family: var(--font); scroll-behavior: smooth; font-size: 16px; }
-    body { background: var(--surface); color: var(--text); line-height: 1.7; overflow-x: hidden; }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-    img { max-width: 100%; display: block; }
-    button { cursor: pointer; font-family: var(--font); }
-
-    .preloader { position: fixed; inset: 0; background: var(--primary); z-index: 99999; display: flex; align-items: center; justify-content: center; transition: opacity 0.6s, visibility 0.6s; }
-    .preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-    .preloader-inner { text-align: center; color: #fff; }
-    .preloader-logo { width: 120px; margin: 0 auto 1.5rem; animation: pulse 1.5s ease-in-out infinite; }
-    .preloader-bar { width: 200px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; margin: 0 auto; }
-    .preloader-bar::after { content: ''; display: block; width: 40%; height: 100%; background: var(--accent); border-radius: 3px; animation: loading 1.2s ease-in-out infinite; }
-    @keyframes loading { 0% { transform: translateX(-100%); } 100% { transform: translateX(350%); } }
-    @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.7; transform: scale(0.95); } }
-
-    header { position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; background: rgba(10, 22, 40, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); transition: var(--transition); }
-    header.scrolled { background: rgba(10, 22, 40, 0.97); box-shadow: 0 4px 30px rgba(0,0,0,0.3); }
-    .container { width: 90%; max-width: 1240px; margin: 0 auto; }
-    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 0; }
-    .logo img { height: 50px; width: auto; transition: var(--transition); }
-    header.scrolled .logo img { height: 42px; }
-    nav ul { display: flex; gap: 0.25rem; align-items: center; }
-    nav a { color: rgba(255,255,255,0.75); font-weight: 500; font-size: 0.875rem; padding: 0.5rem 0.9rem; transition: var(--transition); border-radius: 8px; letter-spacing: 0.01em; }
-    nav a:hover, nav a.active { color: #fff; background: rgba(255,255,255,0.1); }
-    .menu-toggle { display: none; font-size: 1.4rem; color: #fff; background: none; border: none; padding: 0.5rem; }
-
-    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; background: var(--primary); }
-    .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(10,22,40,0.7) 50%, rgba(10,22,40,0.85) 100%); z-index: 1; }
-    .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
-    .hero-particles { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
-    .hero-content { position: relative; z-index: 3; text-align: center; color: #fff; max-width: 850px; padding: 0 1rem; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.3); padding: 0.4rem 1.2rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; color: var(--accent); margin-bottom: 1.5rem; letter-spacing: 0.05em; text-transform: uppercase; }
-    .hero-badge i { font-size: 0.7rem; }
-    .hero-content h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .hero-content h1 span { background: linear-gradient(135deg, var(--accent) 0%, #fbbf24 100%); -webkit-background-clip: text; background-clip: text; }
-    .hero-content p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 2.5rem; max-width: 650px; margin-left: auto; margin-right: auto; line-height: 1.8; }
-    .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .btn { padding: 0.85rem 2rem; font-weight: 600; border-radius: 10px; font-size: 0.95rem; transition: var(--transition); display: inline-flex; align-items: center; gap: 0.5rem; border: none; }
-    .btn-primary { background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%); color: #fff; box-shadow: 0 4px 15px var(--accent-glow); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px var(--accent-glow); }
-    .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
-    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); transform: translateY(-2px); }
-    .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 3; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; animation: bounce 2s infinite; }
-    .hero-scroll i { display: block; font-size: 1.2rem; margin-top: 0.3rem; }
-    @keyframes bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-8px); } }
-
-    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s, transform 0.8s; }
-    .reveal-left.visible { opacity: 1; transform: translateX(0); }
-    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.8s, transform 0.8s; }
-    .reveal-right.visible { opacity: 1; transform: translateX(0); }
-
-    section { padding: 6rem 0; }
-    .section-header { text-align: center; margin-bottom: 4rem; }
-    .section-tag { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
-    .section-tag i { font-size: 0.6rem; }
-    .section-header h2 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; color: var(--primary); line-height: 1.2; margin-bottom: 1rem; }
-    .section-header p { font-size: 1.05rem; color: var(--text-light); max-width: 600px; margin: 0 auto; line-height: 1.8; }
-
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-    .about-content h2 { font-size: 2.2rem; font-weight: 800; color: var(--primary); margin-bottom: 1.5rem; line-height: 1.2; }
-    .about-content p { color: var(--text-light); margin-bottom: 1rem; }
-    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
-    .stat-item { text-align: center; }
-    .stat-number { font-size: 2.5rem; font-weight: 800; color: var(--accent); font-family: 'JetBrains Mono', monospace; }
-    .stat-label { font-size: 0.8rem; color: var(--text-light); font-weight: 500; margin-top: 0.25rem; }
-    .about-visual { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .about-visual img { border-radius: var(--radius); object-fit: cover; height: 200px; width: 100%; box-shadow: var(--shadow); }
-    .about-visual img:first-child { grid-row: 1 / 3; height: 100%; }
-    .about-accent-box { position: absolute; bottom: -1rem; right: -1rem; background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%); color: #fff; padding: 1.2rem 1.5rem; border-radius: var(--radius); box-shadow: 0 8px 25px var(--accent-glow); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
-
-    .services-section { background: var(--surface-alt); }
-    .services-grid, .servicios-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
-    .service-card { background: var(--surface); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); cursor: pointer; border: 1px solid var(--border); position: relative; }
-    .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: var(--accent); }
-    .service-card-img { height: 190px; overflow: hidden; position: relative; }
-    .service-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
-    .service-card:hover .service-card-img img { transform: scale(1.08); }
-    .service-card-img .service-icon { position: absolute; bottom: -1.2rem; left: 1.5rem; width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.1rem; box-shadow: 0 4px 12px var(--blue-glow); border: 3px solid var(--surface); }
-    .service-card-body { padding: 1.8rem 1.5rem 1.5rem; }
-    .service-card-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
-    .service-card-body p { font-size: 0.875rem; color: var(--text-light); line-height: 1.6; margin-bottom: 1rem; }
-    .service-card-actions { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
-    .service-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color: var(--accent); transition: var(--transition); }
-    .service-link:hover { gap: 0.7rem; }
-    .service-link i { font-size: 0.75rem; transition: var(--transition); }
-    .service-whatsapp-link { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 36px; padding: 0.45rem 0.8rem; border-radius: 10px; background: rgba(37,211,102,0.1); color: #128c4a; font-size: 0.78rem; font-weight: 700; border: 1px solid rgba(37,211,102,0.24); transition: var(--transition); }
-    .service-whatsapp-link:hover { background: #25d366; color: #fff; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(37,211,102,0.25); }
-    .service-pages-links { margin-top: 2rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); }
-    .service-pages-links h3 { font-size: 1.05rem; color: var(--primary); margin-bottom: 0.5rem; }
-    .service-pages-links p { font-size: 0.92rem; color: var(--text-light); margin-bottom: 1rem; }
-    .service-pages-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; }
-    .service-page-link { display: block; padding: 0.95rem 1rem; border-radius: 14px; border: 1px solid var(--border); background: var(--surface-alt); font-weight: 600; color: var(--primary); transition: var(--transition); }
-    .service-page-link:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow); }
-    .seo-note { margin-top: 1.5rem; font-size: 0.92rem; color: var(--text-light); }
-
-    .brochure-section { position: relative; overflow: hidden; background: var(--primary); color: #fff; padding: 6rem 0; }
-    .brochure-section { scroll-margin-top: 86px; }
-    .brochure-section::before { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px); background-size: 48px 48px; }
-    .brochure-layout { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 380px); gap: 3rem; align-items: center; }
-    .brochure-copy .section-tag { color: #fb923c; }
-    .brochure-copy h2 { font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 800; line-height: 1.1; margin-bottom: 1rem; color: #fff; }
-    .brochure-copy > p { color: rgba(255,255,255,0.76); font-size: 1.05rem; max-width: 720px; margin-bottom: 1.6rem; }
-    .brochure-list { display: grid; gap: 0.9rem; margin-bottom: 2rem; }
-    .brochure-list li { display: flex; gap: 0.75rem; color: rgba(255,255,255,0.82); font-size: 0.95rem; }
-    .brochure-list i { color: var(--accent); margin-top: 0.25rem; flex-shrink: 0; }
-    .brochure-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .brochure-preview { display: block; padding: 0.85rem; border: 1px solid rgba(255,255,255,0.24); border-radius: 8px; background: rgba(255,255,255,0.96); box-shadow: 0 25px 60px -15px rgba(0,0,0,0.45); transform: rotate(1.2deg); transition: var(--transition); }
-    .brochure-preview:hover { transform: translateY(-6px) rotate(0deg); box-shadow: 0 35px 70px -18px rgba(0,0,0,0.55); }
-    .brochure-preview span { display: flex; align-items: center; gap: 0.45rem; color: var(--primary); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0; margin: 0.35rem 0 0.85rem; }
-    .brochure-preview img { width: 100%; aspect-ratio: 7 / 9; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); }
-
-    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); z-index: 10000; opacity: 0; visibility: hidden; transition: var(--transition); display: flex; align-items: center; justify-content: center; padding: 2rem; }
-    .modal-overlay.active { opacity: 1; visibility: visible; }
-    .modal { background: var(--surface); border-radius: var(--radius-lg); max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; transform: translateY(30px) scale(0.95); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: var(--shadow-xl); }
-    .modal-overlay.active .modal { transform: translateY(0) scale(1); }
-    .modal-header { position: relative; height: 280px; overflow: hidden; }
-    .modal-header img { width: 100%; height: 100%; object-fit: cover; }
-    .modal-header::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--surface) 0%, transparent 60%); }
-    .modal-close { position: absolute; top: 1rem; right: 1rem; z-index: 2; width: 40px; height: 40px; border-radius: 50%; border: none; background: rgba(0,0,0,0.5); color: #fff; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: var(--transition); backdrop-filter: blur(10px); }
-    .modal-close:hover { background: rgba(0,0,0,0.7); transform: rotate(90deg); }
-    .modal-body { padding: 0 2.5rem 2.5rem; margin-top: -3rem; position: relative; }
-    .modal-tag { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(59,130,246,0.1); color: var(--blue); padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.75rem; }
-    .modal-body h2 { font-size: 1.8rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; line-height: 1.2; }
-    .modal-body .modal-desc { color: var(--text-light); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; }
-    .modal-features { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 2rem; }
-    .modal-feature { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.875rem; }
-    .modal-feature i { color: var(--accent); margin-top: 0.2rem; font-size: 0.8rem; flex-shrink: 0; }
-    .modal-tools { margin-bottom: 1.5rem; }
-    .modal-tools h4 { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .tools-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .tool-badge { background: var(--surface-alt); border: 1px solid var(--border); padding: 0.3rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 500; color: var(--text-light); }
-    .modal-norms { margin-bottom: 1.5rem; }
-    .modal-norms h4 { font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .norms-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .norm-badge { background: rgba(249,115,22,0.08); border: 1px solid rgba(249,115,22,0.2); padding: 0.3rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600; color: var(--accent); }
-    .modal-cta { display: flex; gap: 1rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid var(--border); }
-
-    .stats-band { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); padding: 4rem 0; position: relative; overflow: hidden; }
-    .stats-band::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
-    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative; z-index: 1; }
-    .stat-card { text-align: center; color: #fff; }
-    .stat-card .stat-icon { width: 56px; height: 56px; border-radius: 14px; margin: 0 auto 1rem; background: rgba(249,115,22,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: var(--accent); }
-    .stat-card .stat-num { font-size: 2.8rem; font-weight: 800; font-family: 'JetBrains Mono', monospace; line-height: 1; }
-    .stat-card .stat-suffix { font-size: 1.5rem; }
-    .stat-card .stat-desc { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem; font-weight: 500; }
-
-    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-    .feature-card { padding: 2.5rem 2rem; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--border); transition: var(--transition); text-align: center; }
-    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--blue); }
-    .feature-card .feature-icon { width: 64px; height: 64px; border-radius: 16px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--blue); background: linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(59,130,246,0.05) 100%); }
-    .feature-card h4 { font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem; }
-    .feature-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
-
-    .portfolio-section { background: var(--surface-alt); }
-    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
-    .portfolio-item { border-radius: var(--radius-lg); overflow: hidden; position: relative; cursor: pointer; aspect-ratio: 4/3; }
-    .portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
-    .portfolio-item:hover img { transform: scale(1.08); }
-    .portfolio-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,40,0.9) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; color: #fff; opacity: 0; transition: opacity 0.4s; }
-    .portfolio-item:hover .portfolio-overlay { opacity: 1; }
-    .portfolio-overlay h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem; }
-    .portfolio-overlay p { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
-
-    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-    .team-card { text-align: center; background: var(--surface); border-radius: var(--radius-lg); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: var(--transition); position: relative; }
-    .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .team-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.2rem; border: 4px solid var(--surface-alt); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-    .team-card h5 { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 0.2rem; }
-    .team-card small { color: var(--accent); font-weight: 600; font-size: 0.8rem; }
-    .team-card .team-role-badge { display: inline-block; background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%); color: #fff; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
-    .team-card .team-socials { margin-top: 1rem; display: flex; gap: 0.5rem; justify-content: center; }
-    .team-card .team-socials a { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--surface-alt); color: var(--text-light); font-size: 0.85rem; transition: var(--transition); }
-    .team-card .team-socials a:hover { background: var(--primary); color: #fff; }
-
-    .faq-section { background: var(--surface-alt); }
-    .faq-grid { max-width: 750px; margin: 0 auto; }
-    .faq-item { margin-bottom: 0.75rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--surface); transition: var(--transition); }
-    .faq-item.active { border-color: var(--blue); box-shadow: 0 4px 15px var(--blue-glow); }
-    .faq-question { padding: 1.2rem 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-weight: 600; font-size: 0.95rem; color: var(--primary); transition: var(--transition); background: none; border: none; width: 100%; text-align: left; font-family: var(--font); }
-    .faq-question:hover { color: var(--blue); }
-    .faq-icon { width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; background: var(--surface-alt); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: var(--text-light); transition: var(--transition); }
-    .faq-item.active .faq-icon { background: var(--blue); color: #fff; transform: rotate(45deg); }
-    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-    .faq-answer-inner { padding: 0 1.5rem 1.2rem; color: var(--text-light); font-size: 0.9rem; line-height: 1.8; }
-    .faq-item.active .faq-answer { max-height: 300px; }
-
-    .cta-band { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); padding: 5rem 0; text-align: center; position: relative; overflow: hidden; }
-    .cta-band::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); }
-    .cta-band h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); color: #fff; font-weight: 800; margin-bottom: 1rem; position: relative; }
-    .cta-band p { color: rgba(255,255,255,0.7); max-width: 550px; margin: 0 auto 2rem; font-size: 1.05rem; position: relative; }
-    .cta-band .btn { position: relative; }
-
-    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: start; }
-    .contact-info h3 { font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; }
-    .contact-info > p { color: var(--text-light); margin-bottom: 2rem; }
-    .contact-detail { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
-    .contact-detail .detail-icon { width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; background: rgba(59,130,246,0.1); display: flex; align-items: center; justify-content: center; color: var(--blue); font-size: 1rem; }
-    .contact-detail h5 { font-weight: 700; font-size: 0.9rem; color: var(--primary); margin-bottom: 0.15rem; }
-    .contact-detail p { font-size: 0.875rem; color: var(--text-light); }
-    .contact-detail a { color: var(--text-light); transition: var(--transition); }
-    .contact-detail a:hover { color: var(--accent); }
-    .contact-form { background: var(--surface); padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border: 1px solid var(--border); }
-    .form-group { margin-bottom: 1.2rem; }
-    .form-group label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--primary); margin-bottom: 0.4rem; }
-    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.8rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; font-size: 0.9rem; font-family: var(--font); transition: var(--transition); background: var(--surface-alt); }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-glow); }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-
-    footer { background: var(--surface-dark); color: var(--text-white); padding: 4rem 0 0; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
-    .footer-brand p { color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-top: 1rem; line-height: 1.7; }
-    .footer-brand img { height: 44px; margin-bottom: 0.5rem; }
-    .footer-col h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1.2rem; color: rgba(255,255,255,0.9); }
-    .footer-col a { display: block; color: rgba(255,255,255,0.5); font-size: 0.875rem; padding: 0.3rem 0; transition: var(--transition); }
-    .footer-col a:hover { color: var(--accent); transform: translateX(3px); }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); }
-    .footer-bottom .social-links a { color: rgba(255,255,255,0.4); margin-left: 1rem; font-size: 1rem; transition: var(--transition); }
-    .footer-bottom .social-links a:hover { color: var(--accent); }
-
-    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 9999; width: 60px; height: 60px; border-radius: 50%; background: #25d366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: var(--transition); animation: whatsappPulse 2s infinite; }
-    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
-    @keyframes whatsappPulse { 0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 4px 30px rgba(37,211,102,0.6), 0 0 0 10px rgba(37,211,102,0.1); } }
-
-    .back-to-top { position: fixed; bottom: 2rem; left: 2rem; z-index: 9999; width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--primary); color: #fff; font-size: 1rem; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: var(--transition); box-shadow: var(--shadow); }
-    .back-to-top.visible { opacity: 1; visibility: visible; }
-    .back-to-top:hover { background: var(--accent); transform: translateY(-3px); }
-
-    @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-grid { grid-template-columns: 1fr 1fr; } .stats-grid { grid-template-columns: repeat(2, 1fr); } .features-grid { grid-template-columns: 1fr 1fr; } .contact-grid { grid-template-columns: 1fr; } }
-    @media (max-width: 768px) { .menu-toggle { display: block; } nav ul { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background: var(--primary); flex-direction: column; padding: 5rem 2rem 2rem; transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: -10px 0 40px rgba(0,0,0,0.3); } nav ul.show { right: 0; } nav a { padding: 0.8rem 1rem; font-size: 1rem; display: block; } .mobile-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; } .features-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; } .modal-features { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; } .service-pages-grid { grid-template-columns: 1fr; } section { padding: 4rem 0; } }
-    @media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr 1fr; } .team-grid { grid-template-columns: 1fr; } .hero-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; } .hero-buttons .btn { width: 100%; justify-content: center; padding: 0.75rem 0.6rem; font-size: 0.86rem; } }
-    @media (max-width: 1024px) { .brochure-layout { grid-template-columns: 1fr; } .brochure-preview { max-width: 360px; transform: none; } }
-    @media (max-width: 768px) { .brochure-section { padding: 4.5rem 0; } .brochure-actions { display: grid; grid-template-columns: 1fr; } .brochure-actions .btn { justify-content: center; width: 100%; } }
-    @media (max-width: 480px) { .brochure-list li { font-size: 0.9rem; } .brochure-preview { max-width: 310px; } }
-  </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "@id": "https://dismek.co/#business",
-      "name": "DISMEK Ingeniería",
-      "url": "https://dismek.co/",
-      "image": "https://dismek.co/assets/dismec_logo.png",
-      "logo": "https://dismek.co/assets/dismec_logo.png",
-      "telephone": "+57 315 663 7925",
-      "email": "contacto.dismec@gmail.com",
-      "description": "Empresa de ingeniería en Bucaramanga especializada en servicios mecánicos, eléctricos, civiles, hidráulicos, HVAC, solar fotovoltaica, P&ID, recipientes a presión ASME, estructuras y simulaciones CFD.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bucaramanga",
-        "addressRegion": "Santander",
-        "addressCountry": "CO"
-      },
-      "areaServed": [
-        "Bucaramanga",
-        "Santander",
-        "Colombia",
-        "Latinoamérica"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/dis_mec"
-      ],
-      "knowsAbout": [
-        "Ingeniería mecánica",
-        "Ingeniería eléctrica",
-        "Ingeniería civil",
-        "Diseño de recipientes a presión ASME",
-        "Paneles solares fotovoltaicos",
-        "Sistemas HVAC",
-        "Tuberías e instrumentación P&ID",
-        "Estructuras metálicas",
-        "Diseño hidrosanitario y gas",
-        "Simulaciones CFD"
-      ]
-    }
-  </script>
+  <meta name="twitter:title" content="DISMEK Ingeniería en Bucaramanga | Ingeniería mecánica, eléctrica, civil e industrial">
+  <meta name="twitter:description" content="DISMEK desarrolla diseño mecánico, civil, eléctrico, energético e industrial con planos, cálculos, simulación, BIM y documentación técnica para proyectos en Colombia.">
+  <meta name="twitter:image" content="https://dismek.co/assets/hero-poster.webp">
+  <link rel="stylesheet" href="assets/dismek-site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://dismek.co/#organization","name":"DISMEK Ingeniería","url":"https://dismek.co/","logo":"https://dismek.co/assets/dismek-logo-badge.png","image":"https://dismek.co/assets/structures.png","telephone":"+57 315 663 7925","email":"contacto.dismec@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bucaramanga","addressRegion":"Santander","addressCountry":"CO"},"areaServed":["Bucaramanga","Santander","Colombia"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://dismek.co/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto tarda un plano mecánico completo?","acceptedAnswer":{"@type":"Answer","text":"El tiempo depende de la complejidad, la información de entrada, las revisiones y el alcance. La programación se confirma después de revisar los requisitos técnicos."}},{"@type":"Question","name":"¿Diseñan recipientes a presión bajo ASME?","acceptedAnswer":{"@type":"Answer","text":"Sí. El alcance puede incluir cálculos de componentes, boquillas, soportes, MAWP, MDMT, memorias y planos, según los datos y la edición normativa confirmada para el proyecto."}},{"@type":"Question","name":"¿Realizan diseños de sistemas solares fotovoltaicos?","acceptedAnswer":{"@type":"Answer","text":"Sí. El servicio puede incluir dimensionamiento, selección de equipos, planos, memorias, análisis de producción y documentación para coordinación con el operador, según el alcance."}},{"@type":"Question","name":"¿Pueden diseñar con normas internacionales?","acceptedAnswer":{"@type":"Answer","text":"Sí, cuando la norma, edición, jurisdicción y autoridad revisora se definen en el alcance. No se aplica una lista genérica sin verificar pertinencia."}},{"@type":"Question","name":"¿Ofrecen consultoría remota?","acceptedAnswer":{"@type":"Answer","text":"Sí. La revisión de información, reuniones y entrega documental pueden coordinarse de forma remota; las visitas se definen cuando son necesarias."}},{"@type":"Question","name":"¿Qué software y herramientas utilizan?","acceptedAnswer":{"@type":"Answer","text":"AutoCAD, SolidWorks, Inventor, Revit/BIM, ANSYS, ETABS, SAP2000, Dialux y otras herramientas se seleccionan según la disciplina y el entregable."}},{"@type":"Question","name":"¿Qué información necesitan para cotizar?","acceptedAnswer":{"@type":"Answer","text":"Depende del servicio. Normalmente se requieren planos, ubicación, fotos, alcance esperado, datos de operación, normativa aplicable si existe y fecha objetivo."}},{"@type":"Question","name":"¿Entregan archivos editables?","acceptedAnswer":{"@type":"Answer","text":"Sí, cuando el alcance lo solicita se pueden entregar archivos CAD, modelos, memorias o documentos editables además de PDF."}},{"@type":"Question","name":"¿Atienden proyectos fuera de Bucaramanga?","acceptedAnswer":{"@type":"Answer","text":"Sí. El alcance puede trabajarse de forma remota o con coordinación puntual segun la información disponible y las necesidades del proyecto."}},{"@type":"Question","name":"¿Pueden revisar documentos existentes?","acceptedAnswer":{"@type":"Answer","text":"Sí. Se pueden revisar planos, memorias, modelos o fichas existentes y documentar observaciones, riesgos y pendientes."}}]}</script>
 </head>
-<body>
-  <div class="preloader" id="preloader"><div class="preloader-inner"><img src="assets/dismec_logo.webp" alt="DISMEK" class="preloader-logo" width="420" height="196"><div class="preloader-bar"></div></div></div>
 
-  <header id="header">
-    <div class="container navbar">
-      <a href="#inicio" class="logo"><img src="assets/dismec_logo.webp" alt="DISMEK Ingeniería" width="420" height="196" fetchpriority="high"></a>
-      <button class="menu-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
-      <nav>
-        <ul id="navMenu">
-          <button class="mobile-close" id="mobileClose" style="display:none;"><i class="fas fa-times"></i></button>
-          <li><a href="#inicio" data-nav>Inicio</a></li>
-          <li><a href="#nosotros" data-nav>Nosotros</a></li>
-          <li><a href="#servicios" data-nav>Servicios</a></li>
-          <li><a href="#brochure" data-nav>Brochure</a></li>
-          <li><a href="#ventajas" data-nav>Ventajas</a></li>
-          <li><a href="#portfolio" data-nav>Proyectos</a></li>
-          <li><a href="#equipo" data-nav>Equipo</a></li>
-          <li><a href="#faq" data-nav>FAQ</a></li>
-          <li><a href="#contacto" class="btn btn-primary" style="padding:0.5rem 1.2rem; font-size:0.85rem;">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero" id="inicio">
-    <video class="hero-video" muted loop playsinline preload="none" poster="assets/hero-poster.webp"><source data-src="assets/hero-video-lite.mp4" type="video/mp4"></video>
-    <canvas class="hero-particles" id="particles"></canvas>
-    <div class="hero-content">
-      <div class="hero-badge"><i class="fas fa-circle"></i> Ingeniería en Bucaramanga para Colombia</div>
-      <h1><span>Ingeniería</span> mecánica, eléctrica, civil e industrial para proyectos en Colombia</h1>
-      <p>DISMEK desarrolla diseño mecánico, civil, eléctrico e hidráulico con enfoque técnico y normativo. Planos, simulaciones CFD, modelos BIM y consultoría para Bucaramanga, Santander y todo Colombia.</p>
-      <div class="hero-buttons">
-        <a href="#servicios" class="btn btn-primary"><i class="fas fa-compass"></i> Explorar Servicios</a>
-        <a href="#contacto" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Cotizar Proyecto</a>
-        <a href="https://www.instagram.com/dis_mec" class="btn btn-outline" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61575796754160" class="btn btn-outline" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i> Facebook</a>
+<body class="home-v3">
+    <header class="premium-header" data-premium-header>
+      <a class="skip-link" href="#contenido">Saltar al contenido</a>
+      <div class="container premium-nav-shell">
+        <a class="premium-brand" href="#inicio" aria-label="Inicio DISMEK Ingeniería">
+          <picture class="premium-brand-logo"><source srcset="assets/dismec_logo.webp" type="image/webp"><img src="assets/dismec_logo.png" alt="DISMEK Ingeniería" loading="eager" decoding="async" fetchpriority="high"></picture>
+        </a>
+        <button class="premium-menu-toggle" type="button" aria-expanded="false" aria-controls="premium-nav" data-premium-menu-toggle><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menú</span></button>
+        <nav class="premium-nav" id="premium-nav" aria-label="Navegación principal" data-premium-nav>
+          <button class="premium-menu-close" type="button" aria-label="Cerrar menú" data-premium-menu-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+          <a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Soluciones</a>
+          <a href="#brochure">Brochure</a><a href="#portfolio">Proyectos</a><a href="#equipo">Equipo</a><a href="#faq">FAQ</a>
+          <a class="premium-nav-cta" href="#contacto">Solicitar propuesta</a>
+        </nav>
       </div>
-    </div>
-    <div class="hero-scroll"><span>Desliza</span><i class="fas fa-chevron-down"></i></div>
+    </header><main id="contenido">
+  <section class="premium-hero" id="inicio">
+    <video class="premium-hero-video" data-hero-video muted loop playsinline preload="metadata" poster="assets/hero-poster.webp" aria-label="Video de diseño e ingeniería DISMEK"><source src="assets/hero-video-lite.mp4" type="video/mp4"></video>
+    <div class="premium-hero-inner"><div class="premium-hero-copy"><p class="premium-kicker">Ingeniería en Bucaramanga para Colombia</p><h1><span class="accent">Ingeniería</span> mecánica, eléctrica, civil e industrial para proyectos en Colombia</h1><p>DISMEK desarrolla diseño mecánico, civil, eléctrico e hidráulico con enfoque técnico y normativo. Planos, simulaciones CFD, modelos BIM y consultoría para Bucaramanga, Santander y todo Colombia.</p><div class="premium-hero-actions"><a class="premium-action premium-action-primary" href="#servicios">Explorar servicios <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="premium-action premium-action-secondary" href="#contacto">Cotizar proyecto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="premium-icon-link" href="https://www.instagram.com/dis_mec" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Instagram</a><a class="premium-icon-link" href="https://www.facebook.com/profile.php?id=61575796754160" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h4V4h-4c-3 0-5 2-5 5v3H6v4h3v5h4v-5h4l1-4h-5V9c0-.7.3-1 1-1Z"/></svg> Facebook</a></div></div><div class="premium-hero-controls"><button class="video-control" type="button" aria-pressed="false" aria-label="Pausar video de fondo" data-video-toggle><span class="video-control-icon" data-video-icon-pause><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg></span><span class="video-control-icon" data-video-icon-play hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 10 7-10 7Z"/></svg></span><span data-video-label>Pausar video</span></button></div></div><a class="premium-scroll-cue" href="#nosotros"><span>Desliza</span><span></span></a>
   </section>
-
-  <section id="nosotros" style="padding-top:7rem;">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-content reveal-left">
-          <div class="section-tag"><i class="fas fa-circle"></i> Sobre Nosotros</div>
-          <h2>Ingeniería multidisciplinaria con precisión y compromiso</h2>
-          <p>DISMEK nace como una empresa independiente dedicada a la ingeniería y el diseño mecánico e industrial. Nuestro propósito es brindar consultoría y documentación técnica de alta calidad para proyectos en diversos sectores industriales.</p>
-          <p>Nuestro equipo de ingenieros mecánicos, civiles, eléctricos, electrónicos y mecatrónicos transforma ideas técnicas en soluciones de ingeniería y documentación gráfica de alto nivel, usando herramientas de CAD, BIM, simulación y análisis.</p>
-          <div class="about-stats">
-            <div class="stat-item"><div class="stat-number" data-count="50">0</div><div class="stat-label">Proyectos Realizados</div></div>
-            <div class="stat-item"><div class="stat-number" data-count="16" data-suffix="+">0</div><div class="stat-label">Servicios Especializados</div></div>
-            <div class="stat-item"><div class="stat-number" data-count="3">0</div><div class="stat-label">Ingenieros Cofundadores</div></div>
-          </div>
-        </div>
-        <div class="about-visual reveal-right">
-          <img src="assets/port1.webp" alt="Proyecto DISMEK" loading="lazy" decoding="async">
-          <img src="assets/structures.webp" alt="Estructuras metálicas" loading="lazy" decoding="async">
-          <img src="assets/energy.webp" alt="Diseño energético" loading="lazy" decoding="async">
-          <div class="about-accent-box"><i class="fas fa-shield-halved"></i> Normas ASME, API, NSR-10</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="stats-band">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-drafting-compass"></i></div><div class="stat-num"><span data-count="16">0</span></div><div class="stat-desc">Líneas de Servicio</div></div>
-        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-building"></i></div><div class="stat-num"><span data-count="50">0</span><span class="stat-suffix">+</span></div><div class="stat-desc">Proyectos Entregados</div></div>
-        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-globe-americas"></i></div><div class="stat-num"><span data-count="5">0</span></div><div class="stat-desc">Departamentos Atendidos</div></div>
-        <div class="stat-card reveal"><div class="stat-icon"><i class="fas fa-handshake"></i></div><div class="stat-num"><span data-count="100">0</span><span class="stat-suffix">%</span></div><div class="stat-desc">Satisfacción del Cliente</div></div>
-      </div>
-    </div>
-  </div>
-
-  <section class="services-section" id="servicios">
-    <div class="container">
-      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Nuestros Servicios</div><h2>Soluciones integrales de ingeniería</h2><p>Desde el diseño conceptual hasta la documentación final, cubrimos todas las disciplinas que su proyecto necesita.</p></div>
-      <div class="servicios-grid" id="serviciosGrid"></div>
-      <div class="service-pages-links reveal">
-        <h3>Servicios destacados con páginas especializadas</h3>
-        <p>Para mejorar la visibilidad en Google, DISMEK ahora cuenta con páginas internas enfocadas en búsquedas técnicas y comerciales de alto valor.</p>
-        <div class="service-pages-grid">
-          <a class="service-page-link" href="servicios/recipientes-presion-asme.html">Diseño de recipientes a presión ASME</a>
-          <a class="service-page-link" href="servicios/energia-solar-fotovoltaica.html">Diseño de sistemas solares fotovoltaicos</a>
-          <a class="service-page-link" href="servicios/sistemas-hvac-y-mep.html">Diseño HVAC y coordinación MEP</a>
-          <a class="service-page-link" href="servicios/diseno-electrico-y-energia.html">Diseño eléctrico y de potencia</a>
-          <a class="service-page-link" href="servicios/estructuras-metalicas-y-diseno-estructural.html">Estructuras metálicas y diseño estructural</a>
-          <a class="service-page-link" href="servicios/">Ver índice completo de servicios</a>
-        </div>
-        <p class="seo-note">Estas URLs ayudan a posicionar mejor términos como ingeniería en Bucaramanga, recipientes a presión ASME, diseño solar fotovoltaico, HVAC y diseño eléctrico industrial.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="brochure-section" id="brochure">
-    <div class="container brochure-layout">
-      <div class="brochure-copy reveal-left">
-        <div class="section-tag"><i class="fas fa-circle"></i> Brochure</div>
-        <h2>Brochure DISMEK</h2>
-        <p>Descargue una presentación corporativa en PDF con el portafolio técnico de DISMEK: servicios, metodología, entregables, criterios de calidad, software especializado y canales de contacto.</p>
-        <ul class="brochure-list">
-          <li><i class="fas fa-check-circle"></i><span>Resumen comercial para clientes de industria, energía, salud, construcción e infraestructura.</span></li>
-          <li><i class="fas fa-check-circle"></i><span>Alcances por disciplina, entregables esperados y enfoque de trabajo verificable.</span></li>
-          <li><i class="fas fa-check-circle"></i><span>Archivo PDF listo para revisar, compartir o anexar a una solicitud de cotización.</span></li>
-        </ul>
-        <div class="brochure-actions">
-          <a class="btn btn-primary" href="assets/brochure-dismek-servicios.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Ver PDF</a>
-          <a class="btn btn-outline" href="assets/brochure-dismek-servicios.pdf" download="Brochure_DISMEK_Servicios.pdf"><i class="fas fa-download"></i> Descargar PDF</a>
-        </div>
-      </div>
-      <a class="brochure-preview reveal-right" href="assets/brochure-dismek-servicios.pdf" target="_blank" rel="noopener" aria-label="Ver brochure DISMEK en PDF">
-        <span><i class="fas fa-eye"></i> Vista previa del PDF</span>
-        <img src="assets/brochure-dismek-cover.webp" alt="Portada del brochure de servicios DISMEK" loading="lazy" decoding="async">
-      </a>
-    </div>
-  </section>
-
-  <section id="ventajas">
-    <div class="container">
-      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Por Qué Elegirnos</div><h2>Ventajas competitivas que nos distinguen</h2><p>Combinamos especialización técnica con herramientas de última generación para entregar resultados excepcionales.</p></div>
-      <div class="features-grid">
-        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-drafting-compass"></i></div><h4>Especialización Multidisciplinaria</h4><p>Ingenieros mecánicos, civiles, eléctricos, electrónicos y mecatrónicos trabajando de forma integrada para entregar soluciones completas.</p></div>
-        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-globe-americas"></i></div><h4>Alcance Regional</h4><p>Servicios en toda Colombia y Latinoamérica, con capacidad de respuesta rápida y soporte técnico permanente.</p></div>
-        <div class="feature-card reveal"><div class="feature-icon"><i class="fas fa-microchip"></i></div><h4>Tecnología de Punta</h4><p>Modelado 3D, BIM, simulaciones CFD y análisis estructural con software de última generación para máxima precisión.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolio-section" id="portfolio">
-    <div class="container">
-      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Portafolio</div><h2>Proyectos que hablan por nosotros</h2><p>Cada proyecto refleja nuestro compromiso con la calidad, la precisión y la innovación en ingeniería.</p></div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item reveal"><img src="assets/recipiente_2.webp" alt="Recipiente a Presión ASME" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Recipiente a Presión</h4><p>Diseño ASME Sección VIII</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/solar2.webp" alt="Sistema Solar Fotovoltaico" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Sistema Solar Fotovoltaico</h4><p>Energía renovable – Ley 1715</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/port1.webp" alt="Equipo Industrial" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Equipo Industrial</h4><p>Planos de fabricación</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/port2_new.webp" alt="Diseño HVAC y BIM" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Diseño HVAC y BIM</h4><p>Coordinación de sistemas</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/port3.webp" alt="Subestación Eléctrica" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Subestación Eléctrica</h4><p>Diseño de potencia</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/project_sopladores.webp" alt="Edificio Sopladores" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Edificio Sopladores</h4><p>Ptar Río de Oro</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/modulo_d_metalica_malaga.webp" alt="Estructura Metálica" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Estructura Metálica</h4><p>Hospital de Málaga, Santander</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_san_andres.webp" alt="Gases Medicinales" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Gases Medicinales</h4><p>Hospital San Andrés, Santander</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/gases_medicinales_coromoro.webp" alt="Red de Gases" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Red de Gases</h4><p>Hospital de Coromoro</p></div></div>
-        <div class="portfolio-item reveal"><img src="assets/iluminacion_vivienda_bucaramanga.webp" alt="Iluminación Bucaramanga" loading="lazy" decoding="async"><div class="portfolio-overlay"><h4>Propuesta de Iluminación</h4><p>Viviendas en Bucaramanga</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta-band"><div class="container reveal"><h2>¿Tiene un proyecto de ingeniería en mente?</h2><p>Permítanos convertir su idea en una solución técnica precisa. Solicite una cotización sin compromiso.</p><a href="#contacto" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Solicitar Cotización</a></div></div>
-
-  <section id="equipo">
-    <div class="container">
-      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Nuestro Equipo</div><h2>Los ingenieros detrás de DISMEK</h2><p>Un equipo multidisciplinario de profesionales comprometidos con la excelencia técnica.</p></div>
-      <div class="team-grid">
-        <div class="team-card reveal"><img src="assets/daniel_mendez.webp" alt="Daniel Méndez" loading="lazy" decoding="async"><div class="team-role-badge">CEO</div><h5>Daniel Méndez</h5><small>Ing. Mecánico – CEO & Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/deyner_alvarado.webp" alt="Dayner Alvarado" loading="lazy" decoding="async"><h5>Dayner Alvarado</h5><small>Ing. Electrónico – Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/dayner-alvarado-770a82158/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/daniel_torres.webp" alt="Daniel Torres" loading="lazy" decoding="async"><h5>Daniel Torres</h5><small>Ing. Mecánico – Cofundador</small><div class="team-socials"><a href="https://www.linkedin.com/in/daniel-torres-94023623b/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/fabian_rondon.webp" alt="Fabián Rondón" loading="lazy" decoding="async"><h5>Fabián Rondón</h5><small>Ing. Civil</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/sergio_ramirez.webp" alt="Sergio Ramírez" loading="lazy" decoding="async"><h5>Sergio Ramírez</h5><small>Ing. Electricista</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
-        <div class="team-card reveal"><img src="assets/edisson_rangel.webp" alt="Edisson Rangel" loading="lazy" decoding="async"><h5>Edisson Rangel</h5><small>Ing. Mecatrónico</small><div class="team-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Preguntas Frecuentes</div><h2>Resolvemos tus dudas</h2><p>Las consultas más comunes de nuestros clientes respondidas de forma clara y directa.</p></div>
-      <div class="faq-grid">
-        <div class="faq-item reveal"><button class="faq-question">¿Cuánto tarda un plano mecánico completo?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">El tiempo depende de la complejidad del proyecto, pero suele oscilar entre 2 y 8 semanas desde la recepción de la información técnica. Proyectos urgentes pueden acelerarse con coordinación directa.</div></div></div>
-        <div class="faq-item reveal"><button class="faq-question">¿Diseñan recipientes a presión bajo ASME?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Diseñamos recipientes a presión conforme al código ASME BPVC Sección VIII Divisiones 1 y 2, incluyendo cálculos de espesor, boquillas, silletas, faldones y toda la documentación técnica requerida (MDMT, MAWP, memorias de cálculo y planos de fabricación).</div></div></div>
-        <div class="faq-item reveal"><button class="faq-question">¿Realizan diseños de paneles solares fotovoltaicos?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Diseñamos sistemas solares fotovoltaicos On-Grid y Off-Grid conforme a la Ley 1715 de 2014 (actualizada por Ley 2099 de 2021), el RETIE, las normas NTC 2050 y NTC 5899. Incluimos dimensionamiento, selección de equipos, planos eléctricos, memorias de cálculo y trámites ante el operador de red.</div></div></div>
-        <div class="faq-item reveal"><button class="faq-question">¿Pueden diseñar para normativas internacionales?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Trabajamos conforme a normativas locales e internacionales (ASME, API, ASHRAE, NSR-10, IEC, NEC, RETIE, entre otras) y adaptamos los planos a las exigencias específicas de cada proyecto y jurisdicción.</div></div></div>
-        <div class="faq-item reveal"><button class="faq-question">¿Ofrecen servicios de consultoría remota?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Sí. Atendemos clientes en toda Colombia y Latinoamérica de forma remota. Utilizamos herramientas digitales para reuniones, revisión de planos y entrega de documentación técnica en tiempo real.</div></div></div>
-        <div class="faq-item reveal"><button class="faq-question">¿Qué software y herramientas utilizan?<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-answer"><div class="faq-answer-inner">Trabajamos con AutoCAD, SolidWorks, Inventor, Revit (BIM), ANSYS, ETABS, SAP2000, Dialux, Compress, PV Elite, PVsyst, Helioscope y otras herramientas especializadas según la disciplina del proyecto.</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <div class="container">
-      <div class="section-header reveal"><div class="section-tag"><i class="fas fa-circle"></i> Contacto</div><h2>Hablemos de su proyecto</h2><p>Estamos listos para ayudarle a materializar su próximo proyecto de ingeniería.</p></div>
-      <div class="contact-grid">
-        <div class="contact-info reveal-left">
-          <h3>Información de contacto</h3>
-          <p>Escríbanos o llámenos directamente. Respondemos en menos de 24 horas hábiles.</p>
-          <div class="contact-detail"><div class="detail-icon"><i class="fas fa-location-dot"></i></div><div><h5>Ubicación</h5><p>Bucaramanga, Santander, Colombia</p></div></div>
-          <div class="contact-detail"><div class="detail-icon"><i class="fas fa-phone"></i></div><div><h5>Teléfono / WhatsApp</h5><p><a href="tel:+573156637925">+57 315 663 7925</a></p></div></div>
-          <div class="contact-detail"><div class="detail-icon"><i class="fas fa-envelope"></i></div><div><h5>Email</h5><p><a href="mailto:contacto.dismec@gmail.com">contacto.dismec@gmail.com</a></p></div></div>
-          <div class="contact-detail"><div class="detail-icon"><i class="fab fa-instagram"></i></div><div><h5>Instagram</h5><p><a href="https://www.instagram.com/dis_mec" target="_blank" rel="noopener">@dis_mec</a></p></div></div>
-        </div>
-        <div class="contact-form reveal-right">
-          <form action="https://formsubmit.co/contacto.dismec@gmail.com" method="POST" id="contactForm">
-            <input type="hidden" name="_subject" value="Nuevo contacto desde DISMEK Web">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="#">
-            <div class="form-row">
-              <div class="form-group"><label for="nombre">Nombre completo</label><input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required></div>
-              <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="juan@empresa.com" required></div>
-            </div>
-            <div class="form-row">
-              <div class="form-group"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000"></div>
-              <div class="form-group"><label for="servicio">Servicio de interés</label>
-                <select id="servicio" name="servicio">
-                  <option value="">Seleccione un servicio</option>
-                  <option>Planos de Maquinaria</option>
-                  <option>Recipientes a Presión (ASME)</option>
-                  <option>Paneles Solares Fotovoltaicos</option>
-                  <option>Sistemas HVAC</option>
-                  <option>Tuberías P&ID</option>
-                  <option>Diseño Energético</option>
-                  <option>Estructuras Metálicas</option>
-                  <option>Diseños Eléctricos</option>
-                  <option>Simulaciones CFD</option>
-                  <option>Hidrosanitario y Gas</option>
-                  <option>Concreto Reforzado</option>
-                  <option>Contención y Taludes</option>
-                  <option>Obras de Arte</option>
-                  <option>Reconocimientos de Vivienda</option>
-                  <option>Patologías Estructurales</option>
-                  <option>Vulnerabilidad Sísmica</option>
-                  <option>Otro</option>
-                </select>
+  <section class="premium-section premium-about" id="nosotros"><div class="container premium-about-grid"><div class="premium-about-copy reveal-item"><p class="premium-section-label">Sobre nosotros</p><h2>Ingeniería multidisciplinaria con <span class="accent">precisión y compromiso</span></h2><p>DISMEK nace como una empresa independiente dedicada a la ingeniería y el diseño mecánico e industrial. Nuestro propósito es brindar consultoría y documentación técnica de alta calidad para proyectos en diversos sectores industriales.</p><p>Nuestro equipo de ingenieros mecánicos, civiles, eléctricos, electrónicos y mecatrónicos transforma ideas técnicas en soluciones de ingeniería y documentación gráfica de alto nivel, usando herramientas de CAD, BIM, simulación y análisis.</p><div class="premium-proof-strip"><div class="premium-proof"><strong>18</strong><span>capacidades técnicas</span></div><div class="premium-proof"><strong>5</strong><span>disciplinas integradas</span></div><div class="premium-proof"><strong>3</strong><span>cofundadores</span></div></div></div><div class="premium-about-media reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/port1.webp" alt="Proyecto DISMEK" loading="lazy" decoding="async"></picture><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/structures.webp" alt="Estructuras metálicas" loading="lazy" decoding="async"></picture><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/energy.webp" alt="Diseño energético" loading="lazy" decoding="async"></picture></div></div></section>
+  <section class="premium-section premium-solutions" id="servicios"><div class="container"><div class="premium-heading-row reveal-item"><div><p class="premium-section-label">Nuestras soluciones</p><h2>Soluciones integrales de <span class="accent">ingeniería</span></h2></div><p>Explore capacidades por disciplina, abra el alcance técnico o solicite una cotización contextual sin perder el detalle de la oferta actual.</p></div><div class="premium-filters" aria-label="Filtrar soluciones"><button class="premium-filter" type="button" aria-pressed="true" data-service-filter="all">Todas</button><button class="premium-filter" type="button" aria-pressed="false" data-service-filter="mecanica">Mecánica e industrial</button><button class="premium-filter" type="button" aria-pressed="false" data-service-filter="energia">Energía y eléctrica</button><button class="premium-filter" type="button" aria-pressed="false" data-service-filter="mep">MEP e instalaciones</button><button class="premium-filter" type="button" aria-pressed="false" data-service-filter="civil">Civil y estructural</button><button class="premium-filter" type="button" aria-pressed="false" data-service-filter="diagnostico">Diagnóstico y simulación</button></div><div class="premium-service-grid">
+            <article class="premium-service-card reveal-item" data-service-category="mecanica">
+              <a class="premium-service-media" href="servicios/recipientes-presion-asme.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/recipiente_2.webp" alt="Diseño de recipientes a presión ASME" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Mecánica e industrial</p><h3>Recipientes ASME</h3>
+                <p class="premium-service-summary">Desarrollamos ingeniería para recipientes a presión con enfoque en cálculo trazable, planos de fabricación y documentación técnica para revisión, construcción o actualización.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/recipientes-presion-asme.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="recipientes-presion-asme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Recipientes%20ASME%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
               </div>
-            </div>
-            <div class="form-group"><label for="mensaje">Cuéntenos sobre su proyecto</label><textarea id="mensaje" name="mensaje" rows="5" placeholder="Describa brevemente su proyecto, alcance y plazos esperados..." required></textarea></div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
-          </form>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="energia">
+              <a class="premium-service-media" href="servicios/energia-solar-fotovoltaica.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/solar2.webp" alt="Diseño de sistemas solares fotovoltaicos" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Energía y eléctrica</p><h3>Solar fotovoltaica</h3>
+                <p class="premium-service-summary">Preparamos diseños solares fotovoltaicos orientados a entregables técnicos claros para revisión, cotización, montaje o coordinación con operadores y contratistas.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/energia-solar-fotovoltaica.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="energia-solar-fotovoltaica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Solar%20fotovoltaica%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="mep">
+              <a class="premium-service-media" href="servicios/sistemas-hvac-y-mep.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/hvac.webp" alt="Diseño HVAC y coordinación MEP" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">MEP e instalaciones</p><h3>HVAC y MEP</h3>
+                <p class="premium-service-summary">Integramos criterios mecánicos, eléctricos, hidráulicos y arquitectónicos para documentar sistemas HVAC y MEP con claridad constructiva.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/sistemas-hvac-y-mep.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="sistemas-hvac-y-mep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20HVAC%20y%20MEP%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="energia">
+              <a class="premium-service-media" href="servicios/diseno-electrico-y-energia.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/design_electrico.webp" alt="Diseño eléctrico industrial y de energía" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Energía y eléctrica</p><h3>Diseño eléctrico</h3>
+                <p class="premium-service-summary">Desarrollamos documentación eléctrica para instalaciones industriales, comerciales e institucionales, priorizando seguridad, trazabilidad y coordinación.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/diseno-electrico-y-energia.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="diseno-electrico-y-energia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Dise%C3%B1o%20el%C3%A9ctrico%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="civil">
+              <a class="premium-service-media" href="servicios/estructuras-metalicas-y-diseno-estructural.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/structures.webp" alt="Diseño de estructuras metálicas y estructurales" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Civil y estructural</p><h3>Estructuras metálicas</h3>
+                <p class="premium-service-summary">Apoyamos diseños estructurales con análisis, modelado, planos y memorias orientadas a fabricación, montaje, revisión o coordinación técnica.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/estructuras-metalicas-y-diseno-estructural.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="estructuras-metalicas-y-diseno-estructural"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Estructuras%20met%C3%A1licas%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="mecanica">
+              <a class="premium-service-media" href="servicios/diseno-mecanico-industrial.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/diseno-maquinaria-planos.webp" alt="Diseño mecánico industrial" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Mecánica e industrial</p><h3>Diseño mecánico</h3>
+                <p class="premium-service-summary">Convertimos requerimientos de operación, fabricación y mantenimiento en modelos, planos y documentos técnicos para equipos y componentes industriales.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/diseno-mecanico-industrial.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="diseno-mecanico-industrial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Dise%C3%B1o%20mec%C3%A1nico%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="mecanica">
+              <a class="premium-service-media" href="servicios/planos-de-fabricacion-maquinaria.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/diseno-maquinaria-planos.webp" alt="Planos de fabricación para maquinaria" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Mecánica e industrial</p><h3>Planos de fabricación</h3>
+                <p class="premium-service-summary">Preparamos documentación gráfica para fabricación, ensamble, montaje y revisión de maquinaria o componentes industriales.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/planos-de-fabricacion-maquinaria.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="planos-de-fabricacion-maquinaria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Planos%20de%20fabricaci%C3%B3n%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="diagnostico">
+              <a class="premium-service-media" href="servicios/simulacion-cfd-fea.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/simulaciones_cfd.webp" alt="Simulación CFD y FEA para ingeniería" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Diagnóstico y simulación</p><h3>Simulación CFD/FEA</h3>
+                <p class="premium-service-summary">Usamos simulación como herramienta de soporte técnico cuando el problema, las condiciones de frontera y los criterios de validación están definidos.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/simulacion-cfd-fea.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="simulacion-cfd-fea"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Simulaci%C3%B3n%20CFD/FEA%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="mecanica">
+              <a class="premium-service-media" href="servicios/tuberias-pid.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/pid.webp" alt="Diseño de tuberías y diagramas P&amp;ID" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Mecánica e industrial</p><h3>Tuberías y P&amp;ID</h3>
+                <p class="premium-service-summary">Documentamos redes de tuberías y diagramas de proceso para ordenar equipos, válvulas, instrumentos, recorridos y criterios de instalación.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/tuberias-pid.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="tuberias-pid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Tuber%C3%ADas%20y%20P%26ID%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="mep">
+              <a class="premium-service-media" href="servicios/gases-medicinales.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/gases_medicinales_coromoro.webp" alt="Diseño de redes de gases medicinales" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">MEP e instalaciones</p><h3>Gases medicinales</h3>
+                <p class="premium-service-summary">Apoyamos la documentación técnica de redes de gases medicinales para instituciones de salud, integrando criterios MEP, seguridad y coordinación constructiva.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/gases-medicinales.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="gases-medicinales"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Gases%20medicinales%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="mep">
+              <a class="premium-service-media" href="servicios/hidrosanitario-y-gas.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/hidraulico_sanitario_gas.webp" alt="Diseño hidrosanitario y redes de gas" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">MEP e instalaciones</p><h3>Hidrosanitario y gas</h3>
+                <p class="premium-service-summary">Desarrollamos documentación para redes hidráulicas, sanitarias, lluvias y gas, priorizando coordinación, trazabilidad y claridad constructiva.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/hidrosanitario-y-gas.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="hidrosanitario-y-gas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Hidrosanitario%20y%20gas%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="civil">
+              <a class="premium-service-media" href="servicios/concreto-reforzado.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/estructural_concreto.webp" alt="Diseño estructural en concreto reforzado" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Civil y estructural</p><h3>Concreto reforzado</h3>
+                <p class="premium-service-summary">Apoyamos diseños y revisiones de elementos de concreto reforzado con documentación clara para revisión, coordinación y construcción.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/concreto-reforzado.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="concreto-reforzado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Concreto%20reforzado%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="diagnostico">
+              <a class="premium-service-media" href="servicios/patologia-estructural.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/patologias.webp" alt="Patología estructural y diagnóstico técnico" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Diagnóstico y simulación</p><h3>Patología estructural</h3>
+                <p class="premium-service-summary">Apoyamos diagnósticos técnicos de edificaciones y estructuras mediante revisión documental, inspección visual y análisis de información disponible.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/patologia-estructural.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="patologia-estructural"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Patolog%C3%ADa%20estructural%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="diagnostico">
+              <a class="premium-service-media" href="servicios/vulnerabilidad-sismica.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/vulnerabilidad.webp" alt="Estudios de vulnerabilidad sísmica" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Diagnóstico y simulación</p><h3>Vulnerabilidad sísmica</h3>
+                <p class="premium-service-summary">Evaluamos información estructural existente para identificar condiciones de vulnerabilidad y necesidades de análisis, refuerzo o estudios complementarios.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/vulnerabilidad-sismica.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="vulnerabilidad-sismica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Vulnerabilidad%20s%C3%ADsmica%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="energia">
+              <a class="premium-service-media" href="servicios/diseno-energetico-potencia-subestaciones.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/energy.webp" alt="Diseño energético, potencia y subestaciones" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Energía y eléctrica</p><h3>Diseño energético</h3>
+                <p class="premium-service-summary">Desarrollamos ingeniería energética y de potencia con diagramas, cálculos, especificaciones y documentos coordinados para revisión o ejecución.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/diseno-energetico-potencia-subestaciones.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="diseno-energetico-potencia-subestaciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Dise%C3%B1o%20energ%C3%A9tico%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="civil">
+              <a class="premium-service-media" href="servicios/estructuras-contencion-taludes.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/contencion.webp" alt="Diseño de estructuras de contención y estabilización" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Civil y estructural</p><h3>Contención y taludes</h3>
+                <p class="premium-service-summary">Integramos información topográfica, geotécnica, hidráulica y estructural para documentar soluciones de contención y estabilización.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/estructuras-contencion-taludes.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="estructuras-contencion-taludes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Contenci%C3%B3n%20y%20taludes%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="civil">
+              <a class="premium-service-media" href="servicios/obras-arte-infraestructura-hidraulica.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/obras_arte.webp" alt="Diseño de obras de arte e infraestructura hidráulica" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Civil y estructural</p><h3>Obras de infraestructura</h3>
+                <p class="premium-service-summary">Coordinamos hidráulica, geometría, estructura y construcción para documentar obras de drenaje e infraestructura menor.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/obras-arte-infraestructura-hidraulica.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="obras-arte-infraestructura-hidraulica"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Obras%20de%20infraestructura%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article>
+            <article class="premium-service-card reveal-item" data-service-category="diagnostico">
+              <a class="premium-service-media" href="servicios/reconocimiento-vivienda-diagnostico.html"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/reconocimiento.webp" alt="Reconocimiento de vivienda y diagnóstico técnico" loading="lazy" decoding="async"></picture></a>
+              <div class="premium-service-body">
+                <p class="premium-service-tag">Diagnóstico y simulación</p><h3>Reconocimiento de vivienda</h3>
+                <p class="premium-service-summary">Organizamos la información de viviendas existentes mediante visita, registro, levantamiento y revisión técnica según el objetivo confirmado.</p>
+                <div class="premium-card-actions">
+                  <a class="premium-card-action" href="servicios/reconocimiento-vivienda-diagnostico.html">Ver alcance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                  <button class="premium-card-action quick" type="button" data-service-quick="reconocimiento-vivienda-diagnostico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg> Vista rápida</button>
+                  <a class="premium-card-action whatsapp" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Reconocimiento%20de%20vivienda%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20" target="_blank" rel="noopener" data-track="service_whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar</a>
+                </div>
+              </div>
+            </article></div><div class="premium-capability-footer"><p><strong>18 capacidades</strong> para diseño, análisis, documentación, revisión y coordinación técnica.</p><a class="premium-action premium-action-primary" href="servicios/">Ver índice completo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section>
+  <section class="premium-section premium-brochure" id="brochure"><div class="container premium-brochure-grid"><div class="premium-brochure-copy reveal-item"><p class="premium-section-label">Brochure</p><h2>Brochure <span class="accent">DISMEK</span></h2><p>Descargue una presentación corporativa con servicios, metodología, entregables, criterios de calidad, software especializado y canales de contacto.</p><ul class="premium-checklist"><li>Resumen para industria, energía, salud, construcción e infraestructura.</li><li>Alcances por disciplina y entregables esperados.</li><li>Archivo listo para revisar, compartir o anexar a una solicitud de cotización.</li></ul><div class="premium-brochure-actions"><a class="premium-action premium-action-primary" href="assets/brochure-dismek-servicios.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7Z"/><path d="M14 3v5h5M10 13h5M10 17h5"/></svg> Ver PDF</a><a class="premium-action premium-action-secondary" href="assets/brochure-dismek-servicios.pdf" download="Brochure_DISMEK_Servicios.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg> Descargar PDF</a></div></div><a class="premium-brochure-preview reveal-item" href="assets/brochure-dismek-servicios.pdf" target="_blank" rel="noopener" aria-label="Ver brochure DISMEK en PDF"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/brochure-dismek-cover.webp" alt="Portada del brochure DISMEK" loading="lazy" decoding="async"></picture></a></div></section>
+  <section class="premium-section premium-advantages" id="ventajas"><div class="container"><p class="premium-section-label">Por qué elegirnos</p><h2>Coordinación técnica <span class="accent">sin perder el detalle</span></h2><div class="premium-advantage-grid"><article class="premium-advantage reveal-item"><strong>01</strong><h3>Especialización multidisciplinaria</h3><p>Ingeniería mecánica, civil, eléctrica, electrónica y mecatrónica coordinada dentro de un mismo alcance.</p></article><article class="premium-advantage reveal-item"><strong>02</strong><h3>Alcance regional</h3><p>Atención en Colombia y coordinación remota para otros lugares según visitas, información y alcance confirmados.</p></article><article class="premium-advantage reveal-item"><strong>03</strong><h3>Tecnología aplicada</h3><p>CAD, BIM, simulación y análisis elegidos por su utilidad para el problema y los entregables requeridos.</p></article></div></div></section>
+  <section class="premium-section premium-method" id="metodologia"><div class="container"><p class="premium-section-label">Cómo trabajamos</p><h2>Un mismo criterio técnico <span class="accent">de principio a fin</span></h2><div class="premium-method-line"><article class="premium-method-step reveal-item"><strong>01</strong><h3>Diagnóstico</h3><p>Revisión de datos, objetivos, restricciones, archivos disponibles y pendientes críticos.</p></article><article class="premium-method-step reveal-item"><strong>02</strong><h3>Ingeniería conceptual</h3><p>Definición de alternativas, criterios, alcance y entregables necesarios para decidir.</p></article><article class="premium-method-step reveal-item"><strong>03</strong><h3>Diseño detallado</h3><p>Modelado, cálculos, coordinación interdisciplinaria y revisión técnica de resultados.</p></article><article class="premium-method-step reveal-item"><strong>04</strong><h3>Documentación</h3><p>Planos, memorias, fichas, listados y archivos editables para revisión o ejecución.</p></article><article class="premium-method-step reveal-item"><strong>05</strong><h3>Soporte</h3><p>Acompañamiento para aclaraciones, ajustes y coordinación técnica posterior a la entrega.</p></article></div></div></section>
+  <section class="premium-section premium-projects" id="portfolio"><div class="container"><div class="premium-heading-row reveal-item"><div><p class="premium-section-label">Portafolio</p><h2>Proyectos que muestran <span class="accent">cómo trabajamos</span></h2></div><p>Se conservan las diez referencias visuales de la web pública. Alcance, cliente y resultados solo se ampliarán cuando estén autorizados.</p></div><div class="premium-project-grid"><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/recipiente_2.webp" alt="Recipiente a presión" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Recipiente a presión</strong><span>Diseño y documentación ASME</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/solar2.webp" alt="Sistema solar fotovoltaico" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Sistema solar fotovoltaico</strong><span>Diseño energético</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/port1.webp" alt="Equipo industrial" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Equipo industrial</strong><span>Planos de fabricación</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/port2_new.webp" alt="Diseño HVAC y BIM" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Diseño HVAC y BIM</strong><span>Coordinación de sistemas</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/port3.webp" alt="Subestación eléctrica" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Subestación eléctrica</strong><span>Diseño de potencia</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/project_sopladores.webp" alt="Edificio de sopladores" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Edificio de sopladores</strong><span>Documentación industrial</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/modulo_d_metalica_malaga.webp" alt="Estructura metálica" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Estructura metálica</strong><span>Hospital de Málaga, Santander</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/gases_medicinales_san_andres.webp" alt="Gases medicinales" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Gases medicinales</strong><span>Hospital San Andrés, Santander</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/gases_medicinales_coromoro.webp" alt="Red de gases" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Red de gases</strong><span>Hospital de Coromoro</span></div></article><article class="premium-project reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/iluminacion_vivienda_bucaramanga.webp" alt="Propuesta de iluminación" loading="lazy" decoding="async"></picture><div class="premium-project-caption"><strong>Propuesta de iluminación</strong><span>Vivienda en Bucaramanga</span></div></article></div><div class="premium-brochure-actions" style="margin-top:28px"><a class="premium-action premium-action-secondary" href="proyectos/">Ver portafolio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="premium-action premium-action-primary" href="#contacto">Solicitar una referencia</a></div></div></section>
+  <section class="premium-section premium-team" id="equipo"><div class="container premium-team-layout"><div class="premium-team-intro reveal-item"><p class="premium-section-label">Nuestro equipo</p><h2>Los ingenieros detrás de <span class="accent">DISMEK</span></h2><p>Un equipo multidisciplinario de profesionales comprometidos con la excelencia técnica.</p></div><div class="premium-team-grid"><article class="premium-team-card reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/daniel_mendez.webp" alt="Daniel Méndez" loading="lazy" decoding="async"></picture><h3>Daniel Méndez</h3><p>Ing. Mecánico - CEO &amp; Cofundador</p><a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener">LinkedIn →</a></article><article class="premium-team-card reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/deyner_alvarado.webp" alt="Dayner Alvarado" loading="lazy" decoding="async"></picture><h3>Dayner Alvarado</h3><p>Ing. Electrónico - Cofundador</p><a href="https://www.linkedin.com/in/dayner-alvarado-770a82158/" target="_blank" rel="noopener">LinkedIn →</a></article><article class="premium-team-card reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/daniel_torres.webp" alt="Daniel Torres" loading="lazy" decoding="async"></picture><h3>Daniel Torres</h3><p>Ing. Mecánico - Cofundador</p><a href="https://www.linkedin.com/in/daniel-torres-94023623b/" target="_blank" rel="noopener">LinkedIn →</a></article><article class="premium-team-card reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/fabian_rondon.webp" alt="Fabián Rondón" loading="lazy" decoding="async"></picture><h3>Fabián Rondón</h3><p>Ing. Civil</p><span class="muted">Perfil público pendiente de confirmar</span></article><article class="premium-team-card reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/sergio_ramirez.webp" alt="Sergio Ramírez" loading="lazy" decoding="async"></picture><h3>Sergio Ramírez</h3><p>Ing. Electricista</p><span class="muted">Perfil público pendiente de confirmar</span></article><article class="premium-team-card reveal-item"><picture><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/edisson_rangel.webp" alt="Edisson Rangel" loading="lazy" decoding="async"></picture><h3>Edisson Rangel</h3><p>Ing. Mecatrónico</p><span class="muted">Perfil público pendiente de confirmar</span></article></div></div></section>
+  <section class="premium-section premium-faq-contact" id="faq"><div class="container premium-faq-contact-grid"><div class="reveal-item"><p class="premium-section-label">Preguntas frecuentes</p><h2>Resolvemos sus <span class="accent">dudas</span></h2><div class="premium-faq-list"><details><summary>¿Cuánto tarda un plano mecánico completo?</summary><p>El tiempo depende de la complejidad, la información de entrada, las revisiones y el alcance. La programación se confirma después de revisar los requisitos técnicos.</p></details><details><summary>¿Diseñan recipientes a presión bajo ASME?</summary><p>Sí. El alcance puede incluir cálculos de componentes, boquillas, soportes, MAWP, MDMT, memorias y planos, según los datos y la edición normativa confirmada para el proyecto.</p></details><details><summary>¿Realizan diseños de sistemas solares fotovoltaicos?</summary><p>Sí. El servicio puede incluir dimensionamiento, selección de equipos, planos, memorias, análisis de producción y documentación para coordinación con el operador, según el alcance.</p></details><details><summary>¿Pueden diseñar con normas internacionales?</summary><p>Sí, cuando la norma, edición, jurisdicción y autoridad revisora se definen en el alcance. No se aplica una lista genérica sin verificar pertinencia.</p></details><details><summary>¿Ofrecen consultoría remota?</summary><p>Sí. La revisión de información, reuniones y entrega documental pueden coordinarse de forma remota; las visitas se definen cuando son necesarias.</p></details><details><summary>¿Qué software y herramientas utilizan?</summary><p>AutoCAD, SolidWorks, Inventor, Revit/BIM, ANSYS, ETABS, SAP2000, Dialux y otras herramientas se seleccionan según la disciplina y el entregable.</p></details><details><summary>¿Qué información necesitan para cotizar?</summary><p>Depende del servicio. Normalmente se requieren planos, ubicación, fotos, alcance esperado, datos de operación, normativa aplicable si existe y fecha objetivo.</p></details><details><summary>¿Entregan archivos editables?</summary><p>Sí, cuando el alcance lo solicita se pueden entregar archivos CAD, modelos, memorias o documentos editables además de PDF.</p></details><details><summary>¿Atienden proyectos fuera de Bucaramanga?</summary><p>Sí. El alcance puede trabajarse de forma remota o con coordinación puntual segun la información disponible y las necesidades del proyecto.</p></details><details><summary>¿Pueden revisar documentos existentes?</summary><p>Sí. Se pueden revisar planos, memorias, modelos o fichas existentes y documentar observaciones, riesgos y pendientes.</p></details></div></div><div class="premium-contact-panel reveal-item" id="contacto"><p class="premium-section-label">Contacto</p><h2>Hablemos de su <span class="accent">proyecto</span></h2><p>Comparta la información disponible. El equipo revisará el alcance antes de proponer el siguiente paso.</p><div class="premium-contact-links"><a href="tel:+573156637925">+57 315 663 7925</a><a href="mailto:contacto.dismec@gmail.com">contacto.dismec@gmail.com</a><a href="https://www.instagram.com/dis_mec" target="_blank" rel="noopener">@dis_mec</a></div>
+    <form class="contact-form proposal-form" action="https://formsubmit.co/contacto.dismec@gmail.com" method="POST" data-contact-form data-api-endpoint="/api/leads" novalidate>
+      <input type="hidden" name="_subject" value="Nueva solicitud de propuesta desde dismek.co">
+      <input type="hidden" name="_captcha" value="true"><input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://dismek.co/gracias.html"><input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="field-grid">
+        <label>Nombre<input name="nombre" type="text" autocomplete="name" required minlength="3"></label>
+        <label>Empresa<input name="empresa" type="text" autocomplete="organization"></label>
+        <label>Correo<input name="email" type="email" autocomplete="email" required></label>
+        <label>Teléfono<input name="telefono" type="tel" autocomplete="tel" required pattern="[0-9+()\s-]{7,20}"></label>
+        <label>Ciudad y país<input name="ubicacion" type="text" autocomplete="address-level2" required></label>
+        <label>Tipo de servicio<select name="servicio" required><option value="">Seleccione</option><option value="Recipientes ASME">Recipientes ASME</option><option value="Solar fotovoltaica">Solar fotovoltaica</option><option value="HVAC y MEP">HVAC y MEP</option><option value="Diseño eléctrico">Diseño eléctrico</option><option value="Estructuras metálicas">Estructuras metálicas</option><option value="Diseño mecánico">Diseño mecánico</option><option value="Planos de fabricación">Planos de fabricación</option><option value="Simulación CFD/FEA">Simulación CFD/FEA</option><option value="Tuberías y P&amp;ID">Tuberías y P&amp;ID</option><option value="Gases medicinales">Gases medicinales</option><option value="Hidrosanitario y gas">Hidrosanitario y gas</option><option value="Concreto reforzado">Concreto reforzado</option><option value="Patología estructural">Patología estructural</option><option value="Vulnerabilidad sísmica">Vulnerabilidad sísmica</option><option value="Diseño energético">Diseño energético</option><option value="Contención y taludes">Contención y taludes</option><option value="Obras de infraestructura">Obras de infraestructura</option><option value="Reconocimiento de vivienda">Reconocimiento de vivienda</option></select></label>
+        <label>Sector<select name="sector" required><option value="">Seleccione</option><option>Industria</option><option>Energía</option><option>Salud</option><option>Construcción</option><option>Infraestructura</option><option>Edificaciones comerciales</option><option>Otro / por definir</option></select></label>
+        <label>Etapa del proyecto<select name="etapa" required><option value="">Seleccione</option><option>Idea o prefactibilidad</option><option>Diseño</option><option>Revisión</option><option>Construcción o fabricación</option><option>Operación o diagnóstico</option></select></label>
+        <label>Canal preferido<select name="canal" required><option value="">Seleccione</option><option>Correo</option><option>Teléfono</option><option>WhatsApp</option><option>Videollamada</option></select></label>
+      </div>
+      <label>Descripción<textarea name="descripcion" rows="6" minlength="30" maxlength="3000" required placeholder="Describa el problema, alcance, ubicación, archivos disponibles y objetivos principales."></textarea></label>
+      <div class="field-grid"><label>Fecha estimada<input name="fecha_estimada" type="date"></label><label>Presupuesto (opcional)<input name="presupuesto" type="text" inputmode="decimal" maxlength="80"></label></div>
+      <p class="file-note"><strong>Adjuntar documentos:</strong> esta versión no recibe archivos hasta contar con almacenamiento y validación del servidor. Indique qué documentos tiene disponibles y se confirmará un canal seguro.</p>
+      <label class="consent"><input name="autorizacion_datos" type="checkbox" required><span>Autorizo el tratamiento de mis datos para atender esta solicitud conforme a la <a href="tratamiento-de-datos.html">política aplicable</a>.</span></label>
+      <p class="form-status" data-form-status aria-live="polite"></p>
+      <div class="form-actions"><button class="button button-primary" type="submit" data-track="proposal_submit">Enviar solicitud</button><a class="button button-secondary" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20quiero%20solicitar%20una%20propuesta%20de%20ingenier%C3%ADa." target="_blank" rel="noopener" data-track="proposal_whatsapp">Continuar por WhatsApp</a></div>
+    </form></div></div></section>
+  <dialog class="premium-dialog" data-service-dialog aria-labelledby="premium-dialog-title"><form method="dialog"><button class="premium-dialog-close" type="submit" aria-label="Cerrar vista rápida">×</button></form><div class="premium-dialog-grid"><div class="premium-dialog-media"><img data-dialog-image src="assets/recipiente_2.webp" alt=""></div><div class="premium-dialog-content"><p class="premium-dialog-tag" data-dialog-tag>Ingeniería</p><h2 id="premium-dialog-title" data-dialog-title>Servicio</h2><p class="premium-dialog-lead" data-dialog-lead></p><div class="premium-dialog-columns"><section><h3>Alcance</h3><ul data-dialog-scope></ul></section><section><h3>Entregables</h3><ul data-dialog-deliverables></ul></section></div><section><h3>Normas y criterios</h3><ul data-dialog-standards></ul></section><div class="premium-dialog-actions"><a class="premium-action premium-action-secondary" data-dialog-page href="servicios/">Ver página completa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="premium-action premium-action-primary" data-dialog-whatsapp href="#contacto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.4-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.4 2.8 2.2 4.5 5 5l1-1.4 2 .9c-.4 1.7-1.5 2.5-3.2 2.2-3.7-.7-6-3-6.8-6.7-.3-1.5.5-2.6 2-3l1 2Z"/></svg> Cotizar este servicio</a></div></div></div></dialog>
+  <script type="application/json" id="premium-service-data">{"recipientes-presion-asme": {"title": "Diseño de recipientes a presión ASME", "tag": "Mecánica e industrial", "intro": "Desarrollamos ingeniería para recipientes a presión con enfoque en cálculo trazable, planos de fabricación y documentación técnica para revisión, construcción o actualización.", "image": "assets/recipiente_2.webp", "page": "servicios/recipientes-presion-asme.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Recipientes%20ASME%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de datos de proceso, condiciones de operación y restricciones de fabricación.", "Cálculos de componentes, conexiones, boquillas, soportes y condiciones críticas del recipiente.", "Coordinación de planos generales, detalles, listas de materiales y notas técnicas."], "deliverables": ["Memoria de cálculo editable.", "Planos de fabricación y detalles constructivos.", "Listado de materiales, boquillas, conexiones y notas de inspección.", "Resumen de criterios, supuestos y pendientes de confirmación."], "standards": ["ASME BPVC Sección VIII cuando el alcance lo requiera.", "Criterios de soldadura, inspección y materiales definidos por el proyecto.", "Normas complementarias del cliente o autoridad revisora."]}, "energia-solar-fotovoltaica": {"title": "Diseño de sistemas solares fotovoltaicos", "tag": "Energía y eléctrica", "intro": "Preparamos diseños solares fotovoltaicos orientados a entregables técnicos claros para revisión, cotización, montaje o coordinación con operadores y contratistas.", "image": "assets/solar2.webp", "page": "servicios/energia-solar-fotovoltaica.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Solar%20fotovoltaica%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Análisis de demanda, condiciones de instalación, orientación y restricciones del sitio.", "Dimensionamiento de arreglo, inversores, protecciones, canalizaciones y puesta a tierra.", "Planos unifilares, rutas, cuadro de cargas y memoria de cálculo."], "deliverables": ["Memoria de dimensionamiento.", "Planos eléctricos y diagramas unifilares.", "Especificaciones de equipos y protecciones.", "Lista de pendientes para datos de cubierta, consumo y operador."], "standards": ["RETIE cuando aplique", "NTC 2050 cuando aplique", "Requisitos del operador de red", "Criterios del fabricante de equipos"]}, "sistemas-hvac-y-mep": {"title": "Diseño HVAC y coordinación MEP", "tag": "MEP e instalaciones", "intro": "Integramos criterios mecánicos, eléctricos, hidráulicos y arquitectónicos para documentar sistemas HVAC y MEP con claridad constructiva.", "image": "assets/hvac.webp", "page": "servicios/sistemas-hvac-y-mep.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20HVAC%20y%20MEP%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Levantamiento de requerimientos térmicos, ventilación, ocupación y condiciones de frontera.", "Cálculo preliminar o detallado de cargas, selección de equipos y trazado de redes.", "Coordinación MEP con planos, cortes, detalles y revisión de interferencias."], "deliverables": ["Memoria de cálculo y criterios de diseño.", "Planos de ductos, tuberías, equipos y detalles.", "Listas de equipos y cantidades referenciales.", "Matriz de coordinación y pendientes técnicos."], "standards": ["ASHRAE segun alcance", "RITE o criterios locales si aplican", "Requisitos hospitalarios del proyecto", "Normas del cliente o interventoría"]}, "diseno-electrico-y-energia": {"title": "Diseño eléctrico industrial y de energía", "tag": "Energía y eléctrica", "intro": "Desarrollamos documentación eléctrica para instalaciones industriales, comerciales e institucionales, priorizando seguridad, trazabilidad y coordinación.", "image": "assets/design_electrico.webp", "page": "servicios/diseno-electrico-y-energia.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Dise%C3%B1o%20el%C3%A9ctrico%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Levantamiento de cargas y criterios de alimentación, protección y distribución.", "Diseño de tableros, circuitos, iluminación, puesta a tierra y canalizaciones.", "Revisión de criterios de seguridad eléctrica y coordinación con otras disciplinas."], "deliverables": ["Planos eléctricos y diagramas unifilares.", "Cuadros de carga y memorias de cálculo.", "Especificaciones de protecciones, conductores y tableros.", "Lista de pendientes para datos de red, operador y equipos."], "standards": ["RETIE cuando aplique", "NTC 2050 cuando aplique", "IEC/NEC si el proyecto lo exige", "Requisitos del operador de red"]}, "estructuras-metalicas-y-diseno-estructural": {"title": "Diseño de estructuras metálicas y estructurales", "tag": "Civil y estructural", "intro": "Apoyamos diseños estructurales con análisis, modelado, planos y memorias orientadas a fabricación, montaje, revisión o coordinación técnica.", "image": "assets/structures.webp", "page": "servicios/estructuras-metalicas-y-diseno-estructural.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Estructuras%20met%C3%A1licas%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de cargas, geometría, uso, restricciones y criterios estructurales.", "Modelado, análisis y predimensionamiento o diseño detallado según alcance.", "Planos de conjunto, detalles, conexiones y documentación de soporte."], "deliverables": ["Memoria de cálculo estructural.", "Planos de taller, montaje o coordinación.", "Detalles de conexiones y listado de elementos.", "Registro de supuestos y datos pendientes."], "standards": ["NSR-10 cuando aplique", "AISC si el proyecto lo requiere", "Criterios del cliente o interventoría", "Normas complementarias segun uso"]}, "diseno-mecanico-industrial": {"title": "Diseño mecánico industrial", "tag": "Mecánica e industrial", "intro": "Convertimos requerimientos de operación, fabricación y mantenimiento en modelos, planos y documentos técnicos para equipos y componentes industriales.", "image": "assets/diseno-maquinaria-planos.webp", "page": "servicios/diseno-mecanico-industrial.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Dise%C3%B1o%20mec%C3%A1nico%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Definición de requerimientos, cargas, materiales, restricciones y condiciones de uso.", "Modelado 3D, análisis básico o detallado y generación de planos.", "Revisión de fabricabilidad, montaje y mantenimiento."], "deliverables": ["Modelo 3D", "Planos de fabricación", "Lista de materiales", "Memoria o nota técnica de diseño", "Archivos editables segun alcance"], "standards": ["Criterios de diseño mecánico definidos por el proyecto", "Normas de dibujo técnico aplicables", "Requisitos de fabricación del cliente"]}, "planos-de-fabricacion-maquinaria": {"title": "Planos de fabricación para maquinaria", "tag": "Mecánica e industrial", "intro": "Preparamos documentación gráfica para fabricación, ensamble, montaje y revisión de maquinaria o componentes industriales.", "image": "assets/diseno-maquinaria-planos.webp", "page": "servicios/planos-de-fabricacion-maquinaria.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Planos%20de%20fabricaci%C3%B3n%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de modelos, bocetos, fotografías, mediciones o planos existentes.", "Generación de planos de piezas, conjuntos, explosivos y detalles.", "Validación de coherencia entre listas, cotas y archivos editables."], "deliverables": ["Planos 2D", "Despieces y conjuntos", "Listas de materiales", "Archivos CAD editables", "Notas de fabricación y montaje"], "standards": ["Normas de dibujo técnico definidas por el cliente", "Criterios de tolerancias segun fabricación", "Convenciones CAD del proyecto"]}, "simulacion-cfd-fea": {"title": "Simulación CFD y FEA para ingeniería", "tag": "Diagnóstico y simulación", "intro": "Usamos simulación como herramienta de soporte técnico cuando el problema, las condiciones de frontera y los criterios de validación están definidos.", "image": "assets/simulaciones_cfd.webp", "page": "servicios/simulacion-cfd-fea.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Simulaci%C3%B3n%20CFD/FEA%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Definición del objetivo de simulación y simplificaciones del modelo.", "Preparación de geometría, materiales, cargas, malla y condiciones de frontera.", "Postproceso, revisión de sensibilidad y reporte de resultados."], "deliverables": ["Modelo de simulación segun software", "Reporte técnico", "Tablas y gráficas de resultados", "Conclusiones y limitaciones", "Recomendaciones de mejora"], "standards": ["Criterios de verificación definidos por el proyecto", "Buenas prácticas de independencia de malla", "Referencias técnicas aportadas por el cliente"]}, "tuberias-pid": {"title": "Diseño de tuberías y diagramas P&ID", "tag": "Mecánica e industrial", "intro": "Documentamos redes de tuberías y diagramas de proceso para ordenar equipos, válvulas, instrumentos, recorridos y criterios de instalación.", "image": "assets/pid.webp", "page": "servicios/tuberias-pid.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Tuber%C3%ADas%20y%20P%26ID%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Levantamiento de proceso, fluidos, presiones, temperaturas y restricciones de ruta.", "Elaboración de P&ID, diagramas, rutas preliminares o detalladas e isométricos.", "Revisión de interferencias, soportes y criterios de instalación."], "deliverables": ["P&ID", "Planos de tuberías", "Isométricos si aplica", "Listas de válvulas, accesorios e instrumentos", "Pendientes de información de proceso"], "standards": ["Criterios internos del cliente", "Simbología ISA si aplica", "Normas de tubería requeridas por el proyecto", "Buenas prácticas de documentación"]}, "gases-medicinales": {"title": "Diseño de redes de gases medicinales", "tag": "MEP e instalaciones", "intro": "Apoyamos la documentación técnica de redes de gases medicinales para instituciones de salud, integrando criterios MEP, seguridad y coordinación constructiva.", "image": "assets/gases_medicinales_coromoro.webp", "page": "servicios/gases-medicinales.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Gases%20medicinales%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de programa médico-arquitectónico y necesidades de puntos de consumo.", "Trazado de redes, coordinación con otras disciplinas y documentación de criterios.", "Planos, detalles y listas de puntos, equipos o componentes segun alcance."], "deliverables": ["Planos de red", "Cuadros de puntos", "Detalles y notas técnicas", "Memoria o criterios de diseño", "Lista de pendientes de información hospitalaria"], "standards": ["Normativa hospitalaria aplicable segun jurisdicción", "Criterios del cliente o interventoría", "Requisitos de fabricantes y operación"]}, "hidrosanitario-y-gas": {"title": "Diseño hidrosanitario y redes de gas", "tag": "MEP e instalaciones", "intro": "Desarrollamos documentación para redes hidráulicas, sanitarias, lluvias y gas, priorizando coordinación, trazabilidad y claridad constructiva.", "image": "assets/hidraulico_sanitario_gas.webp", "page": "servicios/hidrosanitario-y-gas.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Hidrosanitario%20y%20gas%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de arquitectura, usos, aparatos, equipos y restricciones de instalación.", "Diseño de redes hidráulicas, sanitarias, lluvias y gas segun alcance.", "Planos, detalles, isométricos, memorias y coordinación con otras disciplinas."], "deliverables": ["Planos hidrosanitarios", "Planos de gas si aplica", "Memorias de cálculo", "Isométricos y detalles", "Cantidades referenciales"], "standards": ["RAS o criterios locales si aplican", "NTC aplicables a redes de gas cuando corresponda", "Requisitos de curaduría, interventoría o operador"]}, "concreto-reforzado": {"title": "Diseño estructural en concreto reforzado", "tag": "Civil y estructural", "intro": "Apoyamos diseños y revisiones de elementos de concreto reforzado con documentación clara para revisión, coordinación y construcción.", "image": "assets/estructural_concreto.webp", "page": "servicios/concreto-reforzado.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Concreto%20reforzado%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de geometría, cargas, uso, suelo disponible y restricciones del proyecto.", "Modelado, análisis y diseño de elementos estructurales segun alcance.", "Planos de refuerzo, detalles, despieces y memoria de cálculo."], "deliverables": ["Memoria de cálculo", "Planos estructurales", "Despieces y detalles", "Cuadros de cantidades", "Registro de supuestos y pendientes"], "standards": ["NSR-10 cuando aplique", "ACI si el proyecto lo requiere", "Criterios geotécnicos confirmados", "Requisitos de interventoría"]}, "patologia-estructural": {"title": "Patología estructural y diagnóstico técnico", "tag": "Diagnóstico y simulación", "intro": "Apoyamos diagnósticos técnicos de edificaciones y estructuras mediante revisión documental, inspección visual y análisis de información disponible.", "image": "assets/patologias.webp", "page": "servicios/patologia-estructural.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Patolog%C3%ADa%20estructural%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de antecedentes, planos, fotografías, uso y cambios de la estructura.", "Inspección visual, registro de lesiones y clasificación de hallazgos.", "Análisis técnico y recomendaciones segun información disponible."], "deliverables": ["Informe técnico", "Registro fotográfico", "Mapeo de lesiones si aplica", "Recomendaciones", "Listado de ensayos o datos pendientes"], "standards": ["NSR-10 cuando aplique", "Guías de evaluación estructural segun alcance", "Criterios de interventoría o autoridad local"]}, "vulnerabilidad-sismica": {"title": "Estudios de vulnerabilidad sísmica", "tag": "Diagnóstico y simulación", "intro": "Evaluamos información estructural existente para identificar condiciones de vulnerabilidad y necesidades de análisis, refuerzo o estudios complementarios.", "image": "assets/vulnerabilidad.webp", "page": "servicios/vulnerabilidad-sismica.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Vulnerabilidad%20s%C3%ADsmica%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión documental, levantamiento disponible y criterios de ocupación.", "Modelado o evaluación estructural segun información y alcance contratado.", "Informe de hallazgos, limitaciones, recomendaciones y próximos pasos."], "deliverables": ["Informe de vulnerabilidad", "Modelo o memoria segun alcance", "Registro de información revisada", "Recomendaciones técnicas", "Lista de datos pendientes"], "standards": ["NSR-10 cuando aplique", "Criterios de evaluación definidos por el proyecto", "Requisitos de autoridad o interventoría"]}, "diseno-energetico-potencia-subestaciones": {"title": "Diseño energético, potencia y subestaciones", "tag": "Energía y eléctrica", "intro": "Desarrollamos ingeniería energética y de potencia con diagramas, cálculos, especificaciones y documentos coordinados para revisión o ejecución.", "image": "assets/energy.webp", "page": "servicios/diseno-energetico-potencia-subestaciones.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Dise%C3%B1o%20energ%C3%A9tico%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de demanda, fuentes, restricciones de conexión y datos del operador.", "Diagramas unifilares, coordinación de equipos y criterios de distribución.", "Cálculos y especificaciones según el alcance eléctrico confirmado."], "deliverables": ["Diagramas unifilares", "Memorias de cálculo", "Planos de distribución", "Especificaciones técnicas", "Listados y pendientes"], "standards": ["RETIE cuando aplique", "NTC 2050 cuando aplique", "Requisitos del operador de red", "Criterios del fabricante"]}, "estructuras-contencion-taludes": {"title": "Diseño de estructuras de contención y estabilización", "tag": "Civil y estructural", "intro": "Integramos información topográfica, geotécnica, hidráulica y estructural para documentar soluciones de contención y estabilización.", "image": "assets/contencion.webp", "page": "servicios/estructuras-contencion-taludes.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Contenci%C3%B3n%20y%20taludes%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de exploración geotécnica, topografía, cargas y condiciones hidráulicas.", "Evaluación de alternativas de contención según información disponible.", "Cálculo, detalles, drenaje y documentación constructiva según alcance."], "deliverables": ["Memoria de cálculo", "Planos y detalles", "Criterios de drenaje", "Cantidades referenciales", "Lista de datos pendientes"], "standards": ["NSR-10 cuando aplique", "Estudio geotécnico del proyecto", "Criterios de estabilidad definidos", "Requisitos de autoridad competente"]}, "obras-arte-infraestructura-hidraulica": {"title": "Diseño de obras de arte e infraestructura hidráulica", "tag": "Civil y estructural", "intro": "Coordinamos hidráulica, geometría, estructura y construcción para documentar obras de drenaje e infraestructura menor.", "image": "assets/obras_arte.webp", "page": "servicios/obras-arte-infraestructura-hidraulica.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Obras%20de%20infraestructura%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión de topografía, caudales, niveles, suelos y restricciones de implantación.", "Dimensionamiento hidráulico y estructural según datos confirmados.", "Detalles de entrada, salida, cimentación, protección y construcción."], "deliverables": ["Memoria hidráulica", "Memoria estructural según alcance", "Planos y detalles", "Cantidades referenciales", "Criterios y pendientes"], "standards": ["NSR-10 cuando aplique", "Manual o criterios de la autoridad vial", "Requisitos ambientales e hidráulicos del proyecto"]}, "reconocimiento-vivienda-diagnostico": {"title": "Reconocimiento de vivienda y diagnóstico técnico", "tag": "Diagnóstico y simulación", "intro": "Organizamos la información de viviendas existentes mediante visita, registro, levantamiento y revisión técnica según el objetivo confirmado.", "image": "assets/reconocimiento.webp", "page": "servicios/reconocimiento-vivienda-diagnostico.html", "whatsapp": "https://wa.me/573156637925?text=Hola%20DISMEK%2C%20vi%20en%20dismek.co%20el%20servicio%20de%20Reconocimiento%20de%20vivienda%20y%20quiero%20cotizarlo.%20Mi%20proyecto%20es%3A%20", "scope": ["Revisión del objetivo, antecedentes, documentos y restricciones de acceso.", "Visita y registro visual o dimensional según alcance contratado.", "Informe de hallazgos, limitaciones y recomendaciones técnicas."], "deliverables": ["Registro fotográfico", "Levantamiento según alcance", "Informe técnico", "Inventario de información", "Recomendaciones y pendientes"], "standards": ["NSR-10 cuando aplique", "Requisitos de la autoridad competente", "Alcance de inspección acordado"]}}</script>
+</main><button class="premium-back-top" type="button" aria-label="Volver al inicio" data-back-top>↑</button>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <picture class="footer-logo"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Crect width='16' height='10' fill='%23edf3f6'/%3E%3C/svg%3E" data-src="assets/dismek-logo-badge.webp" alt="Logo DISMEK Ingeniería" loading="lazy" decoding="async"></picture>
+          <p>Ingeniería mecánica, eléctrica, civil e industrial para documentación técnica, diseño, simulación y coordinación de proyectos en Colombia.</p>
+          <p><a href="tel:+573156637925">+57 315 663 7925</a><br><a href="mailto:contacto.dismec@gmail.com">contacto.dismec@gmail.com</a></p>
+        </div>
+        <div>
+          <h2>Servicios</h2>
+          <ul><li><a href="servicios/recipientes-presion-asme.html">Recipientes ASME</a></li>
+<li><a href="servicios/energia-solar-fotovoltaica.html">Solar fotovoltaica</a></li>
+<li><a href="servicios/sistemas-hvac-y-mep.html">HVAC y MEP</a></li>
+<li><a href="servicios/diseno-electrico-y-energia.html">Diseño eléctrico</a></li>
+<li><a href="servicios/estructuras-metalicas-y-diseno-estructural.html">Estructuras metálicas</a></li>
+<li><a href="servicios/diseno-mecanico-industrial.html">Diseño mecánico</a></li></ul>
+        </div>
+        <div>
+          <h2>Ingeniería civil</h2>
+          <ul><li><a href="servicios/estructuras-metalicas-y-diseno-estructural.html">Estructuras metálicas</a></li>
+<li><a href="servicios/concreto-reforzado.html">Concreto reforzado</a></li>
+<li><a href="servicios/patologia-estructural.html">Patología estructural</a></li>
+<li><a href="servicios/vulnerabilidad-sismica.html">Vulnerabilidad sísmica</a></li></ul>
+        </div>
+        <div>
+          <h2>Normativas aplicables</h2>
+          <ul>
+            <li>ASME BPVC</li>
+            <li>RETIE</li>
+            <li>NSR-10</li>
+            <li>NTC 2050</li>
+            <li>ASHRAE</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Herramientas y software</h2>
+          <ul>
+            <li>AutoCAD</li>
+            <li>Revit / BIM</li>
+            <li>SolidWorks / Inventor</li>
+            <li>ANSYS / CFD-FEA</li>
+            <li>SAP2000 / ETABS</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Empresa</h2>
+          <ul>
+            <li><a href="index.html#metodologia">Metodología</a></li>
+            <li><a href="index.html#equipo">Equipo</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="politica-de-privacidad.html">Política de privacidad</a></li>
+            <li><a href="tratamiento-de-datos.html">Tratamiento de datos</a></li>
+            <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><img src="assets/dismec_logo.webp" alt="DISMEK" loading="lazy" decoding="async"><p>Empresa de ingeniería y diseño mecánico, civil y eléctrico. Transformamos necesidades técnicas en soluciones de precisión para la industria colombiana y latinoamericana.</p></div>
-        <div class="footer-col"><h4>Servicios</h4>
-          <a href="#" onclick="openServiceModal(0);return false;">Planos de Maquinaria</a>
-          <a href="#" onclick="openServiceModal(1);return false;">Recipientes a Presión</a>
-          <a href="#" onclick="openServiceModal(2);return false;">Paneles Solares</a>
-          <a href="#" onclick="openServiceModal(3);return false;">Sistemas HVAC</a>
-          <a href="#" onclick="openServiceModal(5);return false;">Diseño Energético</a>
-          <a href="#" onclick="openServiceModal(6);return false;">Estructuras Metálicas</a>
-        </div>
-        <div class="footer-col"><h4>Ingeniería Civil</h4>
-          <a href="#" onclick="openServiceModal(10);return false;">Concreto Reforzado</a>
-          <a href="#" onclick="openServiceModal(11);return false;">Contención</a>
-          <a href="#" onclick="openServiceModal(12);return false;">Obras de Arte</a>
-          <a href="#" onclick="openServiceModal(14);return false;">Patologías</a>
-          <a href="#" onclick="openServiceModal(15);return false;">Vulnerabilidad Sísmica</a>
-        </div>
-        <div class="footer-col"><h4>Empresa</h4>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#brochure">Brochure</a>
-          <a href="#portfolio">Proyectos</a>
-          <a href="#equipo">Equipo</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contacto">Contacto</a>
-        </div>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year>2026</span> DISMEK Ingeniería. Todos los derechos reservados.</span>
+        <span>Datos legales sujetos a confirmación documental.</span>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 DISMEK Ingeniería. Todos los derechos reservados.</span>
-        <div class="social-links">
-          <a href="https://www.facebook.com/profile.php?id=61575796754160" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/daniel-augusto-m%C3%A9ndez-pedraza-928445363/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/dis_mec" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20ingenier%C3%ADa." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-  <button class="back-to-top" id="backToTop" aria-label="Volver arriba"><i class="fas fa-chevron-up"></i></button>
-
-  <div class="modal-overlay" id="serviceModal">
-    <div class="modal">
-      <div class="modal-header"><img id="modalImg" src="" alt=""><button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button></div>
-      <div class="modal-body">
-        <div class="modal-tag" id="modalTag"></div>
-        <h2 id="modalTitle"></h2>
-        <p class="modal-desc" id="modalDesc"></p>
-        <div class="modal-features" id="modalFeatures"></div>
-        <div class="modal-norms" id="modalNormsWrap" style="display:none;"><h4>Normativas Aplicables</h4><div class="norms-list" id="modalNorms"></div></div>
-        <div class="modal-tools" id="modalToolsWrap"><h4>Herramientas y Software</h4><div class="tools-list" id="modalTools"></div></div>
-        <div class="modal-cta">
-          <a href="#contacto" class="btn btn-primary" onclick="closeModal()"><i class="fas fa-paper-plane"></i> Solicitar Cotización</a>
-          <a href="https://wa.me/573156637925" target="_blank" rel="noopener" class="btn btn-outline" id="modalWhatsApp" style="border-color:var(--border);color:var(--text);"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const services = [
-      {
-        title: "Planos de Maquinaria y Equipos", tag: "Ingeniería Mecánica", icon: "fas fa-cogs",
-        img: "assets/diseno-maquinaria-planos.webp",
-        short: "Diseño de planos 2D y 3D para maquinaria y equipos industriales con memoria de cálculo.",
-        desc: "Desarrollamos documentación técnica completa para la fabricación y montaje de maquinaria industrial. Desde el concepto inicial hasta los planos de detalle, incluyendo despieces, listas de materiales (BOM), tolerancias y memorias de cálculo. Nuestros planos cumplen con estándares ASME e ISO.",
-        features: ["Planos de fabricación 2D (AutoCAD)", "Modelado 3D paramétrico", "Memoria de cálculo estructural y mecánico", "Despieces y listas de materiales (BOM)", "Planos de montaje y ensamblaje", "Revisión de normativa ASME / ISO"],
-        tools: ["AutoCAD", "SolidWorks", "Inventor", "Autodesk Vault"], norms: []
-      },
-      {
-        title: "Diseño de Recipientes a Presión", tag: "Ingeniería de Presión · ASME", icon: "fas fa-flask-vial",
-        img: "assets/recipiente.webp",
-        short: "Diseño, cálculo y documentación de recipientes a presión conforme a ASME BPVC Sección VIII y normativas complementarias.",
-        desc: "Realizamos el diseño integral de recipientes a presión para la industria petrolera, petroquímica, farmacéutica, alimentaria y de generación de energía. Nuestro alcance abarca desde la definición de condiciones de diseño hasta la producción de planos de fabricación, memorias de cálculo detalladas y hojas de datos. Trabajamos bajo ASME BPVC Sección VIII División 1 y 2, integrando normativas complementarias. Cada diseño incluye verificación de espesores de carcasa, tapas, boquillas con refuerzo, silletas o faldones, anillos rigidizadores, análisis de MDMT y cálculo de MAWP. Entregamos un Data Book completo listo para inspección y certificación.",
-        features: ["Cálculo de espesores de carcasa y tapas (ASME VIII Div. 1 y 2)", "Diseño de boquillas con refuerzo por área de reemplazo", "Análisis de silletas (Zick) y faldones para recipientes verticales", "Cálculo de MDMT y curvas de exención de impacto", "Determinación de MAWP en condición nueva y corroída", "Diseño de anillos rigidizadores para vacío y presión externa", "Análisis de cargas en boquillas (WRC 107 / WRC 537)", "Selección de materiales según ASME II Parte D", "Planos de fabricación y detalle de soldadura (WPS/PQR)", "Data Book completo para certificación e inspección"],
-        tools: ["Compress (Codeware)", "PV Elite", "SolidWorks", "AutoCAD", "Inventor", "Excel (hojas de cálculo ASME)", "ANSYS Mechanical"],
-        norms: ["ASME BPVC Sección VIII Div. 1", "ASME BPVC Sección VIII Div. 2", "ASME BPVC Sección II Parte D", "ASME B16.5 (Bridas)", "ASME B16.9 (Accesorios)", "ASME B31.3 (Tuberías de proceso)", "API 510 (Inspección en servicio)", "API 572 (Inspección de recipientes)", "API 650 (Tanques atmosféricos)", "TEMA (Intercambiadores de calor)", "WRC 107 / WRC 537 (Cargas en boquillas)", "AWS D1.1 (Soldadura estructural)", "NTC / Resolución 181495 (Colombia)"]
-      },
-      {
-        title: "Paneles Solares Fotovoltaicos", tag: "Energía Renovable · Solar", icon: "fas fa-solar-panel",
-        img: "assets/solar1.webp",
-        short: "Diseño de sistemas solares fotovoltaicos On-Grid y Off-Grid conforme a la Ley 1715 de 2014, Ley 2099 de 2021 y RETIE.",
-        desc: "Diseñamos sistemas de generación solar fotovoltaica para proyectos residenciales, comerciales e industriales en Colombia. Nuestro servicio abarca el dimensionamiento completo del sistema (paneles, inversores, estructuras de montaje, protecciones y cableado), los planos eléctricos de conexión, memorias de cálculo, análisis de sombreado, simulación de producción energética y la documentación técnica necesaria para la conexión a la red ante el operador (trámite de autogeneración). Trabajamos bajo el marco de la Ley 1715 de 2014 (Regulación de energías renovables no convencionales), actualizada por la Ley 2099 de 2021 (que amplía incentivos tributarios y promueve la transición energética), y el Reglamento Técnico de Instalaciones Eléctricas (RETIE), que garantiza la seguridad técnica de la instalación. Todos nuestros diseños cumplen con las normas NTC 2050 (Código Eléctrico Colombiano), NTC 5899 (Sistemas fotovoltaicos) y las resoluciones CREG aplicables para autogeneración a pequeña escala y generación distribuida. Garantizamos que cada proyecto cuente con certificación de producto de los equipos seleccionados y cumpla con los estándares internacionales IEC 61215 (módulos) e IEC 61730 (seguridad).",
-        features: ["Dimensionamiento de sistemas On-Grid y Off-Grid", "Selección de paneles, inversores y optimizadores", "Diseño de estructuras de montaje (techo y suelo)", "Planos eléctricos unifilares y de conexión", "Análisis de sombreado y orientación óptima", "Simulación de producción energética anual (kWh)", "Memoria de cálculo de protecciones y cableado", "Documentación para trámite de autogeneración ante operador de red", "Análisis de retorno de inversión y beneficios tributarios (Ley 1715)", "Coordinación con instaladores y supervisión técnica"],
-        tools: ["PVsyst", "Helioscope", "AutoCAD Electrical", "SketchUp", "Google Earth Pro", "Homer Energy", "Excel (dimensionamiento)", "Dialux"],
-        norms: ["Ley 1715 de 2014 (Energías renovables no convencionales)", "Ley 2099 de 2021 (Transición energética)", "RETIE (Reglamento Técnico de Instalaciones Eléctricas)", "NTC 2050 (Código Eléctrico Colombiano)", "NTC 5899 (Sistemas fotovoltaicos)", "Resolución CREG 030 de 2018 (Autogeneración)", "Resolución CREG 174 de 2021 (Generación distribuida)", "IEC 61215 (Módulos fotovoltaicos – Diseño)", "IEC 61730 (Módulos fotovoltaicos – Seguridad)", "IEC 62109 (Seguridad de inversores)", "NTC 4405 (Eficiencia energética)", "Decreto 2469 de 2014 (Incentivos tributarios)"]
-      },
-      {
-        title: "Sistemas HVAC", tag: "Climatización", icon: "fas fa-wind", img: "assets/hvac.webp",
-        short: "Sistemas de aire acondicionado, ventilación y calefacción con eficiencia energética.",
-        desc: "Diseñamos sistemas completos de climatización para edificaciones comerciales, hospitalarias e industriales. Realizamos cálculos de carga térmica, selección de equipos, diseño de ductos y tuberías, coordinación BIM con otras disciplinas y especificaciones técnicas.",
-        features: ["Cálculo de cargas térmicas", "Diseño de ductería y tuberías", "Selección de equipos y especificaciones", "Coordinación BIM multidisciplinaria", "Eficiencia energética y sostenibilidad", "Cumplimiento normativo ASHRAE"],
-        tools: ["Revit MEP", "AutoCAD MEP", "HAP (Carrier)", "Navisworks"], norms: []
-      },
-      {
-        title: "Tuberías e Instrumentación (P&ID)", tag: "Procesos Industriales", icon: "fas fa-project-diagram", img: "assets/pid.webp",
-        short: "Diagramas P&ID, isométricos y layout de plantas con especificaciones completas.",
-        desc: "Creamos diagramas de tuberías e instrumentación (P&ID) para plantas industriales, refinerías, plantas de tratamiento y proyectos de proceso. Incluimos isométricos de tubería, layouts de planta, especificaciones de materiales, listas de líneas y hojas de datos de equipos.",
-        features: ["Diagramas P&ID según ISA S5.1", "Isométricos de tubería", "Layout de equipos y plantas", "Listas de líneas y materiales", "Hojas de datos de equipos", "Normas ASME B31 y API"],
-        tools: ["AutoCAD P&ID", "SmartPlant", "SolidWorks Routing", "Excel"], norms: []
-      },
-      {
-        title: "Diseño Energético", tag: "Energía y Potencia", icon: "fas fa-bolt", img: "assets/energy.webp",
-        short: "Planos de generación, transmisión y distribución eléctrica, subestaciones y control.",
-        desc: "Diseñamos sistemas eléctricos de potencia para proyectos industriales y comerciales, incluyendo subestaciones, transformadores, tableros de distribución, sistemas de control y protección.",
-        features: ["Diseño de subestaciones eléctricas", "Coordinación de protecciones", "Estudios de cortocircuito", "Tableros y centros de control de motores", "Diagramas unifilares y trifilares", "Cumplimiento RETIE y NEC"],
-        tools: ["ETAP", "AutoCAD Electrical", "Dialux", "SKM PowerTools"], norms: []
-      },
-      {
-        title: "Estructuras Metálicas", tag: "Ingeniería Estructural", icon: "fas fa-warehouse", img: "assets/structures.webp",
-        short: "Modelado, diseño y detallado de estructuras de acero para proyectos industriales.",
-        desc: "Desarrollamos el diseño completo de estructuras metálicas: desde el modelado 3D hasta los planos de fabricación y montaje. Realizamos análisis estructural, diseño de conexiones, planos de taller con despieces y listas de corte.",
-        features: ["Modelado 3D de estructuras", "Análisis y diseño estructural", "Planos de taller y detallado", "Diseño de conexiones soldadas y apernadas", "Listas de corte y materiales", "Normas NSR-10, AISC, AWS"],
-        tools: ["Tekla Structures", "SAP2000", "ETABS", "AutoCAD", "IDEA StatiCa"], norms: []
-      },
-      {
-        title: "Diseños Eléctricos", tag: "Ingeniería Eléctrica", icon: "fas fa-plug", img: "assets/design_electrico.webp",
-        short: "Instalaciones eléctricas industriales: tableros, subestaciones y sistemas de potencia.",
-        desc: "Planificamos y diseñamos instalaciones eléctricas para edificaciones e industrias. Incluimos diagramas unifilares, cuadros de carga, diseño de iluminación, rutas de cables, puestas a tierra y sistemas de protección contra rayos.",
-        features: ["Diagramas unifilares y cuadros de carga", "Diseño de iluminación interior y exterior", "Sistemas de puesta a tierra", "Protección contra rayos (SIPRA)", "Rutas de cables y canalizaciones", "Cumplimiento RETIE y NTC"],
-        tools: ["AutoCAD Electrical", "Dialux", "ETAP", "Revit MEP"], norms: []
-      },
-      {
-        title: "Simulaciones CFD", tag: "Simulación Avanzada", icon: "fas fa-atom", img: "assets/simulaciones_cfd.webp",
-        short: "Modelado y simulación de fluidos y transferencia de calor para optimizar diseños.",
-        desc: "Realizamos simulaciones computacionales de dinámica de fluidos (CFD) y análisis térmico para optimizar el rendimiento de productos, sistemas de ventilación, equipos de proceso y componentes mecánicos.",
-        features: ["Simulación de flujos internos y externos", "Análisis de transferencia de calor", "Optimización de diseño mediante CFD", "Validación de sistemas de ventilación", "Análisis de esfuerzos térmicos", "Reportes técnicos con visualización 3D"],
-        tools: ["ANSYS Fluent", "ANSYS CFX", "SolidWorks Flow Simulation", "OpenFOAM"], norms: []
-      },
-      {
-        title: "Diseño Hidrosanitario y Gas", tag: "Ingeniería Hidráulica", icon: "fas fa-faucet-drip", img: "assets/hidraulico_sanitario_gas.webp",
-        short: "Redes hidráulicas, sanitarias y de gas para edificaciones e instalaciones industriales.",
-        desc: "Diseñamos redes completas de agua potable, aguas residuales, aguas lluvias y gas natural para edificaciones residenciales, comerciales e industriales.",
-        features: ["Red de agua potable y distribución", "Sistema de aguas residuales y lluvias", "Red de gas natural domiciliario", "Dimensionamiento hidráulico completo", "Memorias de cálculo normativas", "Planos de instalación detallados"],
-        tools: ["AutoCAD", "EPANET", "Revit MEP", "HEC-RAS"], norms: []
-      },
-      {
-        title: "Estructuras de Concreto Reforzado", tag: "Ingeniería Civil", icon: "fas fa-building", img: "assets/estructural_concreto.webp",
-        short: "Cálculo y diseño de vigas, columnas, losas y cimentaciones en concreto reforzado.",
-        desc: "Desarrollamos el diseño estructural completo en concreto reforzado para edificaciones y obras industriales. Realizamos modelado estructural, análisis sísmico, diseño de elementos y producción de planos estructurales de detalle.",
-        features: ["Modelado y análisis estructural", "Diseño sismorresistente NSR-10", "Diseño de cimentaciones", "Planos de detalle con despieces", "Memoria de cálculo completa", "Cumplimiento ACI 318"],
-        tools: ["ETABS", "SAP2000", "SAFE", "AutoCAD", "Revit Structure"], norms: []
-      },
-      {
-        title: "Estructuras de Contención", tag: "Geotecnia", icon: "fas fa-mountain", img: "assets/contencion.webp",
-        short: "Muros de contención, taludes y obras de estabilización con estudios geotécnicos.",
-        desc: "Analizamos y diseñamos estructuras de contención para estabilización de taludes y excavaciones. Incluimos muros en voladizo, muros de gravedad, tierra armada, pantallas ancladas y sistemas de drenaje.",
-        features: ["Muros de contención en voladizo", "Análisis de estabilidad de taludes", "Tierra armada y muros anclados", "Sistemas de subdrenaje", "Integración de estudios geotécnicos", "Cumplimiento NSR-10 Título H"],
-        tools: ["GEO5", "SLOPE/W", "PLAXIS", "AutoCAD", "Excel"], norms: []
-      },
-      {
-        title: "Obras de Arte e Infraestructura", tag: "Infraestructura Vial", icon: "fas fa-road", img: "assets/obras_arte.webp",
-        short: "Alcantarillas, box culverts, puentes menores y estructuras hidráulicas especiales.",
-        desc: "Diseñamos obras de arte menores y mayores para proyectos de infraestructura vial y drenaje. Incluimos alcantarillas de cajón, circulares y de arco, box culverts, cabezales, aletones, disipadores de energía y puentes menores.",
-        features: ["Diseño de alcantarillas y box culverts", "Puentes menores y pontones", "Cabezales, aletones y disipadores", "Análisis hidrológico e hidráulico", "Planos constructivos detallados", "Especificaciones técnicas para licitación"],
-        tools: ["HEC-HMS", "HEC-RAS", "AutoCAD Civil 3D", "SAP2000"], norms: []
-      },
-      {
-        title: "Reconocimientos de Vivienda", tag: "Legalización", icon: "fas fa-house-circle-check", img: "assets/reconocimiento.webp",
-        short: "Evaluación técnica de viviendas para certificación, legalización y diagnóstico.",
-        desc: "Realizamos reconocimientos técnicos de viviendas y edificaciones existentes conforme al Decreto 1077 de 2015 y normativa municipal. Evaluamos el estado estructural, arquitectónico y de cumplimiento normativo para procesos de legalización ante curadurías urbanas.",
-        features: ["Inspección técnica de vivienda", "Verificación de cumplimiento normativo", "Informe para legalización ante curaduría", "Evaluación estructural y arquitectónica", "Registro fotográfico detallado", "Concepto de ingeniero civil matriculado"],
-        tools: ["Equipos de medición", "AutoCAD", "Office", "Registro fotográfico"], norms: []
-      },
-      {
-        title: "Patologías Estructurales", tag: "Diagnóstico", icon: "fas fa-magnifying-glass", img: "assets/patologias.webp",
-        short: "Diagnóstico de daños en estructuras, identificación de causas y propuestas de reparación.",
-        desc: "Diagnosticamos patologías en estructuras de concreto, acero y mampostería. Identificamos las causas de fisuras, asentamientos, corrosión, humedades y otros daños, y proponemos soluciones de reparación, refuerzo o rehabilitación.",
-        features: ["Inspección y diagnóstico de daños", "Identificación de causas raíz", "Ensayos no destructivos", "Propuestas de reparación y refuerzo", "Informes técnicos con fotografías", "Seguimiento post-intervención"],
-        tools: ["Esclerómetro", "Ultrasonido", "Pachómetro", "AutoCAD", "Excel"], norms: []
-      },
-      {
-        title: "Vulnerabilidad Sísmica", tag: "Sismorresistencia", icon: "fas fa-house-crack", img: "assets/vulnerabilidad.webp",
-        short: "Evaluación de vulnerabilidad sísmica para cumplimiento de normativas sismorresistentes.",
-        desc: "Evaluamos la vulnerabilidad sísmica de estructuras nuevas y existentes conforme a la NSR-10 y la Ley 400 de 1997. Realizamos modelado estructural, análisis dinámico, evaluación de la capacidad de la estructura frente a demandas sísmicas y formulación de un plan de reforzamiento.",
-        features: ["Modelado y análisis dinámico", "Evaluación de capacidad vs demanda", "Calificación de vulnerabilidad NSR-10", "Plan de reforzamiento estructural", "Informe técnico normativo", "Cumplimiento Ley 400/1997"],
-        tools: ["ETABS", "SAP2000", "AutoCAD", "Excel", "SAFE"], norms: []
-      }
-    ];
-
-    const WHATSAPP_NUMBER = '573156637925';
-    const quoteLabels = {
-      "Planos de Maquinaria y Equipos": "Cotizar maquinaria",
-      "Diseño de Recipientes a Presión": "Cotizar recipientes ASME",
-      "Paneles Solares Fotovoltaicos": "Cotizar energía solar",
-      "Sistemas HVAC": "Cotizar HVAC",
-      "Tuberías e Instrumentación (P&ID)": "Cotizar P&ID",
-      "Diseño Energético": "Cotizar diseño energético",
-      "Estructuras Metálicas": "Cotizar estructura metálica",
-      "Diseños Eléctricos": "Cotizar diseño eléctrico",
-      "Simulaciones CFD": "Cotizar simulación CFD",
-      "Diseño Hidrosanitario y Gas": "Cotizar hidrosanitario",
-      "Estructuras de Concreto Reforzado": "Cotizar concreto reforzado",
-      "Estructuras de Contención": "Cotizar contención",
-      "Obras de Arte e Infraestructura": "Cotizar infraestructura",
-      "Reconocimientos de Vivienda": "Cotizar reconocimiento",
-      "Patologías Estructurales": "Cotizar diagnóstico estructural",
-      "Vulnerabilidad Sísmica": "Cotizar vulnerabilidad sísmica"
-    };
-    function getQuoteLabel(service) { return quoteLabels[service.title] || 'Cotizar servicio'; }
-    function getWhatsAppUrl(service) {
-      const message = `Hola DISMEK, vi en dismek.co el servicio de ${service.title} y quiero cotizarlo. Mi proyecto es: `;
-      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    }
-
-    const grid = document.getElementById('serviciosGrid');
-    services.forEach((s, i) => {
-      grid.innerHTML += `<article class="service-card reveal" onclick="openServiceModal(${i})"><div class="service-card-img"><img src="${s.img}" alt="${s.title}" loading="lazy"><div class="service-icon"><i class="${s.icon}"></i></div></div><div class="service-card-body"><h3>${s.title}</h3><p>${s.short}</p><div class="service-card-actions"><span class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></span><a class="service-whatsapp-link" href="${getWhatsAppUrl(s)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="${getQuoteLabel(s)} por WhatsApp"><i class="fab fa-whatsapp"></i> ${getQuoteLabel(s)}</a></div></div></article>`;
-    });
-
-    const modalOverlay = document.getElementById('serviceModal');
-    function openServiceModal(i) {
-      const s = services[i];
-      document.getElementById('modalImg').src = s.img;
-      document.getElementById('modalImg').alt = s.title;
-      document.getElementById('modalTag').innerHTML = `<i class="${s.icon}"></i> ${s.tag}`;
-      document.getElementById('modalTitle').textContent = s.title;
-      document.getElementById('modalDesc').textContent = s.desc;
-      document.getElementById('modalFeatures').innerHTML = s.features.map(f => `<div class="modal-feature"><i class="fas fa-check-circle"></i><span>${f}</span></div>`).join('');
-      document.getElementById('modalTools').innerHTML = s.tools.map(t => `<span class="tool-badge">${t}</span>`).join('');
-      const modalWhatsApp = document.getElementById('modalWhatsApp');
-      modalWhatsApp.href = getWhatsAppUrl(s);
-      modalWhatsApp.innerHTML = `<i class="fab fa-whatsapp"></i> ${getQuoteLabel(s)}`;
-      const normsWrap = document.getElementById('modalNormsWrap');
-      if (s.norms && s.norms.length > 0) { normsWrap.style.display = 'block'; document.getElementById('modalNorms').innerHTML = s.norms.map(n => `<span class="norm-badge">${n}</span>`).join(''); } else { normsWrap.style.display = 'none'; }
-      modalOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeModal() { modalOverlay.classList.remove('active'); document.body.style.overflow = ''; }
-    document.getElementById('modalClose').addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-    const hidePreloader = () => document.getElementById('preloader').classList.add('hidden');
-    setTimeout(hidePreloader, 500);
-    window.addEventListener('load', hidePreloader);
-
-    const heroVideo = document.querySelector('.hero-video');
-    function loadHeroVideo() {
-      const source = heroVideo && heroVideo.querySelector('source[data-src]');
-      if (!source) return;
-      source.src = source.dataset.src;
-      source.removeAttribute('data-src');
-      heroVideo.load();
-      heroVideo.play().catch(() => {});
-    }
-    if (document.readyState === 'complete') { loadHeroVideo(); }
-    else { window.addEventListener('load', () => setTimeout(loadHeroVideo, 200)); }
-
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
-
-    function scrollToBrochure(event) {
-      if (event) event.preventDefault();
-      const target = document.getElementById('brochure');
-      if (!target) return;
-      const offset = (header ? header.offsetHeight : 72) + 18;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      if (location.hash !== '#brochure') history.pushState(null, '', '#brochure');
-      window.scrollTo({ top, behavior: event ? 'smooth' : 'auto' });
-    }
-    document.querySelectorAll('a[href="#brochure"]').forEach((link) => link.addEventListener('click', scrollToBrochure));
-    window.addEventListener('load', () => {
-      if (location.hash === '#brochure') setTimeout(() => scrollToBrochure(), 120);
-    });
-
-    const toggle = document.querySelector('.menu-toggle');
-    const navMenu = document.getElementById('navMenu');
-    const mobileClose = document.getElementById('mobileClose');
-    toggle.addEventListener('click', () => { navMenu.classList.add('show'); mobileClose.style.display = 'block'; });
-    mobileClose.addEventListener('click', () => { navMenu.classList.remove('show'); mobileClose.style.display = 'none'; });
-    document.querySelectorAll('[data-nav]').forEach(a => { a.addEventListener('click', () => { navMenu.classList.remove('show'); mobileClose.style.display = 'none'; }); });
-
-    const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => { const y = window.scrollY + 100; sections.forEach(sec => { const top = sec.offsetTop; const h = sec.offsetHeight; const id = sec.getAttribute('id'); const link = document.querySelector(`nav a[href="#${id}"]`); if (link) link.classList.toggle('active', y >= top && y < top + h); }); });
-
-    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-    const revealObs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }}); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-    revealEls.forEach(el => revealObs.observe(el));
-
-    const counters = document.querySelectorAll('[data-count]');
-    const counterObs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { const el = e.target; const target = parseInt(el.dataset.count); const suffix = el.dataset.suffix || ''; let current = 0; const step = Math.max(1, Math.floor(target / 40)); const timer = setInterval(() => { current += step; if (current >= target) { current = target; clearInterval(timer); } el.textContent = current + suffix; }, 30); counterObs.unobserve(el); } }); }, { threshold: 0.5 });
-    counters.forEach(c => counterObs.observe(c));
-
-    document.querySelectorAll('.faq-question').forEach(btn => { btn.addEventListener('click', () => { const item = btn.parentElement; const wasActive = item.classList.contains('active'); document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active')); if (!wasActive) item.classList.add('active'); }); });
-
-    const btt = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 500));
-    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-    const canvas = document.getElementById('particles');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-    function resizeCanvas() { canvas.width = canvas.parentElement.offsetWidth; canvas.height = canvas.parentElement.offsetHeight; }
-    resizeCanvas(); window.addEventListener('resize', resizeCanvas);
-    for (let i = 0; i < 50; i++) { particles.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4, r: Math.random() * 2 + 0.5, a: Math.random() * 0.3 + 0.1 }); }
-    function drawParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => { p.x += p.vx; p.y += p.vy; if (p.x < 0 || p.x > canvas.width) p.vx *= -1; if (p.y < 0 || p.y > canvas.height) p.vy *= -1; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(249,115,22,${p.a})`; ctx.fill(); });
-      for (let i = 0; i < particles.length; i++) { for (let j = i + 1; j < particles.length; j++) { const dx = particles[i].x - particles[j].x; const dy = particles[i].y - particles[j].y; const dist = Math.sqrt(dx * dx + dy * dy); if (dist < 120) { ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y); ctx.strokeStyle = `rgba(249,115,22,${0.08 * (1 - dist / 120)})`; ctx.lineWidth = 0.5; ctx.stroke(); } } }
-      requestAnimationFrame(drawParticles);
-    }
-    drawParticles();
-
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      const btn = this.querySelector('button[type="submit"]');
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-      btn.disabled = true;
-    });
-  </script>
-</body>
-</html>
+    </footer>
+    <a class="whatsapp-float" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20quiero%20cotizar%20un%20proyecto%20de%20ingenier%C3%ADa." target="_blank" rel="noopener" aria-label="WA: Cotizar por WhatsApp" data-track="whatsapp_float">WA</a>
+    <script src="assets/dismek-site.js" defer></script></body></html>
