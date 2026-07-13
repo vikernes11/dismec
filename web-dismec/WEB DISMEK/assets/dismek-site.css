@@ -507,8 +507,8 @@ input:focus, textarea:focus, select:focus { outline: 3px solid rgba(47,95,126,0.
 .home-v3 * { box-sizing:border-box; }
 .home-v3 .container { width:min(1320px,calc(100% - 48px)); }
 .home-v3 main [id] { scroll-margin-top:84px; }
-.home-v3 h1,.home-v3 h2,.home-v3 h3 { letter-spacing:-.035em; }
-.home-v3 h2 { font-size:clamp(2.25rem,4.2vw,4.65rem); line-height:1.02; }
+.home-v3 main h1,.home-v3 main h2,.home-v3 main h3 { letter-spacing:-.035em; }
+.home-v3 main h2 { font-size:clamp(2.25rem,4.2vw,4.65rem); line-height:1.02; }
 .home-v3 .accent { color:var(--p-orange); }
 .premium-hero .accent,.premium-about .accent,.premium-brochure .accent,.premium-projects .accent,.premium-method .accent { color:var(--p-orange-bright); }
 .premium-about .premium-section-label,.premium-brochure .premium-section-label,.premium-projects .premium-section-label,.premium-method .premium-section-label { color:var(--p-orange-bright); }
