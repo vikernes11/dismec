@@ -1,0 +1,2231 @@
+{
+  "version": 1,
+  "assistant": {
+    "name": "Vikers",
+    "mode": "faq",
+    "disclaimer": "Vikers busca únicamente en preguntas frecuentes y contenido publicado por DISMEK. Sus respuestas son predefinidas y no sustituyen una revisión técnica."
+  },
+  "services": [
+    {
+      "slug": "recipientes-presion-asme",
+      "title": "Diseño de recipientes a presión ASME",
+      "summary": "Desarrollamos ingeniería para recipientes a presión con enfoque en cálculo trazable, planos de fabricación y documentación técnica para revisión, construcción o actualización.",
+      "url": "/servicios/recipientes-presion-asme.html",
+      "keywords": [
+        "Recipientes ASME",
+        "Diseño de recipientes a presión ASME",
+        "Ingeniería mecánica",
+        "recipientes",
+        "tanques",
+        "vasijas",
+        "presión",
+        "ASME",
+        "MAWP",
+        "MDMT",
+        "boquillas",
+        "Industrial",
+        "Energético",
+        "Manufactura",
+        "Oil & gas",
+        "Servicios técnicos",
+        "AutoCAD",
+        "SolidWorks o Inventor",
+        "Herramientas de cálculo verificables",
+        "PV Elite/Compress si aplica al alcance"
+      ],
+      "scope": [
+        "Revisión de datos de proceso, condiciones de operación y restricciones de fabricación.",
+        "Cálculos de componentes, conexiones, boquillas, soportes y condiciones críticas del recipiente.",
+        "Coordinación de planos generales, detalles, listas de materiales y notas técnicas."
+      ],
+      "deliverables": [
+        "Memoria de cálculo editable.",
+        "Planos de fabricación y detalles constructivos.",
+        "Listado de materiales, boquillas, conexiones y notas de inspección.",
+        "Resumen de criterios, supuestos y pendientes de confirmación."
+      ],
+      "standards": [
+        "ASME BPVC Sección VIII cuando el alcance lo requiera.",
+        "Criterios de soldadura, inspección y materiales definidos por el proyecto.",
+        "Normas complementarias del cliente o autoridad revisora."
+      ],
+      "software": [
+        "AutoCAD",
+        "SolidWorks o Inventor",
+        "Herramientas de cálculo verificables",
+        "PV Elite/Compress si aplica al alcance"
+      ]
+    },
+    {
+      "slug": "energia-solar-fotovoltaica",
+      "title": "Diseño de sistemas solares fotovoltaicos",
+      "summary": "Preparamos diseños solares fotovoltaicos orientados a entregables técnicos claros para revisión, cotización, montaje o coordinación con operadores y contratistas.",
+      "url": "/servicios/energia-solar-fotovoltaica.html",
+      "keywords": [
+        "Solar fotovoltaica",
+        "Diseño de sistemas solares fotovoltaicos",
+        "Energía",
+        "solar",
+        "fotovoltaica",
+        "paneles solares",
+        "inversores",
+        "generación distribuida",
+        "Comercial",
+        "Industrial",
+        "Hospitalario",
+        "Residencial técnico",
+        "Institucional",
+        "AutoCAD",
+        "PVsyst o HelioScope si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación eléctrica"
+      ],
+      "scope": [
+        "Análisis de demanda, condiciones de instalación, orientación y restricciones del sitio.",
+        "Dimensionamiento de arreglo, inversores, protecciones, canalizaciones y puesta a tierra.",
+        "Planos unifilares, rutas, cuadro de cargas y memoria de cálculo."
+      ],
+      "deliverables": [
+        "Memoria de dimensionamiento.",
+        "Planos eléctricos y diagramas unifilares.",
+        "Especificaciones de equipos y protecciones.",
+        "Lista de pendientes para datos de cubierta, consumo y operador."
+      ],
+      "standards": [
+        "RETIE cuando aplique",
+        "NTC 2050 cuando aplique",
+        "Requisitos del operador de red",
+        "Criterios del fabricante de equipos"
+      ],
+      "software": [
+        "AutoCAD",
+        "PVsyst o HelioScope si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación eléctrica"
+      ]
+    },
+    {
+      "slug": "sistemas-hvac-y-mep",
+      "title": "Diseño HVAC y coordinación MEP",
+      "summary": "Integramos criterios mecánicos, eléctricos, hidráulicos y arquitectónicos para documentar sistemas HVAC y MEP con claridad constructiva.",
+      "url": "/servicios/sistemas-hvac-y-mep.html",
+      "keywords": [
+        "HVAC y MEP",
+        "Diseño HVAC y coordinación MEP",
+        "MEP",
+        "HVAC",
+        "climatización",
+        "aire acondicionado",
+        "ventilación",
+        "refrigeración",
+        "Hospitalario",
+        "Comercial",
+        "Industrial",
+        "Construcción",
+        "Institucional",
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Herramientas de carga térmica",
+        "Navisworks o coordinación 3D si aplica"
+      ],
+      "scope": [
+        "Levantamiento de requerimientos térmicos, ventilación, ocupación y condiciones de frontera.",
+        "Cálculo preliminar o detallado de cargas, selección de equipos y trazado de redes.",
+        "Coordinación MEP con planos, cortes, detalles y revisión de interferencias."
+      ],
+      "deliverables": [
+        "Memoria de cálculo y criterios de diseño.",
+        "Planos de ductos, tuberías, equipos y detalles.",
+        "Listas de equipos y cantidades referenciales.",
+        "Matriz de coordinación y pendientes técnicos."
+      ],
+      "standards": [
+        "ASHRAE segun alcance",
+        "RITE o criterios locales si aplican",
+        "Requisitos hospitalarios del proyecto",
+        "Normas del cliente o interventoría"
+      ],
+      "software": [
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Herramientas de carga térmica",
+        "Navisworks o coordinación 3D si aplica"
+      ]
+    },
+    {
+      "slug": "diseno-electrico-y-energia",
+      "title": "Diseño eléctrico industrial y de energía",
+      "summary": "Desarrollamos documentación eléctrica para instalaciones industriales, comerciales e institucionales, priorizando seguridad, trazabilidad y coordinación.",
+      "url": "/servicios/diseno-electrico-y-energia.html",
+      "keywords": [
+        "Diseño eléctrico",
+        "Diseño eléctrico industrial y de energía",
+        "Ingeniería eléctrica",
+        "eléctrico",
+        "energía",
+        "RETIE",
+        "NTC 2050",
+        "iluminación",
+        "puesta a tierra",
+        "Industrial",
+        "Hospitalario",
+        "Comercial",
+        "Construcción",
+        "Energético",
+        "AutoCAD",
+        "Dialux si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación eléctrica"
+      ],
+      "scope": [
+        "Levantamiento de cargas y criterios de alimentación, protección y distribución.",
+        "Diseño de tableros, circuitos, iluminación, puesta a tierra y canalizaciones.",
+        "Revisión de criterios de seguridad eléctrica y coordinación con otras disciplinas."
+      ],
+      "deliverables": [
+        "Planos eléctricos y diagramas unifilares.",
+        "Cuadros de carga y memorias de cálculo.",
+        "Especificaciones de protecciones, conductores y tableros.",
+        "Lista de pendientes para datos de red, operador y equipos."
+      ],
+      "standards": [
+        "RETIE cuando aplique",
+        "NTC 2050 cuando aplique",
+        "IEC/NEC si el proyecto lo exige",
+        "Requisitos del operador de red"
+      ],
+      "software": [
+        "AutoCAD",
+        "Dialux si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación eléctrica"
+      ]
+    },
+    {
+      "slug": "estructuras-metalicas-y-diseno-estructural",
+      "title": "Diseño de estructuras metálicas y estructurales",
+      "summary": "Apoyamos diseños estructurales con análisis, modelado, planos y memorias orientadas a fabricación, montaje, revisión o coordinación técnica.",
+      "url": "/servicios/estructuras-metalicas-y-diseno-estructural.html",
+      "keywords": [
+        "Estructuras metálicas",
+        "Diseño de estructuras metálicas y estructurales",
+        "Ingeniería civil",
+        "acero",
+        "diseño estructural",
+        "NSR-10",
+        "Construcción",
+        "Industrial",
+        "Manufactura",
+        "Energético",
+        "Institucional",
+        "SAP2000 o ETABS si aplica",
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables"
+      ],
+      "scope": [
+        "Revisión de cargas, geometría, uso, restricciones y criterios estructurales.",
+        "Modelado, análisis y predimensionamiento o diseño detallado según alcance.",
+        "Planos de conjunto, detalles, conexiones y documentación de soporte."
+      ],
+      "deliverables": [
+        "Memoria de cálculo estructural.",
+        "Planos de taller, montaje o coordinación.",
+        "Detalles de conexiones y listado de elementos.",
+        "Registro de supuestos y datos pendientes."
+      ],
+      "standards": [
+        "NSR-10 cuando aplique",
+        "AISC si el proyecto lo requiere",
+        "Criterios del cliente o interventoría",
+        "Normas complementarias segun uso"
+      ],
+      "software": [
+        "SAP2000 o ETABS si aplica",
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables"
+      ]
+    },
+    {
+      "slug": "diseno-mecanico-industrial",
+      "title": "Diseño mecánico industrial",
+      "summary": "Convertimos requerimientos de operación, fabricación y mantenimiento en modelos, planos y documentos técnicos para equipos y componentes industriales.",
+      "url": "/servicios/diseno-mecanico-industrial.html",
+      "keywords": [
+        "Diseño mecánico",
+        "Diseño mecánico industrial",
+        "Ingeniería mecánica",
+        "maquinaria",
+        "equipos industriales",
+        "CAD",
+        "Manufactura",
+        "Industrial",
+        "Energético",
+        "Construcción",
+        "Servicios técnicos",
+        "SolidWorks",
+        "Inventor",
+        "AutoCAD",
+        "Herramientas de cálculo verificables"
+      ],
+      "scope": [
+        "Definición de requerimientos, cargas, materiales, restricciones y condiciones de uso.",
+        "Modelado 3D, análisis básico o detallado y generación de planos.",
+        "Revisión de fabricabilidad, montaje y mantenimiento."
+      ],
+      "deliverables": [
+        "Modelo 3D",
+        "Planos de fabricación",
+        "Lista de materiales",
+        "Memoria o nota técnica de diseño",
+        "Archivos editables segun alcance"
+      ],
+      "standards": [
+        "Criterios de diseño mecánico definidos por el proyecto",
+        "Normas de dibujo técnico aplicables",
+        "Requisitos de fabricación del cliente"
+      ],
+      "software": [
+        "SolidWorks",
+        "Inventor",
+        "AutoCAD",
+        "Herramientas de cálculo verificables"
+      ]
+    },
+    {
+      "slug": "planos-de-fabricacion-maquinaria",
+      "title": "Planos de fabricación para maquinaria",
+      "summary": "Preparamos documentación gráfica para fabricación, ensamble, montaje y revisión de maquinaria o componentes industriales.",
+      "url": "/servicios/planos-de-fabricacion-maquinaria.html",
+      "keywords": [
+        "Planos de fabricación",
+        "Planos de fabricación para maquinaria",
+        "Documentación técnica",
+        "planos de taller",
+        "despiece",
+        "maquinaria",
+        "Manufactura",
+        "Metalmecánica",
+        "Industrial",
+        "Mantenimiento",
+        "Prototipado",
+        "AutoCAD",
+        "SolidWorks",
+        "Inventor",
+        "Formatos DWG, DXF, PDF o STEP si aplica"
+      ],
+      "scope": [
+        "Revisión de modelos, bocetos, fotografías, mediciones o planos existentes.",
+        "Generación de planos de piezas, conjuntos, explosivos y detalles.",
+        "Validación de coherencia entre listas, cotas y archivos editables."
+      ],
+      "deliverables": [
+        "Planos 2D",
+        "Despieces y conjuntos",
+        "Listas de materiales",
+        "Archivos CAD editables",
+        "Notas de fabricación y montaje"
+      ],
+      "standards": [
+        "Normas de dibujo técnico definidas por el cliente",
+        "Criterios de tolerancias segun fabricación",
+        "Convenciones CAD del proyecto"
+      ],
+      "software": [
+        "AutoCAD",
+        "SolidWorks",
+        "Inventor",
+        "Formatos DWG, DXF, PDF o STEP si aplica"
+      ]
+    },
+    {
+      "slug": "simulacion-cfd-fea",
+      "title": "Simulación CFD y FEA para ingeniería",
+      "summary": "Usamos simulación como herramienta de soporte técnico cuando el problema, las condiciones de frontera y los criterios de validación están definidos.",
+      "url": "/servicios/simulacion-cfd-fea.html",
+      "keywords": [
+        "Simulación CFD/FEA",
+        "Simulación CFD y FEA para ingeniería",
+        "Simulación",
+        "CFD",
+        "FEA",
+        "fluidos",
+        "elementos finitos",
+        "ANSYS",
+        "Industrial",
+        "Energético",
+        "Manufactura",
+        "HVAC",
+        "Mecánica de fluidos",
+        "ANSYS si aplica",
+        "SolidWorks Simulation",
+        "OpenFOAM si aplica",
+        "Herramientas de postproceso"
+      ],
+      "scope": [
+        "Definición del objetivo de simulación y simplificaciones del modelo.",
+        "Preparación de geometría, materiales, cargas, malla y condiciones de frontera.",
+        "Postproceso, revisión de sensibilidad y reporte de resultados."
+      ],
+      "deliverables": [
+        "Modelo de simulación segun software",
+        "Reporte técnico",
+        "Tablas y gráficas de resultados",
+        "Conclusiones y limitaciones",
+        "Recomendaciones de mejora"
+      ],
+      "standards": [
+        "Criterios de verificación definidos por el proyecto",
+        "Buenas prácticas de independencia de malla",
+        "Referencias técnicas aportadas por el cliente"
+      ],
+      "software": [
+        "ANSYS si aplica",
+        "SolidWorks Simulation",
+        "OpenFOAM si aplica",
+        "Herramientas de postproceso"
+      ]
+    },
+    {
+      "slug": "tuberias-pid",
+      "title": "Diseño de tuberías y diagramas P&ID",
+      "summary": "Documentamos redes de tuberías y diagramas de proceso para ordenar equipos, válvulas, instrumentos, recorridos y criterios de instalación.",
+      "url": "/servicios/tuberias-pid.html",
+      "keywords": [
+        "Tuberías y P&ID",
+        "Diseño de tuberías y diagramas P&ID",
+        "Procesos y tuberías",
+        "tuberías",
+        "P&ID",
+        "PID",
+        "isométricos",
+        "líneas de proceso",
+        "Industrial",
+        "Energético",
+        "Hospitalario",
+        "Manufactura",
+        "Servicios públicos",
+        "AutoCAD",
+        "Plant 3D si aplica",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo de soporte"
+      ],
+      "scope": [
+        "Levantamiento de proceso, fluidos, presiones, temperaturas y restricciones de ruta.",
+        "Elaboración de P&ID, diagramas, rutas preliminares o detalladas e isométricos.",
+        "Revisión de interferencias, soportes y criterios de instalación."
+      ],
+      "deliverables": [
+        "P&ID",
+        "Planos de tuberías",
+        "Isométricos si aplica",
+        "Listas de válvulas, accesorios e instrumentos",
+        "Pendientes de información de proceso"
+      ],
+      "standards": [
+        "Criterios internos del cliente",
+        "Simbología ISA si aplica",
+        "Normas de tubería requeridas por el proyecto",
+        "Buenas prácticas de documentación"
+      ],
+      "software": [
+        "AutoCAD",
+        "Plant 3D si aplica",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo de soporte"
+      ]
+    },
+    {
+      "slug": "gases-medicinales",
+      "title": "Diseño de redes de gases medicinales",
+      "summary": "Apoyamos la documentación técnica de redes de gases medicinales para instituciones de salud, integrando criterios MEP, seguridad y coordinación constructiva.",
+      "url": "/servicios/gases-medicinales.html",
+      "keywords": [
+        "Gases medicinales",
+        "Diseño de redes de gases medicinales",
+        "Hospitalario",
+        "oxígeno",
+        "hospital",
+        "redes hospitalarias",
+        "Clínicas",
+        "Laboratorios",
+        "Institucional",
+        "Construcción",
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación MEP"
+      ],
+      "scope": [
+        "Revisión de programa médico-arquitectónico y necesidades de puntos de consumo.",
+        "Trazado de redes, coordinación con otras disciplinas y documentación de criterios.",
+        "Planos, detalles y listas de puntos, equipos o componentes segun alcance."
+      ],
+      "deliverables": [
+        "Planos de red",
+        "Cuadros de puntos",
+        "Detalles y notas técnicas",
+        "Memoria o criterios de diseño",
+        "Lista de pendientes de información hospitalaria"
+      ],
+      "standards": [
+        "Normativa hospitalaria aplicable segun jurisdicción",
+        "Criterios del cliente o interventoría",
+        "Requisitos de fabricantes y operación"
+      ],
+      "software": [
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación MEP"
+      ]
+    },
+    {
+      "slug": "hidrosanitario-y-gas",
+      "title": "Diseño hidrosanitario y redes de gas",
+      "summary": "Desarrollamos documentación para redes hidráulicas, sanitarias, lluvias y gas, priorizando coordinación, trazabilidad y claridad constructiva.",
+      "url": "/servicios/hidrosanitario-y-gas.html",
+      "keywords": [
+        "Hidrosanitario y gas",
+        "Diseño hidrosanitario y redes de gas",
+        "Hidráulica y gas",
+        "hidrosanitario",
+        "acueducto",
+        "alcantarillado",
+        "gas",
+        "fontanería",
+        "Construcción",
+        "Hospitalario",
+        "Comercial",
+        "Residencial técnico",
+        "Institucional",
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación"
+      ],
+      "scope": [
+        "Revisión de arquitectura, usos, aparatos, equipos y restricciones de instalación.",
+        "Diseño de redes hidráulicas, sanitarias, lluvias y gas segun alcance.",
+        "Planos, detalles, isométricos, memorias y coordinación con otras disciplinas."
+      ],
+      "deliverables": [
+        "Planos hidrosanitarios",
+        "Planos de gas si aplica",
+        "Memorias de cálculo",
+        "Isométricos y detalles",
+        "Cantidades referenciales"
+      ],
+      "standards": [
+        "RAS o criterios locales si aplican",
+        "NTC aplicables a redes de gas cuando corresponda",
+        "Requisitos de curaduría, interventoría o operador"
+      ],
+      "software": [
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables",
+        "Herramientas de coordinación"
+      ]
+    },
+    {
+      "slug": "concreto-reforzado",
+      "title": "Diseño estructural en concreto reforzado",
+      "summary": "Apoyamos diseños y revisiones de elementos de concreto reforzado con documentación clara para revisión, coordinación y construcción.",
+      "url": "/servicios/concreto-reforzado.html",
+      "keywords": [
+        "Concreto reforzado",
+        "Diseño estructural en concreto reforzado",
+        "Ingeniería civil",
+        "concreto",
+        "hormigón",
+        "cimentaciones",
+        "diseño estructural",
+        "NSR-10",
+        "Construcción",
+        "Institucional",
+        "Industrial",
+        "Comercial",
+        "Hospitalario",
+        "ETABS o SAP2000 si aplica",
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables"
+      ],
+      "scope": [
+        "Revisión de geometría, cargas, uso, suelo disponible y restricciones del proyecto.",
+        "Modelado, análisis y diseño de elementos estructurales segun alcance.",
+        "Planos de refuerzo, detalles, despieces y memoria de cálculo."
+      ],
+      "deliverables": [
+        "Memoria de cálculo",
+        "Planos estructurales",
+        "Despieces y detalles",
+        "Cuadros de cantidades",
+        "Registro de supuestos y pendientes"
+      ],
+      "standards": [
+        "NSR-10 cuando aplique",
+        "ACI si el proyecto lo requiere",
+        "Criterios geotécnicos confirmados",
+        "Requisitos de interventoría"
+      ],
+      "software": [
+        "ETABS o SAP2000 si aplica",
+        "AutoCAD",
+        "Revit/BIM si aplica",
+        "Hojas de cálculo verificables"
+      ]
+    },
+    {
+      "slug": "patologia-estructural",
+      "title": "Patología estructural y diagnóstico técnico",
+      "summary": "Apoyamos diagnósticos técnicos de edificaciones y estructuras mediante revisión documental, inspección visual y análisis de información disponible.",
+      "url": "/servicios/patologia-estructural.html",
+      "keywords": [
+        "Patología estructural",
+        "Patología estructural y diagnóstico técnico",
+        "Diagnóstico estructural",
+        "patología",
+        "fisuras",
+        "daños",
+        "inspección estructural",
+        "diagnóstico",
+        "Construcción",
+        "Institucional",
+        "Industrial",
+        "Residencial técnico",
+        "Hospitalario",
+        "AutoCAD",
+        "Hojas de registro",
+        "Herramientas de análisis estructural si aplica",
+        "Documentación fotográfica"
+      ],
+      "scope": [
+        "Revisión de antecedentes, planos, fotografías, uso y cambios de la estructura.",
+        "Inspección visual, registro de lesiones y clasificación de hallazgos.",
+        "Análisis técnico y recomendaciones segun información disponible."
+      ],
+      "deliverables": [
+        "Informe técnico",
+        "Registro fotográfico",
+        "Mapeo de lesiones si aplica",
+        "Recomendaciones",
+        "Listado de ensayos o datos pendientes"
+      ],
+      "standards": [
+        "NSR-10 cuando aplique",
+        "Guías de evaluación estructural segun alcance",
+        "Criterios de interventoría o autoridad local"
+      ],
+      "software": [
+        "AutoCAD",
+        "Hojas de registro",
+        "Herramientas de análisis estructural si aplica",
+        "Documentación fotográfica"
+      ]
+    },
+    {
+      "slug": "vulnerabilidad-sismica",
+      "title": "Estudios de vulnerabilidad sísmica",
+      "summary": "Evaluamos información estructural existente para identificar condiciones de vulnerabilidad y necesidades de análisis, refuerzo o estudios complementarios.",
+      "url": "/servicios/vulnerabilidad-sismica.html",
+      "keywords": [
+        "Vulnerabilidad sísmica",
+        "Estudios de vulnerabilidad sísmica",
+        "Evaluación estructural",
+        "sismo",
+        "evaluación sísmica",
+        "NSR-10",
+        "Institucional",
+        "Hospitalario",
+        "Educativo",
+        "Construcción",
+        "Industrial",
+        "ETABS o SAP2000 si aplica",
+        "AutoCAD",
+        "Hojas de cálculo verificables",
+        "Herramientas de documentación"
+      ],
+      "scope": [
+        "Revisión documental, levantamiento disponible y criterios de ocupación.",
+        "Modelado o evaluación estructural segun información y alcance contratado.",
+        "Informe de hallazgos, limitaciones, recomendaciones y próximos pasos."
+      ],
+      "deliverables": [
+        "Informe de vulnerabilidad",
+        "Modelo o memoria segun alcance",
+        "Registro de información revisada",
+        "Recomendaciones técnicas",
+        "Lista de datos pendientes"
+      ],
+      "standards": [
+        "NSR-10 cuando aplique",
+        "Criterios de evaluación definidos por el proyecto",
+        "Requisitos de autoridad o interventoría"
+      ],
+      "software": [
+        "ETABS o SAP2000 si aplica",
+        "AutoCAD",
+        "Hojas de cálculo verificables",
+        "Herramientas de documentación"
+      ]
+    },
+    {
+      "slug": "diseno-energetico-potencia-subestaciones",
+      "title": "Diseño energético, potencia y subestaciones",
+      "summary": "Desarrollamos ingeniería energética y de potencia con diagramas, cálculos, especificaciones y documentos coordinados para revisión o ejecución.",
+      "url": "/servicios/diseno-energetico-potencia-subestaciones.html",
+      "keywords": [
+        "Diseño energético",
+        "Diseño energético, potencia y subestaciones",
+        "Energía y eléctrica",
+        "subestaciones",
+        "potencia",
+        "media tensión",
+        "cortocircuito",
+        "protecciones",
+        "Industrial",
+        "Energía",
+        "Comercial",
+        "Institucional",
+        "Infraestructura",
+        "AutoCAD",
+        "Herramientas de análisis eléctrico según alcance",
+        "Hojas de cálculo verificables",
+        "BIM cuando aplique"
+      ],
+      "scope": [
+        "Revisión de demanda, fuentes, restricciones de conexión y datos del operador.",
+        "Diagramas unifilares, coordinación de equipos y criterios de distribución.",
+        "Cálculos y especificaciones según el alcance eléctrico confirmado."
+      ],
+      "deliverables": [
+        "Diagramas unifilares",
+        "Memorias de cálculo",
+        "Planos de distribución",
+        "Especificaciones técnicas",
+        "Listados y pendientes"
+      ],
+      "standards": [
+        "RETIE cuando aplique",
+        "NTC 2050 cuando aplique",
+        "Requisitos del operador de red",
+        "Criterios del fabricante"
+      ],
+      "software": [
+        "AutoCAD",
+        "Herramientas de análisis eléctrico según alcance",
+        "Hojas de cálculo verificables",
+        "BIM cuando aplique"
+      ]
+    },
+    {
+      "slug": "estructuras-contencion-taludes",
+      "title": "Diseño de estructuras de contención y estabilización",
+      "summary": "Integramos información topográfica, geotécnica, hidráulica y estructural para documentar soluciones de contención y estabilización.",
+      "url": "/servicios/estructuras-contencion-taludes.html",
+      "keywords": [
+        "Contención y taludes",
+        "Diseño de estructuras de contención y estabilización",
+        "Civil y estructural",
+        "muros de contención",
+        "taludes",
+        "estabilidad",
+        "geotecnia",
+        "Infraestructura",
+        "Construcción",
+        "Industrial",
+        "Vial",
+        "Institucional",
+        "Software geotécnico o estructural según alcance",
+        "AutoCAD",
+        "Hojas de cálculo verificables",
+        "Herramientas de modelado"
+      ],
+      "scope": [
+        "Revisión de exploración geotécnica, topografía, cargas y condiciones hidráulicas.",
+        "Evaluación de alternativas de contención según información disponible.",
+        "Cálculo, detalles, drenaje y documentación constructiva según alcance."
+      ],
+      "deliverables": [
+        "Memoria de cálculo",
+        "Planos y detalles",
+        "Criterios de drenaje",
+        "Cantidades referenciales",
+        "Lista de datos pendientes"
+      ],
+      "standards": [
+        "NSR-10 cuando aplique",
+        "Estudio geotécnico del proyecto",
+        "Criterios de estabilidad definidos",
+        "Requisitos de autoridad competente"
+      ],
+      "software": [
+        "Software geotécnico o estructural según alcance",
+        "AutoCAD",
+        "Hojas de cálculo verificables",
+        "Herramientas de modelado"
+      ]
+    },
+    {
+      "slug": "obras-arte-infraestructura-hidraulica",
+      "title": "Diseño de obras de arte e infraestructura hidráulica",
+      "summary": "Coordinamos hidráulica, geometría, estructura y construcción para documentar obras de drenaje e infraestructura menor.",
+      "url": "/servicios/obras-arte-infraestructura-hidraulica.html",
+      "keywords": [
+        "Obras de infraestructura",
+        "Diseño de obras de arte e infraestructura hidráulica",
+        "Civil y estructural",
+        "obras de arte",
+        "alcantarillas",
+        "drenaje",
+        "infraestructura hidráulica",
+        "Infraestructura",
+        "Vial",
+        "Construcción",
+        "Rural",
+        "Industrial",
+        "Herramientas hidráulicas según alcance",
+        "Software estructural según alcance",
+        "AutoCAD",
+        "Hojas de cálculo verificables"
+      ],
+      "scope": [
+        "Revisión de topografía, caudales, niveles, suelos y restricciones de implantación.",
+        "Dimensionamiento hidráulico y estructural según datos confirmados.",
+        "Detalles de entrada, salida, cimentación, protección y construcción."
+      ],
+      "deliverables": [
+        "Memoria hidráulica",
+        "Memoria estructural según alcance",
+        "Planos y detalles",
+        "Cantidades referenciales",
+        "Criterios y pendientes"
+      ],
+      "standards": [
+        "NSR-10 cuando aplique",
+        "Manual o criterios de la autoridad vial",
+        "Requisitos ambientales e hidráulicos del proyecto"
+      ],
+      "software": [
+        "Herramientas hidráulicas según alcance",
+        "Software estructural según alcance",
+        "AutoCAD",
+        "Hojas de cálculo verificables"
+      ]
+    },
+    {
+      "slug": "reconocimiento-vivienda-diagnostico",
+      "title": "Reconocimiento de vivienda y diagnóstico técnico",
+      "summary": "Organizamos la información de viviendas existentes mediante visita, registro, levantamiento y revisión técnica según el objetivo confirmado.",
+      "url": "/servicios/reconocimiento-vivienda-diagnostico.html",
+      "keywords": [
+        "Reconocimiento de vivienda",
+        "Reconocimiento de vivienda y diagnóstico técnico",
+        "Diagnóstico y revisión",
+        "inspección de vivienda",
+        "diagnóstico",
+        "visita técnica",
+        "Residencial",
+        "Institucional",
+        "Construcción",
+        "AutoCAD",
+        "Herramientas de levantamiento",
+        "Registro fotográfico",
+        "Software de oficina"
+      ],
+      "scope": [
+        "Revisión del objetivo, antecedentes, documentos y restricciones de acceso.",
+        "Visita y registro visual o dimensional según alcance contratado.",
+        "Informe de hallazgos, limitaciones y recomendaciones técnicas."
+      ],
+      "deliverables": [
+        "Registro fotográfico",
+        "Levantamiento según alcance",
+        "Informe técnico",
+        "Inventario de información",
+        "Recomendaciones y pendientes"
+      ],
+      "standards": [
+        "NSR-10 cuando aplique",
+        "Requisitos de la autoridad competente",
+        "Alcance de inspección acordado"
+      ],
+      "software": [
+        "AutoCAD",
+        "Herramientas de levantamiento",
+        "Registro fotográfico",
+        "Software de oficina"
+      ]
+    },
+    {
+      "slug": "sistemas-integracion",
+      "title": "Arquitectura e integración de sistemas",
+      "summary": "Diseñamos la arquitectura funcional y técnica que conecta procesos, datos, aplicaciones e infraestructura, con entregables verificables y un alcance de seguridad definido desde el inicio.",
+      "url": "/servicios/sistemas-integracion.html",
+      "keywords": [
+        "Sistemas e integración",
+        "Arquitectura e integración de sistemas",
+        "Sistemas y software",
+        "integración de sistemas",
+        "automatización",
+        "electrónica",
+        "sensores",
+        "control",
+        "Industrial",
+        "Energía",
+        "Construcción",
+        "Servicios profesionales",
+        "Institucional",
+        "Python, JavaScript o TypeScript según la solución",
+        "Bases de datos SQL o NoSQL según el modelo de información",
+        "APIs REST e integraciones documentadas",
+        "Git, contenedores y herramientas de despliegue cuando apliquen"
+      ],
+      "scope": [
+        "Levantamiento de actores, procesos, requisitos, restricciones e información que debe intercambiarse.",
+        "Diseño de arquitectura lógica, datos, interfaces, APIs e integraciones con sistemas existentes.",
+        "Definición de pruebas, criterios de aceptación, transición, operación y controles de seguridad aplicables."
+      ],
+      "deliverables": [
+        "Documento de requisitos y matriz de trazabilidad.",
+        "Diagramas de arquitectura, componentes, datos e integraciones.",
+        "Especificación de interfaces o APIs y reglas de intercambio.",
+        "Plan de pruebas, criterios de aceptación y documentación de operación."
+      ],
+      "standards": [
+        "Ley 1581 de 2012 y Decreto 1074 de 2015 cuando el proyecto trate datos personales.",
+        "Ley 1273 de 2009 para proteger la confidencialidad, integridad y disponibilidad de datos y sistemas.",
+        "Ley 527 de 1999 cuando el alcance use mensajes de datos, archivos o evidencias electrónicas.",
+        "Decisión Andina 351 de 1993 y Ley 23 de 1982 para código, documentación y componentes protegidos.",
+        "ISO/IEC 25010:2023, ISO/IEC 27034-1:2011, OWASP ASVS 5.0.0 y WCAG 2.2 como referencias técnicas cuando se acuerden en el alcance."
+      ],
+      "software": [
+        "Python, JavaScript o TypeScript según la solución",
+        "Bases de datos SQL o NoSQL según el modelo de información",
+        "APIs REST e integraciones documentadas",
+        "Git, contenedores y herramientas de despliegue cuando apliquen"
+      ]
+    },
+    {
+      "slug": "programacion-desarrollo-software",
+      "title": "Programación y desarrollo de software a medida",
+      "summary": "Desarrollamos aplicaciones, automatizaciones e integraciones orientadas a resolver procesos reales, con código mantenible, pruebas, documentación y condiciones de entrega definidas por proyecto.",
+      "url": "/servicios/programacion-desarrollo-software.html",
+      "keywords": [
+        "Programación y software",
+        "Programación y desarrollo de software a medida",
+        "Sistemas y software",
+        "software",
+        "programación",
+        "aplicaciones web",
+        "automatizaciones",
+        "integraciones",
+        "datos",
+        "Industrial",
+        "Energía",
+        "Construcción",
+        "Servicios profesionales",
+        "Emprendimientos",
+        "Python, JavaScript o TypeScript según el alcance",
+        "HTML, CSS y frameworks web seleccionados por proyecto",
+        "SQL y motores de base de datos compatibles con la solución",
+        "Git, pruebas automatizadas, contenedores y CI/CD cuando apliquen"
+      ],
+      "scope": [
+        "Definición de historias, requisitos, reglas de negocio, interfaces y criterios de aceptación.",
+        "Desarrollo de aplicaciones web, APIs, automatizaciones, integraciones y utilidades técnicas según el alcance.",
+        "Pruebas funcionales y de seguridad acordadas, control de versiones, despliegue y transferencia de conocimiento."
+      ],
+      "deliverables": [
+        "Código fuente y repositorio según las condiciones contractuales.",
+        "Aplicación, API, automatización o integración operativa dentro del entorno acordado.",
+        "Pruebas, manual técnico, guía de uso y registro de versiones.",
+        "Documentación de despliegue, dependencias, licencias y mantenimiento."
+      ],
+      "standards": [
+        "Ley 1581 de 2012 y Decreto 1074 de 2015 cuando la solución trate datos personales.",
+        "Ley 1273 de 2009: acceso, pruebas e intervención únicamente con autorización y alcance documentado.",
+        "Ley 527 de 1999 cuando la solución gestione mensajes de datos o contratación electrónica.",
+        "Decisión Andina 351 de 1993 y Ley 23 de 1982 para titularidad, licencias y uso de componentes de terceros.",
+        "ISO/IEC 25010:2023 e ISO/IEC 27034-1:2011 como referencias de calidad y seguridad cuando se incluyan contractualmente.",
+        "OWASP ASVS 5.0.0 y WCAG 2.2 como guías verificables para aplicaciones web, según el nivel de rigor acordado."
+      ],
+      "software": [
+        "Python, JavaScript o TypeScript según el alcance",
+        "HTML, CSS y frameworks web seleccionados por proyecto",
+        "SQL y motores de base de datos compatibles con la solución",
+        "Git, pruebas automatizadas, contenedores y CI/CD cuando apliquen"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "id": "general-precios",
+      "question": "¿Cuánto cuesta un servicio?",
+      "answer": "El valor depende del alcance, los datos de entrada, las revisiones, los entregables y el plazo requerido. DISMEK revisa primero la información disponible y después prepara una propuesta para el proyecto.",
+      "keywords": [
+        "¿Cuánto cuesta un servicio?",
+        "precio",
+        "costo",
+        "valor",
+        "tarifa",
+        "presupuesto"
+      ],
+      "related_services": [],
+      "url": "/#contacto",
+      "source": "Orientación general de DISMEK"
+    },
+    {
+      "id": "general-cotizacion",
+      "question": "¿Qué información necesitan para cotizar?",
+      "answer": "Depende del servicio. Normalmente se requieren planos, ubicación, fotos, alcance esperado, datos de operación, normativa aplicable si existe y fecha objetivo.",
+      "keywords": [
+        "¿Qué información necesitan para cotizar?",
+        "cotizar",
+        "cotización",
+        "propuesta",
+        "información",
+        "requisitos"
+      ],
+      "related_services": [],
+      "url": "/#contacto",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-plazos",
+      "question": "¿Cuánto tarda un plano mecánico completo?",
+      "answer": "El tiempo depende de la complejidad, la información de entrada, las revisiones y el alcance. La programación se confirma después de revisar los requisitos técnicos.",
+      "keywords": [
+        "¿Cuánto tarda un plano mecánico completo?",
+        "tiempo",
+        "plazo",
+        "duración",
+        "fecha",
+        "entrega"
+      ],
+      "related_services": [],
+      "url": "/#contacto",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-contacto",
+      "question": "¿Cómo puedo contactar a DISMEK?",
+      "answer": "Puede comunicarse con DISMEK al +57 315 663 7925 o escribir a contacto.dismec@gmail.com. También puede usar el formulario publicado en la página de inicio.",
+      "keywords": [
+        "¿Cómo puedo contactar a DISMEK?",
+        "contacto",
+        "teléfono",
+        "correo",
+        "WhatsApp",
+        "hablar"
+      ],
+      "related_services": [],
+      "url": "/#contacto",
+      "source": "Orientación general de DISMEK"
+    },
+    {
+      "id": "general-cobertura",
+      "question": "¿Atienden proyectos fuera de Bucaramanga?",
+      "answer": "Sí. El alcance puede trabajarse de forma remota o con coordinación puntual segun la información disponible y las necesidades del proyecto.",
+      "keywords": [
+        "¿Atienden proyectos fuera de Bucaramanga?",
+        "cobertura",
+        "Bucaramanga",
+        "Santander",
+        "Colombia",
+        "remoto",
+        "otra ciudad"
+      ],
+      "related_services": [],
+      "url": "/#contacto",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-servicios",
+      "question": "¿Qué servicios ofrece DISMEK?",
+      "answer": "El catálogo publicado incluye: Recipientes ASME; Solar fotovoltaica; HVAC y MEP; Diseño eléctrico; Estructuras metálicas; Diseño mecánico; Planos de fabricación; Simulación CFD/FEA; Tuberías y P&ID; Gases medicinales; Hidrosanitario y gas; Concreto reforzado; Patología estructural; Vulnerabilidad sísmica; Diseño energético; Contención y taludes; Obras de infraestructura; Reconocimiento de vivienda; Sistemas e integración; Programación y software.",
+      "keywords": [
+        "¿Qué servicios ofrece DISMEK?",
+        "servicios",
+        "soluciones",
+        "capacidades",
+        "ingeniería",
+        "software"
+      ],
+      "related_services": [],
+      "url": "/servicios/",
+      "source": "Catálogo de servicios DISMEK"
+    },
+    {
+      "id": "general-software",
+      "question": "¿Qué software y herramientas utilizan?",
+      "answer": "AutoCAD, SolidWorks, Inventor, Revit/BIM, ANSYS, ETABS, SAP2000, Dialux y otras herramientas se seleccionan según la disciplina y el entregable.",
+      "keywords": [
+        "¿Qué software y herramientas utilizan?",
+        "software",
+        "programas",
+        "herramientas",
+        "AutoCAD",
+        "SolidWorks",
+        "Revit",
+        "ANSYS"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-001",
+      "question": "¿Diseñan recipientes a presión bajo ASME?",
+      "answer": "Sí. El alcance puede incluir cálculos de componentes, boquillas, soportes, MAWP, MDMT, memorias y planos, según los datos y la edición normativa confirmada para el proyecto.",
+      "keywords": [
+        "¿Diseñan recipientes a presión bajo ASME?",
+        "preguntas frecuentes",
+        "DISMEK"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-002",
+      "question": "¿Realizan diseños de sistemas solares fotovoltaicos?",
+      "answer": "Sí. El servicio puede incluir dimensionamiento, selección de equipos, planos, memorias, análisis de producción y documentación para coordinación con el operador, según el alcance.",
+      "keywords": [
+        "¿Realizan diseños de sistemas solares fotovoltaicos?",
+        "preguntas frecuentes",
+        "DISMEK"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-003",
+      "question": "¿Pueden diseñar con normas internacionales?",
+      "answer": "Sí, cuando la norma, edición, jurisdicción y autoridad revisora se definen en el alcance. No se aplica una lista genérica sin verificar pertinencia.",
+      "keywords": [
+        "¿Pueden diseñar con normas internacionales?",
+        "preguntas frecuentes",
+        "DISMEK"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-004",
+      "question": "¿Ofrecen consultoría remota?",
+      "answer": "Sí. La revisión de información, reuniones y entrega documental pueden coordinarse de forma remota; las visitas se definen cuando son necesarias.",
+      "keywords": [
+        "¿Ofrecen consultoría remota?",
+        "preguntas frecuentes",
+        "DISMEK"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-005",
+      "question": "¿Desarrollan software y automatizaciones a medida?",
+      "answer": "Sí. El alcance puede incluir aplicaciones web, automatización de procesos, integraciones, APIs, datos, pruebas y documentación, después de confirmar requisitos, seguridad y criterios de aceptación.",
+      "keywords": [
+        "¿Desarrollan software y automatizaciones a medida?",
+        "preguntas frecuentes",
+        "DISMEK"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-006",
+      "question": "¿Entregan archivos editables?",
+      "answer": "Sí, cuando el alcance lo solicita se pueden entregar archivos CAD, modelos, memorias o documentos editables además de PDF.",
+      "keywords": [
+        "¿Entregan archivos editables?",
+        "preguntas frecuentes",
+        "DISMEK"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "general-007",
+      "question": "¿Pueden revisar documentos existentes?",
+      "answer": "Sí. Se pueden revisar planos, memorias, modelos o fichas existentes y documentar observaciones, riesgos y pendientes.",
+      "keywords": [
+        "¿Pueden revisar documentos existentes?",
+        "preguntas frecuentes",
+        "DISMEK"
+      ],
+      "related_services": [],
+      "url": "/#faq",
+      "source": "Preguntas frecuentes"
+    },
+    {
+      "id": "service-recipientes-presion-asme-01",
+      "question": "¿El diseño incluye memoria de cálculo?",
+      "answer": "Sí, cuando el alcance lo solicita se entrega una memoria trazable con datos de entrada, ecuaciones, resultados y supuestos.",
+      "keywords": [
+        "¿El diseño incluye memoria de cálculo?",
+        "Recipientes ASME",
+        "recipientes",
+        "tanques",
+        "vasijas",
+        "presión",
+        "ASME",
+        "MAWP",
+        "MDMT",
+        "boquillas"
+      ],
+      "related_services": [
+        "recipientes-presion-asme"
+      ],
+      "url": "/servicios/recipientes-presion-asme.html"
+    },
+    {
+      "id": "service-recipientes-presion-asme-02",
+      "question": "¿Pueden revisar un diseño existente?",
+      "answer": "Sí. Se puede partir de planos, hojas de datos o modelos existentes, dejando observaciones y pendientes de información.",
+      "keywords": [
+        "¿Pueden revisar un diseño existente?",
+        "Recipientes ASME",
+        "recipientes",
+        "tanques",
+        "vasijas",
+        "presión",
+        "ASME",
+        "MAWP",
+        "MDMT",
+        "boquillas"
+      ],
+      "related_services": [
+        "recipientes-presion-asme"
+      ],
+      "url": "/servicios/recipientes-presion-asme.html"
+    },
+    {
+      "id": "service-recipientes-presion-asme-03",
+      "question": "¿Se certifica el recipiente?",
+      "answer": "La certificación depende del fabricante, el inspector autorizado y el alcance contractual. La propuesta identifica con precisión qué documentos y revisiones están incluidos.",
+      "keywords": [
+        "¿Se certifica el recipiente?",
+        "Recipientes ASME",
+        "recipientes",
+        "tanques",
+        "vasijas",
+        "presión",
+        "ASME",
+        "MAWP",
+        "MDMT",
+        "boquillas"
+      ],
+      "related_services": [
+        "recipientes-presion-asme"
+      ],
+      "url": "/servicios/recipientes-presion-asme.html"
+    },
+    {
+      "id": "service-energia-solar-fotovoltaica-01",
+      "question": "¿Incluyen planos para instalación?",
+      "answer": "El alcance puede incluir planos unifilares, rutas, protecciones y detalles necesarios para coordinación de instalación.",
+      "keywords": [
+        "¿Incluyen planos para instalación?",
+        "Solar fotovoltaica",
+        "solar",
+        "fotovoltaica",
+        "paneles solares",
+        "inversores",
+        "generación distribuida"
+      ],
+      "related_services": [
+        "energia-solar-fotovoltaica"
+      ],
+      "url": "/servicios/energia-solar-fotovoltaica.html"
+    },
+    {
+      "id": "service-energia-solar-fotovoltaica-02",
+      "question": "¿Se hacen trámites ante operador?",
+      "answer": "Se puede preparar soporte técnico, pero el trámite depende del operador, el propietario y los documentos requeridos.",
+      "keywords": [
+        "¿Se hacen trámites ante operador?",
+        "Solar fotovoltaica",
+        "solar",
+        "fotovoltaica",
+        "paneles solares",
+        "inversores",
+        "generación distribuida"
+      ],
+      "related_services": [
+        "energia-solar-fotovoltaica"
+      ],
+      "url": "/servicios/energia-solar-fotovoltaica.html"
+    },
+    {
+      "id": "service-energia-solar-fotovoltaica-03",
+      "question": "¿Trabajan sistemas on-grid y off-grid?",
+      "answer": "Sí, el tipo de sistema se define con la necesidad energética, respaldo requerido y restricciones del proyecto.",
+      "keywords": [
+        "¿Trabajan sistemas on-grid y off-grid?",
+        "Solar fotovoltaica",
+        "solar",
+        "fotovoltaica",
+        "paneles solares",
+        "inversores",
+        "generación distribuida"
+      ],
+      "related_services": [
+        "energia-solar-fotovoltaica"
+      ],
+      "url": "/servicios/energia-solar-fotovoltaica.html"
+    },
+    {
+      "id": "service-sistemas-hvac-y-mep-01",
+      "question": "¿El servicio incluye BIM?",
+      "answer": "Puede incluir modelado y coordinación BIM si el alcance, nivel de detalle y formato de entrega están definidos.",
+      "keywords": [
+        "¿El servicio incluye BIM?",
+        "HVAC y MEP",
+        "HVAC",
+        "MEP",
+        "climatización",
+        "aire acondicionado",
+        "ventilación",
+        "refrigeración"
+      ],
+      "related_services": [
+        "sistemas-hvac-y-mep"
+      ],
+      "url": "/servicios/sistemas-hvac-y-mep.html"
+    },
+    {
+      "id": "service-sistemas-hvac-y-mep-02",
+      "question": "¿Diseñan redes para hospitales?",
+      "answer": "Sí, siempre que el proyecto entregue requisitos clínicos, arquitectónicos y normativos específicos.",
+      "keywords": [
+        "¿Diseñan redes para hospitales?",
+        "HVAC y MEP",
+        "HVAC",
+        "MEP",
+        "climatización",
+        "aire acondicionado",
+        "ventilación",
+        "refrigeración"
+      ],
+      "related_services": [
+        "sistemas-hvac-y-mep"
+      ],
+      "url": "/servicios/sistemas-hvac-y-mep.html"
+    },
+    {
+      "id": "service-sistemas-hvac-y-mep-03",
+      "question": "¿Incluye cantidades?",
+      "answer": "Se pueden entregar cantidades referenciales trazadas desde planos; el nivel de precisión depende del avance del diseño.",
+      "keywords": [
+        "¿Incluye cantidades?",
+        "HVAC y MEP",
+        "HVAC",
+        "MEP",
+        "climatización",
+        "aire acondicionado",
+        "ventilación",
+        "refrigeración"
+      ],
+      "related_services": [
+        "sistemas-hvac-y-mep"
+      ],
+      "url": "/servicios/sistemas-hvac-y-mep.html"
+    },
+    {
+      "id": "service-diseno-electrico-y-energia-01",
+      "question": "¿Incluyen diseño de iluminación?",
+      "answer": "Sí, puede incluirse con criterios de niveles de iluminación, uso del espacio y selección de luminarias.",
+      "keywords": [
+        "¿Incluyen diseño de iluminación?",
+        "Diseño eléctrico",
+        "eléctrico",
+        "energía",
+        "RETIE",
+        "NTC 2050",
+        "iluminación",
+        "puesta a tierra"
+      ],
+      "related_services": [
+        "diseno-electrico-y-energia"
+      ],
+      "url": "/servicios/diseno-electrico-y-energia.html"
+    },
+    {
+      "id": "service-diseno-electrico-y-energia-02",
+      "question": "¿Preparan cuadros de carga?",
+      "answer": "Sí, se preparan cuadros de carga y memoria cuando el alcance lo exige.",
+      "keywords": [
+        "¿Preparan cuadros de carga?",
+        "Diseño eléctrico",
+        "eléctrico",
+        "energía",
+        "RETIE",
+        "NTC 2050",
+        "iluminación",
+        "puesta a tierra"
+      ],
+      "related_services": [
+        "diseno-electrico-y-energia"
+      ],
+      "url": "/servicios/diseno-electrico-y-energia.html"
+    },
+    {
+      "id": "service-diseno-electrico-y-energia-03",
+      "question": "¿El diseño queda listo para obra?",
+      "answer": "Depende del nivel de información inicial; los pendientes se documentan para evitar supuestos no confirmados.",
+      "keywords": [
+        "¿El diseño queda listo para obra?",
+        "Diseño eléctrico",
+        "eléctrico",
+        "energía",
+        "RETIE",
+        "NTC 2050",
+        "iluminación",
+        "puesta a tierra"
+      ],
+      "related_services": [
+        "diseno-electrico-y-energia"
+      ],
+      "url": "/servicios/diseno-electrico-y-energia.html"
+    },
+    {
+      "id": "service-estructuras-metalicas-y-diseno-estructural-01",
+      "question": "¿Entregan planos de taller?",
+      "answer": "Sí, pueden incluirse cuando el alcance de fabricación y nivel de detalle están definidos.",
+      "keywords": [
+        "¿Entregan planos de taller?",
+        "Estructuras metálicas",
+        "acero",
+        "diseño estructural",
+        "NSR-10"
+      ],
+      "related_services": [
+        "estructuras-metalicas-y-diseno-estructural"
+      ],
+      "url": "/servicios/estructuras-metalicas-y-diseno-estructural.html"
+    },
+    {
+      "id": "service-estructuras-metalicas-y-diseno-estructural-02",
+      "question": "¿Revisan estructuras existentes?",
+      "answer": "Sí, se puede hacer revisión documental o técnica con información de campo suficiente.",
+      "keywords": [
+        "¿Revisan estructuras existentes?",
+        "Estructuras metálicas",
+        "acero",
+        "diseño estructural",
+        "NSR-10"
+      ],
+      "related_services": [
+        "estructuras-metalicas-y-diseno-estructural"
+      ],
+      "url": "/servicios/estructuras-metalicas-y-diseno-estructural.html"
+    },
+    {
+      "id": "service-estructuras-metalicas-y-diseno-estructural-03",
+      "question": "¿Incluyen conexiones?",
+      "answer": "El diseño de conexiones puede incluirse como alcance específico con cargas, perfiles y criterios confirmados.",
+      "keywords": [
+        "¿Incluyen conexiones?",
+        "Estructuras metálicas",
+        "acero",
+        "diseño estructural",
+        "NSR-10"
+      ],
+      "related_services": [
+        "estructuras-metalicas-y-diseno-estructural"
+      ],
+      "url": "/servicios/estructuras-metalicas-y-diseno-estructural.html"
+    },
+    {
+      "id": "service-diseno-mecanico-industrial-01",
+      "question": "¿Pueden partir de una pieza existente?",
+      "answer": "Sí, con mediciones, fotos, planos o levantamiento suficiente se puede documentar o rediseñar.",
+      "keywords": [
+        "¿Pueden partir de una pieza existente?",
+        "Diseño mecánico",
+        "maquinaria",
+        "equipos industriales",
+        "CAD"
+      ],
+      "related_services": [
+        "diseno-mecanico-industrial"
+      ],
+      "url": "/servicios/diseno-mecanico-industrial.html"
+    },
+    {
+      "id": "service-diseno-mecanico-industrial-02",
+      "question": "¿Entregan archivos editables?",
+      "answer": "Sí, si el alcance lo solicita y se define el formato requerido.",
+      "keywords": [
+        "¿Entregan archivos editables?",
+        "Diseño mecánico",
+        "maquinaria",
+        "equipos industriales",
+        "CAD"
+      ],
+      "related_services": [
+        "diseno-mecanico-industrial"
+      ],
+      "url": "/servicios/diseno-mecanico-industrial.html"
+    },
+    {
+      "id": "service-diseno-mecanico-industrial-03",
+      "question": "¿Incluyen análisis estructural?",
+      "answer": "Puede incluirse como revisión o simulación si las cargas y condiciones están definidas.",
+      "keywords": [
+        "¿Incluyen análisis estructural?",
+        "Diseño mecánico",
+        "maquinaria",
+        "equipos industriales",
+        "CAD"
+      ],
+      "related_services": [
+        "diseno-mecanico-industrial"
+      ],
+      "url": "/servicios/diseno-mecanico-industrial.html"
+    },
+    {
+      "id": "service-planos-de-fabricacion-maquinaria-01",
+      "question": "¿Pueden convertir bocetos en planos?",
+      "answer": "Sí, siempre que existan dimensiones, materiales y condiciones suficientes para documentar sin inventar datos.",
+      "keywords": [
+        "¿Pueden convertir bocetos en planos?",
+        "Planos de fabricación",
+        "planos de taller",
+        "despiece",
+        "maquinaria"
+      ],
+      "related_services": [
+        "planos-de-fabricacion-maquinaria"
+      ],
+      "url": "/servicios/planos-de-fabricacion-maquinaria.html"
+    },
+    {
+      "id": "service-planos-de-fabricacion-maquinaria-02",
+      "question": "¿Entregan DXF?",
+      "answer": "Sí, se puede entregar DXF para corte o fabricación cuando las geometrías estén confirmadas.",
+      "keywords": [
+        "¿Entregan DXF?",
+        "Planos de fabricación",
+        "planos de taller",
+        "despiece",
+        "maquinaria"
+      ],
+      "related_services": [
+        "planos-de-fabricacion-maquinaria"
+      ],
+      "url": "/servicios/planos-de-fabricacion-maquinaria.html"
+    },
+    {
+      "id": "service-planos-de-fabricacion-maquinaria-03",
+      "question": "¿Incluyen lista de materiales?",
+      "answer": "Puede incluirse con cantidades, referencias y notas si los componentes están definidos.",
+      "keywords": [
+        "¿Incluyen lista de materiales?",
+        "Planos de fabricación",
+        "planos de taller",
+        "despiece",
+        "maquinaria"
+      ],
+      "related_services": [
+        "planos-de-fabricacion-maquinaria"
+      ],
+      "url": "/servicios/planos-de-fabricacion-maquinaria.html"
+    },
+    {
+      "id": "service-simulacion-cfd-fea-01",
+      "question": "¿La simulación reemplaza ensayos?",
+      "answer": "No necesariamente. La simulación apoya decisiones, pero la validación experimental depende del alcance y criticidad.",
+      "keywords": [
+        "¿La simulación reemplaza ensayos?",
+        "Simulación CFD/FEA",
+        "CFD",
+        "FEA",
+        "simulación",
+        "fluidos",
+        "elementos finitos",
+        "ANSYS"
+      ],
+      "related_services": [
+        "simulacion-cfd-fea"
+      ],
+      "url": "/servicios/simulacion-cfd-fea.html"
+    },
+    {
+      "id": "service-simulacion-cfd-fea-02",
+      "question": "¿Entregan reporte de malla?",
+      "answer": "Sí, se puede documentar malla, supuestos y convergencia cuando el alcance de simulación lo exige.",
+      "keywords": [
+        "¿Entregan reporte de malla?",
+        "Simulación CFD/FEA",
+        "CFD",
+        "FEA",
+        "simulación",
+        "fluidos",
+        "elementos finitos",
+        "ANSYS"
+      ],
+      "related_services": [
+        "simulacion-cfd-fea"
+      ],
+      "url": "/servicios/simulacion-cfd-fea.html"
+    },
+    {
+      "id": "service-simulacion-cfd-fea-03",
+      "question": "¿Pueden comparar diseños?",
+      "answer": "Sí, si las alternativas tienen condiciones y criterios de comparación equivalentes.",
+      "keywords": [
+        "¿Pueden comparar diseños?",
+        "Simulación CFD/FEA",
+        "CFD",
+        "FEA",
+        "simulación",
+        "fluidos",
+        "elementos finitos",
+        "ANSYS"
+      ],
+      "related_services": [
+        "simulacion-cfd-fea"
+      ],
+      "url": "/servicios/simulacion-cfd-fea.html"
+    },
+    {
+      "id": "service-tuberias-pid-01",
+      "question": "¿Pueden partir de un levantamiento?",
+      "answer": "Sí, con información de campo suficiente se pueden actualizar o generar diagramas y planos.",
+      "keywords": [
+        "¿Pueden partir de un levantamiento?",
+        "Tuberías y P&ID",
+        "tuberías",
+        "P&ID",
+        "PID",
+        "isométricos",
+        "líneas de proceso"
+      ],
+      "related_services": [
+        "tuberias-pid"
+      ],
+      "url": "/servicios/tuberias-pid.html"
+    },
+    {
+      "id": "service-tuberias-pid-02",
+      "question": "¿Incluyen isométricos?",
+      "answer": "Pueden incluirse si el alcance requiere fabricación, montaje o cantidades detalladas.",
+      "keywords": [
+        "¿Incluyen isométricos?",
+        "Tuberías y P&ID",
+        "tuberías",
+        "P&ID",
+        "PID",
+        "isométricos",
+        "líneas de proceso"
+      ],
+      "related_services": [
+        "tuberias-pid"
+      ],
+      "url": "/servicios/tuberias-pid.html"
+    },
+    {
+      "id": "service-tuberias-pid-03",
+      "question": "¿Diseñan soportes?",
+      "answer": "Se pueden coordinar soportes como parte del diseño o dejarlos como alcance específico.",
+      "keywords": [
+        "¿Diseñan soportes?",
+        "Tuberías y P&ID",
+        "tuberías",
+        "P&ID",
+        "PID",
+        "isométricos",
+        "líneas de proceso"
+      ],
+      "related_services": [
+        "tuberias-pid"
+      ],
+      "url": "/servicios/tuberias-pid.html"
+    },
+    {
+      "id": "service-gases-medicinales-01",
+      "question": "¿Incluyen coordinación con arquitectura?",
+      "answer": "Sí, la coordinación es clave para rutas, shafts, cielos rasos y cuartos técnicos.",
+      "keywords": [
+        "¿Incluyen coordinación con arquitectura?",
+        "Gases medicinales",
+        "oxígeno",
+        "hospital",
+        "redes hospitalarias"
+      ],
+      "related_services": [
+        "gases-medicinales"
+      ],
+      "url": "/servicios/gases-medicinales.html"
+    },
+    {
+      "id": "service-gases-medicinales-02",
+      "question": "¿El diseño incluye memoria?",
+      "answer": "Puede incluir memoria o criterios técnicos si el alcance lo solicita.",
+      "keywords": [
+        "¿El diseño incluye memoria?",
+        "Gases medicinales",
+        "oxígeno",
+        "hospital",
+        "redes hospitalarias"
+      ],
+      "related_services": [
+        "gases-medicinales"
+      ],
+      "url": "/servicios/gases-medicinales.html"
+    },
+    {
+      "id": "service-gases-medicinales-03",
+      "question": "¿Pueden revisar una red existente?",
+      "answer": "Sí, siempre que se cuente con planos, levantamiento o información suficiente.",
+      "keywords": [
+        "¿Pueden revisar una red existente?",
+        "Gases medicinales",
+        "oxígeno",
+        "hospital",
+        "redes hospitalarias"
+      ],
+      "related_services": [
+        "gases-medicinales"
+      ],
+      "url": "/servicios/gases-medicinales.html"
+    },
+    {
+      "id": "service-hidrosanitario-y-gas-01",
+      "question": "¿Incluyen redes de aguas lluvias?",
+      "answer": "Sí, pueden incluirse si el alcance arquitectónico y de drenaje está definido.",
+      "keywords": [
+        "¿Incluyen redes de aguas lluvias?",
+        "Hidrosanitario y gas",
+        "hidrosanitario",
+        "acueducto",
+        "alcantarillado",
+        "gas",
+        "fontanería"
+      ],
+      "related_services": [
+        "hidrosanitario-y-gas"
+      ],
+      "url": "/servicios/hidrosanitario-y-gas.html"
+    },
+    {
+      "id": "service-hidrosanitario-y-gas-02",
+      "question": "¿Preparan isométricos?",
+      "answer": "Sí, los isométricos pueden entregarse para coordinación, revisión o construcción.",
+      "keywords": [
+        "¿Preparan isométricos?",
+        "Hidrosanitario y gas",
+        "hidrosanitario",
+        "acueducto",
+        "alcantarillado",
+        "gas",
+        "fontanería"
+      ],
+      "related_services": [
+        "hidrosanitario-y-gas"
+      ],
+      "url": "/servicios/hidrosanitario-y-gas.html"
+    },
+    {
+      "id": "service-hidrosanitario-y-gas-03",
+      "question": "¿Incluye gas combustible?",
+      "answer": "Puede incluir redes de gas cuando los requisitos, equipos y normativa aplicable estén definidos.",
+      "keywords": [
+        "¿Incluye gas combustible?",
+        "Hidrosanitario y gas",
+        "hidrosanitario",
+        "acueducto",
+        "alcantarillado",
+        "gas",
+        "fontanería"
+      ],
+      "related_services": [
+        "hidrosanitario-y-gas"
+      ],
+      "url": "/servicios/hidrosanitario-y-gas.html"
+    },
+    {
+      "id": "service-concreto-reforzado-01",
+      "question": "¿Incluyen cimentaciones?",
+      "answer": "Pueden incluirse cuando exista estudio geotécnico o parámetros confirmados.",
+      "keywords": [
+        "¿Incluyen cimentaciones?",
+        "Concreto reforzado",
+        "concreto",
+        "hormigón",
+        "cimentaciones",
+        "diseño estructural",
+        "NSR-10"
+      ],
+      "related_services": [
+        "concreto-reforzado"
+      ],
+      "url": "/servicios/concreto-reforzado.html"
+    },
+    {
+      "id": "service-concreto-reforzado-02",
+      "question": "¿Entregan planos de refuerzo?",
+      "answer": "Sí, el alcance puede incluir planos y detalles de refuerzo para construcción.",
+      "keywords": [
+        "¿Entregan planos de refuerzo?",
+        "Concreto reforzado",
+        "concreto",
+        "hormigón",
+        "cimentaciones",
+        "diseño estructural",
+        "NSR-10"
+      ],
+      "related_services": [
+        "concreto-reforzado"
+      ],
+      "url": "/servicios/concreto-reforzado.html"
+    },
+    {
+      "id": "service-concreto-reforzado-03",
+      "question": "¿Revisan diseños existentes?",
+      "answer": "Sí, se puede revisar documentación existente y dejar observaciones trazables.",
+      "keywords": [
+        "¿Revisan diseños existentes?",
+        "Concreto reforzado",
+        "concreto",
+        "hormigón",
+        "cimentaciones",
+        "diseño estructural",
+        "NSR-10"
+      ],
+      "related_services": [
+        "concreto-reforzado"
+      ],
+      "url": "/servicios/concreto-reforzado.html"
+    },
+    {
+      "id": "service-patologia-estructural-01",
+      "question": "¿Una inspección visual basta para concluir causas?",
+      "answer": "No siempre. El informe debe diferenciar hallazgos observados de hipótesis que requieren ensayos.",
+      "keywords": [
+        "¿Una inspección visual basta para concluir causas?",
+        "Patología estructural",
+        "patología",
+        "fisuras",
+        "daños",
+        "inspección estructural",
+        "diagnóstico"
+      ],
+      "related_services": [
+        "patologia-estructural"
+      ],
+      "url": "/servicios/patologia-estructural.html"
+    },
+    {
+      "id": "service-patologia-estructural-02",
+      "question": "¿Incluyen recomendaciones de reparación?",
+      "answer": "Sí, se pueden proponer lineamientos, dejando claro qué datos faltan para diseño definitivo.",
+      "keywords": [
+        "¿Incluyen recomendaciones de reparación?",
+        "Patología estructural",
+        "patología",
+        "fisuras",
+        "daños",
+        "inspección estructural",
+        "diagnóstico"
+      ],
+      "related_services": [
+        "patologia-estructural"
+      ],
+      "url": "/servicios/patologia-estructural.html"
+    },
+    {
+      "id": "service-patologia-estructural-03",
+      "question": "¿Sirve para compra o mantenimiento?",
+      "answer": "Puede apoyar decisiones técnicas, siempre con alcance y limitaciones claramente documentadas.",
+      "keywords": [
+        "¿Sirve para compra o mantenimiento?",
+        "Patología estructural",
+        "patología",
+        "fisuras",
+        "daños",
+        "inspección estructural",
+        "diagnóstico"
+      ],
+      "related_services": [
+        "patologia-estructural"
+      ],
+      "url": "/servicios/patologia-estructural.html"
+    },
+    {
+      "id": "service-vulnerabilidad-sismica-01",
+      "question": "¿Se requiere levantamiento estructural?",
+      "answer": "Frecuentemente sí, especialmente si no existen planos confiables o la estructura fue modificada.",
+      "keywords": [
+        "¿Se requiere levantamiento estructural?",
+        "Vulnerabilidad sísmica",
+        "sismo",
+        "evaluación sísmica",
+        "NSR-10"
+      ],
+      "related_services": [
+        "vulnerabilidad-sismica"
+      ],
+      "url": "/servicios/vulnerabilidad-sismica.html"
+    },
+    {
+      "id": "service-vulnerabilidad-sismica-02",
+      "question": "¿El informe incluye diseño de refuerzo?",
+      "answer": "El refuerzo puede ser una fase posterior si el diagnóstico y alcance lo justifican.",
+      "keywords": [
+        "¿El informe incluye diseño de refuerzo?",
+        "Vulnerabilidad sísmica",
+        "sismo",
+        "evaluación sísmica",
+        "NSR-10"
+      ],
+      "related_services": [
+        "vulnerabilidad-sismica"
+      ],
+      "url": "/servicios/vulnerabilidad-sismica.html"
+    },
+    {
+      "id": "service-vulnerabilidad-sismica-03",
+      "question": "¿Pueden trabajar con información incompleta?",
+      "answer": "Sí, pero las limitaciones se documentan y no se reemplazan con supuestos no confirmados.",
+      "keywords": [
+        "¿Pueden trabajar con información incompleta?",
+        "Vulnerabilidad sísmica",
+        "sismo",
+        "evaluación sísmica",
+        "NSR-10"
+      ],
+      "related_services": [
+        "vulnerabilidad-sismica"
+      ],
+      "url": "/servicios/vulnerabilidad-sismica.html"
+    },
+    {
+      "id": "service-diseno-energetico-potencia-subestaciones-01",
+      "question": "¿Incluye subestaciones?",
+      "answer": "Puede incluirlas cuando los niveles de tensión, demanda, equipos y requisitos del operador estén confirmados.",
+      "keywords": [
+        "¿Incluye subestaciones?",
+        "Diseño energético",
+        "subestaciones",
+        "potencia",
+        "media tensión",
+        "cortocircuito",
+        "protecciones"
+      ],
+      "related_services": [
+        "diseno-energetico-potencia-subestaciones"
+      ],
+      "url": "/servicios/diseno-energetico-potencia-subestaciones.html"
+    },
+    {
+      "id": "service-diseno-energetico-potencia-subestaciones-02",
+      "question": "¿Se preparan memorias?",
+      "answer": "Sí, de acuerdo con los cálculos y documentos definidos en el alcance.",
+      "keywords": [
+        "¿Se preparan memorias?",
+        "Diseño energético",
+        "subestaciones",
+        "potencia",
+        "media tensión",
+        "cortocircuito",
+        "protecciones"
+      ],
+      "related_services": [
+        "diseno-energetico-potencia-subestaciones"
+      ],
+      "url": "/servicios/diseno-energetico-potencia-subestaciones.html"
+    },
+    {
+      "id": "service-diseno-energetico-potencia-subestaciones-03",
+      "question": "¿Incluye trámites?",
+      "answer": "Los trámites se cotizan y delimitan según operador, ubicación y documentación disponible.",
+      "keywords": [
+        "¿Incluye trámites?",
+        "Diseño energético",
+        "subestaciones",
+        "potencia",
+        "media tensión",
+        "cortocircuito",
+        "protecciones"
+      ],
+      "related_services": [
+        "diseno-energetico-potencia-subestaciones"
+      ],
+      "url": "/servicios/diseno-energetico-potencia-subestaciones.html"
+    },
+    {
+      "id": "service-estructuras-contencion-taludes-01",
+      "question": "¿Necesitan estudio de suelos?",
+      "answer": "Sí, los parámetros geotécnicos son datos críticos y no deben sustituirse con valores inventados.",
+      "keywords": [
+        "¿Necesitan estudio de suelos?",
+        "Contención y taludes",
+        "muros de contención",
+        "taludes",
+        "estabilidad",
+        "geotecnia"
+      ],
+      "related_services": [
+        "estructuras-contencion-taludes"
+      ],
+      "url": "/servicios/estructuras-contencion-taludes.html"
+    },
+    {
+      "id": "service-estructuras-contencion-taludes-02",
+      "question": "¿Incluye drenaje?",
+      "answer": "Se coordina cuando el agua superficial o subterránea afecta la solución.",
+      "keywords": [
+        "¿Incluye drenaje?",
+        "Contención y taludes",
+        "muros de contención",
+        "taludes",
+        "estabilidad",
+        "geotecnia"
+      ],
+      "related_services": [
+        "estructuras-contencion-taludes"
+      ],
+      "url": "/servicios/estructuras-contencion-taludes.html"
+    },
+    {
+      "id": "service-estructuras-contencion-taludes-03",
+      "question": "¿Pueden revisar una estructura existente?",
+      "answer": "Sí, si se cuenta con geometría, materiales, daños, cargas y documentación suficiente.",
+      "keywords": [
+        "¿Pueden revisar una estructura existente?",
+        "Contención y taludes",
+        "muros de contención",
+        "taludes",
+        "estabilidad",
+        "geotecnia"
+      ],
+      "related_services": [
+        "estructuras-contencion-taludes"
+      ],
+      "url": "/servicios/estructuras-contencion-taludes.html"
+    },
+    {
+      "id": "service-obras-arte-infraestructura-hidraulica-01",
+      "question": "¿Qué información requieren?",
+      "answer": "Topografía, hidrología o caudales, geotecnia, geometría y criterios de la entidad revisora.",
+      "keywords": [
+        "¿Qué información requieren?",
+        "Obras de infraestructura",
+        "obras de arte",
+        "alcantarillas",
+        "drenaje",
+        "infraestructura hidráulica"
+      ],
+      "related_services": [
+        "obras-arte-infraestructura-hidraulica"
+      ],
+      "url": "/servicios/obras-arte-infraestructura-hidraulica.html"
+    },
+    {
+      "id": "service-obras-arte-infraestructura-hidraulica-02",
+      "question": "¿Incluye puentes?",
+      "answer": "El alcance se limita a las tipologías y luces expresamente definidas en la propuesta.",
+      "keywords": [
+        "¿Incluye puentes?",
+        "Obras de infraestructura",
+        "obras de arte",
+        "alcantarillas",
+        "drenaje",
+        "infraestructura hidráulica"
+      ],
+      "related_services": [
+        "obras-arte-infraestructura-hidraulica"
+      ],
+      "url": "/servicios/obras-arte-infraestructura-hidraulica.html"
+    },
+    {
+      "id": "service-obras-arte-infraestructura-hidraulica-03",
+      "question": "¿Preparan cantidades?",
+      "answer": "Pueden incluirse cantidades referenciales vinculadas a los planos desarrollados.",
+      "keywords": [
+        "¿Preparan cantidades?",
+        "Obras de infraestructura",
+        "obras de arte",
+        "alcantarillas",
+        "drenaje",
+        "infraestructura hidráulica"
+      ],
+      "related_services": [
+        "obras-arte-infraestructura-hidraulica"
+      ],
+      "url": "/servicios/obras-arte-infraestructura-hidraulica.html"
+    },
+    {
+      "id": "service-reconocimiento-vivienda-diagnostico-01",
+      "question": "¿El reconocimiento certifica automáticamente la vivienda?",
+      "answer": "No. El resultado depende del objetivo, la información, los estudios requeridos y la autoridad competente.",
+      "keywords": [
+        "¿El reconocimiento certifica automáticamente la vivienda?",
+        "Reconocimiento de vivienda",
+        "inspección de vivienda",
+        "diagnóstico",
+        "visita técnica"
+      ],
+      "related_services": [
+        "reconocimiento-vivienda-diagnostico"
+      ],
+      "url": "/servicios/reconocimiento-vivienda-diagnostico.html"
+    },
+    {
+      "id": "service-reconocimiento-vivienda-diagnostico-02",
+      "question": "¿Incluye ensayos?",
+      "answer": "Los ensayos se definen y cotizan cuando la inspección o el objetivo los requiere.",
+      "keywords": [
+        "¿Incluye ensayos?",
+        "Reconocimiento de vivienda",
+        "inspección de vivienda",
+        "diagnóstico",
+        "visita técnica"
+      ],
+      "related_services": [
+        "reconocimiento-vivienda-diagnostico"
+      ],
+      "url": "/servicios/reconocimiento-vivienda-diagnostico.html"
+    },
+    {
+      "id": "service-reconocimiento-vivienda-diagnostico-03",
+      "question": "¿Pueden trabajar sin planos?",
+      "answer": "Sí, mediante levantamiento, dejando visibles las limitaciones y los datos que requieren confirmación.",
+      "keywords": [
+        "¿Pueden trabajar sin planos?",
+        "Reconocimiento de vivienda",
+        "inspección de vivienda",
+        "diagnóstico",
+        "visita técnica"
+      ],
+      "related_services": [
+        "reconocimiento-vivienda-diagnostico"
+      ],
+      "url": "/servicios/reconocimiento-vivienda-diagnostico.html"
+    },
+    {
+      "id": "service-sistemas-integracion-01",
+      "question": "¿Pueden integrar sistemas que ya están en operación?",
+      "answer": "Sí. Primero se revisan documentación, permisos, licencias, interfaces disponibles y riesgos de continuidad antes de definir la integración.",
+      "keywords": [
+        "¿Pueden integrar sistemas que ya están en operación?",
+        "Sistemas e integración",
+        "integración de sistemas",
+        "automatización",
+        "electrónica",
+        "sensores",
+        "control"
+      ],
+      "related_services": [
+        "sistemas-integracion"
+      ],
+      "url": "/servicios/sistemas-integracion.html"
+    },
+    {
+      "id": "service-sistemas-integracion-02",
+      "question": "¿Incluye seguridad de la información?",
+      "answer": "El alcance puede incluir autenticación, autorización, registro, protección de datos y requisitos verificables de seguridad. No se realizan pruebas sobre sistemas sin autorización expresa.",
+      "keywords": [
+        "¿Incluye seguridad de la información?",
+        "Sistemas e integración",
+        "integración de sistemas",
+        "automatización",
+        "electrónica",
+        "sensores",
+        "control"
+      ],
+      "related_services": [
+        "sistemas-integracion"
+      ],
+      "url": "/servicios/sistemas-integracion.html"
+    },
+    {
+      "id": "service-sistemas-integracion-03",
+      "question": "¿Qué se entrega antes de desarrollar?",
+      "answer": "Se puede entregar una fase de arquitectura con requisitos, diagramas, interfaces, criterios de aceptación, plan de pruebas y estimación de implementación.",
+      "keywords": [
+        "¿Qué se entrega antes de desarrollar?",
+        "Sistemas e integración",
+        "integración de sistemas",
+        "automatización",
+        "electrónica",
+        "sensores",
+        "control"
+      ],
+      "related_services": [
+        "sistemas-integracion"
+      ],
+      "url": "/servicios/sistemas-integracion.html"
+    },
+    {
+      "id": "service-programacion-desarrollo-software-01",
+      "question": "¿Desarrollan aplicaciones web y automatizaciones?",
+      "answer": "Sí. El alcance puede cubrir interfaces web, APIs, procesos automáticos, cálculos, reportes e integración con fuentes de datos existentes.",
+      "keywords": [
+        "¿Desarrollan aplicaciones web y automatizaciones?",
+        "Programación y software",
+        "software",
+        "programación",
+        "aplicaciones web",
+        "automatizaciones",
+        "integraciones",
+        "datos"
+      ],
+      "related_services": [
+        "programacion-desarrollo-software"
+      ],
+      "url": "/servicios/programacion-desarrollo-software.html"
+    },
+    {
+      "id": "service-programacion-desarrollo-software-02",
+      "question": "¿Entregan el código fuente?",
+      "answer": "La titularidad o licencia, el repositorio, las dependencias y los usos permitidos se definen expresamente en la propuesta y el contrato.",
+      "keywords": [
+        "¿Entregan el código fuente?",
+        "Programación y software",
+        "software",
+        "programación",
+        "aplicaciones web",
+        "automatizaciones",
+        "integraciones",
+        "datos"
+      ],
+      "related_services": [
+        "programacion-desarrollo-software"
+      ],
+      "url": "/servicios/programacion-desarrollo-software.html"
+    },
+    {
+      "id": "service-programacion-desarrollo-software-03",
+      "question": "¿Cómo se valida la seguridad?",
+      "answer": "Se acuerdan controles y pruebas según el riesgo. OWASP ASVS puede usarse como referencia; cualquier prueba sobre sistemas existentes requiere autorización escrita.",
+      "keywords": [
+        "¿Cómo se valida la seguridad?",
+        "Programación y software",
+        "software",
+        "programación",
+        "aplicaciones web",
+        "automatizaciones",
+        "integraciones",
+        "datos"
+      ],
+      "related_services": [
+        "programacion-desarrollo-software"
+      ],
+      "url": "/servicios/programacion-desarrollo-software.html"
+    }
+  ]
+}

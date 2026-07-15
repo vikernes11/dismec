@@ -29,6 +29,7 @@
   <meta name="twitter:description" content="Levantamiento, revisión documental y diagnóstico técnico de viviendas existentes para definir su condición, información disponible y estudios requeridos.">
   <meta name="twitter:image" content="https://dismek.co/assets/reconocimiento.png">
   <link rel="stylesheet" href="../assets/dismek-site.css">
+  <link rel="stylesheet" href="../assets/vikers.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://dismek.co/#organization","name":"DISMEK Ingeniería","url":"https://dismek.co/","logo":"https://dismek.co/assets/dismek-logo-badge.png","image":"https://dismek.co/assets/structures.png","telephone":"+57 315 663 7925","email":"contacto.dismec@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bucaramanga","addressRegion":"Santander","addressCountry":"CO"},"areaServed":["Bucaramanga","Santander","Colombia"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Reconocimiento de vivienda y diagnóstico técnico","serviceType":"Reconocimiento de vivienda","provider":{"@id":"https://dismek.co/#organization","@type":"ProfessionalService","name":"DISMEK Ingeniería","url":"https://dismek.co/","telephone":"+57 315 663 7925","email":"contacto.dismec@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bucaramanga","addressRegion":"Santander","addressCountry":"CO"}},"areaServed":["Bucaramanga","Santander","Colombia"],"description":"Levantamiento, revisión documental y diagnóstico técnico de viviendas existentes para definir su condición, información disponible y estudios requeridos.","url":"https://dismek.co/servicios/reconocimiento-vivienda-diagnostico.html","image":"https://dismek.co/assets/reconocimiento.png"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://dismek.co/"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://dismek.co/servicios/"},{"@type":"ListItem","position":3,"name":"Reconocimiento de vivienda","item":"https://dismek.co/servicios/reconocimiento-vivienda-diagnostico.html"}]}</script>
@@ -224,6 +225,45 @@
         <span>Bucaramanga, Santander · Atención a proyectos en Colombia.</span>
       </div>
     </footer>
+
+    <div class="vikers" data-vikers
+      data-vikers-knowledge="../assets/vikers-knowledge.json"
+      data-vikers-contact="../index.html#contacto"
+      data-vikers-services="../servicios/"
+      data-vikers-whatsapp="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20Vikers%20me%20orient%C3%B3%20y%20quiero%20hablar%20con%20el%20equipo%20sobre%20mi%20proyecto."
+      aria-label="Vikers, asistente virtual de DISMEK">
+      <button class="vikers-launcher" type="button" data-vikers-toggle aria-expanded="false" aria-controls="vikers-panel" aria-label="Abrir Vikers, asistente virtual de DISMEK">
+        <span class="vikers-launcher-mark" aria-hidden="true">V</span>
+        <span>Vikers</span>
+      </button>
+      <section class="vikers-panel" id="vikers-panel" data-vikers-panel role="dialog" aria-modal="false" aria-labelledby="vikers-title" aria-describedby="vikers-disclaimer" hidden inert>
+        <div class="vikers-header">
+          <span class="vikers-avatar" aria-hidden="true">V</span>
+          <div class="vikers-heading">
+            <h2 id="vikers-title">Vikers</h2>
+            <p>Asistente virtual de DISMEK</p>
+          </div>
+          <button class="vikers-reset" type="button" data-vikers-reset aria-label="Iniciar una nueva consulta">Nueva consulta</button>
+          <button class="vikers-close" type="button" data-vikers-close aria-label="Cerrar Vikers">×</button>
+        </div>
+        <div class="vikers-messages" data-vikers-messages role="log" aria-live="polite" aria-relevant="additions text" aria-busy="false">
+          <article class="vikers-message"><div class="vikers-bubble"><p><span class="vikers-sr-only">Vikers: </span>Hola, soy Vikers, el asistente virtual de DISMEK. Puedo orientarte sobre nuestros servicios y preguntas frecuentes. ¿Qué necesitas?</p><span class="vikers-source">Fuente: Información publicada por DISMEK</span></div></article>
+        </div>
+        <div class="vikers-suggestions" data-vikers-suggestions aria-label="Preguntas sugeridas"><button class="vikers-suggestion" type="button" data-vikers-question="Ver servicios">Ver servicios</button><button class="vikers-suggestion" type="button" data-vikers-question="¿Qué necesitan para cotizar?">¿Qué necesitan para cotizar?</button><button class="vikers-suggestion" type="button" data-vikers-question="¿Trabajan fuera de Bucaramanga?">¿Trabajan fuera de Bucaramanga?</button><button class="vikers-suggestion" type="button" data-vikers-question="¿Qué software utilizan?">¿Qué software utilizan?</button></div>
+        <div class="vikers-form-wrap">
+          <form class="vikers-form" data-vikers-form autocomplete="off">
+            <label class="vikers-sr-only" for="vikers-question">Pregunta para Vikers</label>
+            <textarea class="vikers-input" id="vikers-question" name="pregunta_vikers" data-vikers-input rows="1" maxlength="500" autocomplete="off" placeholder="Escribe tu pregunta…"></textarea>
+            <button class="vikers-send" type="submit" data-vikers-send>Enviar pregunta</button>
+          </form>
+          <div class="vikers-meta"><span data-vikers-status role="status" aria-live="polite"></span><span data-vikers-count>0/500</span></div>
+          <p class="vikers-notice" id="vikers-disclaimer">Vikers consulta únicamente información publicada en este sitio. No sustituye una revisión técnica ni emite cotizaciones.</p>
+          <p class="vikers-privacy">No compartas datos personales, planos ni información confidencial. Este chat no guarda tus preguntas ni las envía a terceros.</p>
+        </div>
+      </section>
+    </div>
+    <script src="../assets/vikers.js" defer></script>
+
     <a class="whatsapp-float" href="https://wa.me/573156637925?text=Hola%20DISMEK%2C%20quiero%20cotizar%20un%20proyecto%20de%20ingenier%C3%ADa%20o%20software." target="_blank" rel="noopener" aria-label="WA: Cotizar por WhatsApp" data-track="whatsapp_float">WA</a>
 
 <script src="../assets/dismek-site.js" defer></script>

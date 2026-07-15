@@ -198,6 +198,7 @@ if (form) {
   document.querySelectorAll('[data-service-quick]').forEach((button) => button.addEventListener('click', () => {
     const item = serviceData[button.dataset.serviceQuick || ''];
     if (!serviceDialog || !item) return;
+    document.dispatchEvent(new CustomEvent('vikers:close'));
     dialogOpener = button;
     const image = serviceDialog.querySelector('[data-dialog-image]');
     const tag = serviceDialog.querySelector('[data-dialog-tag]');
