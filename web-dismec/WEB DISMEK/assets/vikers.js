@@ -28,6 +28,7 @@
     panel: 'solar', paneles: 'solar', solares: 'solar', fotovoltaica: 'solar', fotovoltaico: 'solar', fotovoltaicas: 'solar', fotovoltaicos: 'solar',
     fotoboltaica: 'solar', fotoboltaico: 'solar', fotoboltaicas: 'solar', fotoboltaicos: 'solar',
     climatizacion: 'hvac', acondicionado: 'hvac', refrigeracion: 'hvac',
+    vehiculos: 'vehiculo', carros: 'carro', cargadores: 'cargador', recargas: 'recarga', armonicos: 'armonico',
     aplicaciones: 'software', aplicacion: 'software', app: 'software', apps: 'software', programacion: 'software',
     telefonos: 'telefono', celular: 'telefono', email: 'correo', emails: 'correo',
     documentos: 'archivo', documentacion: 'archivo', editables: 'editable',
@@ -39,14 +40,16 @@
     homologada: 'homologado', homologadas: 'homologado', homologado: 'homologado', homologados: 'homologado', homologacion: 'homologado'
   }));
   const SERVICE_SIGNAL_TOKENS = new Set([
-    'asme','recipiente','recipientes','solar','hvac','mep','retie','electrico','estructura','estructuras','acero','nsr','mecanico','maquinaria','planos','fabricacion','cfd','fea','simulacion','pid','tuberia','tuberias','gases','medicinales','hidrosanitario','concreto','patologia','fisuras','vulnerabilidad','sismica','subestacion','subestaciones','potencia','contencion','taludes','hidraulica','vivienda','diagnostico','integracion','automatizacion'
+    'asme','recipiente','recipientes','solar','hvac','mep','retie','electrico','vehiculo','carro','cargador','electromovilidad','recarga','evse','analizador','armonico','thd','estructura','estructuras','acero','nsr','mecanico','maquinaria','planos','fabricacion','cfd','fea','simulacion','pid','tuberia','tuberias','gases','medicinales','hidrosanitario','concreto','patologia','fisuras','vulnerabilidad','sismica','subestacion','subestaciones','potencia','contencion','taludes','hidraulica','vivienda','diagnostico','integracion','automatizacion'
   ]);
   const DIRECT_SERVICE_TOKENS = new Map(Object.entries({
     asme: 'recipientes-presion-asme', recipiente: 'recipientes-presion-asme', recipientes: 'recipientes-presion-asme',
     solar: 'energia-solar-fotovoltaica', hvac: 'sistemas-hvac-y-mep', mep: 'sistemas-hvac-y-mep',
     cfd: 'simulacion-cfd-fea', fea: 'simulacion-cfd-fea', pid: 'tuberias-pid',
     subestacion: 'diseno-energetico-potencia-subestaciones', subestaciones: 'diseno-energetico-potencia-subestaciones',
-    patologia: 'patologia-estructural', hidrosanitario: 'hidrosanitario-y-gas'
+    patologia: 'patologia-estructural', hidrosanitario: 'hidrosanitario-y-gas',
+    cargador: 'vehiculos-electricos-y-cargadores', electromovilidad: 'vehiculos-electricos-y-cargadores',
+    recarga: 'vehiculos-electricos-y-cargadores', evse: 'vehiculos-electricos-y-cargadores'
   }));
 
   function normalize(value) {

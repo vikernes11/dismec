@@ -186,9 +186,14 @@ if (form) {
   }));
 
   const serviceDialog = document.querySelector('[data-service-dialog]');
-  const dataNode = document.querySelector('#premium-service-data');
+  const dataNodes = [
+    document.querySelector('#premium-service-data'),
+    ...document.querySelectorAll('[data-premium-service-data-extra]')
+  ].filter(Boolean);
   let serviceData = {};
-  try { serviceData = dataNode ? JSON.parse(dataNode.textContent || '{}') : {}; } catch (_) { serviceData = {}; }
+  dataNodes.forEach((dataNode) => {
+    try { Object.assign(serviceData, JSON.parse(dataNode.textContent || '{}')); } catch (_) {}
+  });
   let dialogOpener = null;
   const fillList = (selector, items) => {
     const list = serviceDialog?.querySelector(selector);

@@ -959,6 +959,59 @@
         "SQL y motores de base de datos compatibles con la solución",
         "Git, pruebas automatizadas, contenedores y CI/CD cuando apliquen"
       ]
+    },
+    {
+      "slug": "vehiculos-electricos-y-cargadores",
+      "title": "Vehículos eléctricos, cargadores y calidad de energía",
+      "summary": "Medimos durante varios días la demanda, la cargabilidad del transformador y la calidad de energía para evaluar con datos reales la instalación de cargadores u otras nuevas cargas.",
+      "url": "/servicios/vehiculos-electricos-y-cargadores.html",
+      "keywords": [
+        "Vehículos eléctricos y cargadores",
+        "vehículo eléctrico",
+        "carro eléctrico",
+        "movilidad eléctrica",
+        "electromovilidad",
+        "cargador eléctrico",
+        "cargadores eléctricos",
+        "estación de carga",
+        "punto de recarga",
+        "EVSE",
+        "analizador de redes",
+        "calidad de energía",
+        "demanda máxima",
+        "cargabilidad del transformador",
+        "sobrecarga",
+        "armónicos",
+        "THD",
+        "nueva carga",
+        "factibilidad eléctrica",
+        "parqueadero",
+        "flota"
+      ],
+      "scope": [
+        "Revisión de la potencia del transformador, diagramas disponibles, cargas existentes y características preliminares de los cargadores.",
+        "Definición del punto de medida e instalación segura del analizador de redes según las condiciones confirmadas del tablero.",
+        "Monitoreo continuo durante varios días para registrar el comportamiento real de la instalación.",
+        "Análisis de demanda, cargabilidad, sobrecargas, armónicos y variables de calidad de energía incluidas en el alcance."
+      ],
+      "deliverables": [
+        "Registro consolidado de la medición realizada durante varios días.",
+        "Gráficas y tablas de demanda, cargabilidad, armónicos y hallazgos relevantes.",
+        "Informe técnico con resultados objetivos, condiciones observadas y limitaciones de la evaluación.",
+        "Concepto de viabilidad para los cargadores o nuevas cargas definidas, con recomendaciones para la siguiente etapa."
+      ],
+      "standards": [
+        "RETIE vigente cuando aplique.",
+        "NTC 2050 cuando aplique.",
+        "Requisitos del operador de red y de la instalación evaluada.",
+        "Criterios técnicos del fabricante del cargador cuando estén disponibles."
+      ],
+      "software": [
+        "Analizador de redes adecuado a la instalación y a las variables acordadas.",
+        "Sondas y accesorios de medición compatibles con el punto de conexión.",
+        "Herramientas de procesamiento, cálculo y elaboración de gráficas verificables.",
+        "Formatos de registro para documentar condiciones, fechas y limitaciones de la campaña."
+      ]
     }
   ],
   "faqs": [
@@ -1046,7 +1099,7 @@
     {
       "id": "general-servicios",
       "question": "¿Qué servicios ofrece DISMEK?",
-      "answer": "El catálogo publicado incluye: Recipientes ASME; Solar fotovoltaica; HVAC y MEP; Diseño eléctrico; Estructuras metálicas; Diseño mecánico; Planos de fabricación; Simulación CFD/FEA; Tuberías y P&ID; Gases medicinales; Hidrosanitario y gas; Concreto reforzado; Patología estructural; Vulnerabilidad sísmica; Diseño energético; Contención y taludes; Obras de infraestructura; Reconocimiento de vivienda; Sistemas e integración; Programación y software.",
+      "answer": "El catálogo publicado incluye: Recipientes ASME; Solar fotovoltaica; HVAC y MEP; Diseño eléctrico; Vehículos eléctricos y cargadores; Estructuras metálicas; Diseño mecánico; Planos de fabricación; Simulación CFD/FEA; Tuberías y P&ID; Gases medicinales; Hidrosanitario y gas; Concreto reforzado; Patología estructural; Vulnerabilidad sísmica; Diseño energético; Contención y taludes; Obras de infraestructura; Reconocimiento de vivienda; Sistemas e integración; Programación y software.",
       "keywords": [
         "¿Qué servicios ofrece DISMEK?",
         "servicios",
@@ -2226,6 +2279,59 @@
         "programacion-desarrollo-software"
       ],
       "url": "/servicios/programacion-desarrollo-software.html"
+    },
+    {
+      "id": "service-vehiculos-electricos-y-cargadores-01",
+      "question": "¿Cómo determinan si la instalación puede recibir cargadores eléctricos?",
+      "answer": "Instalamos un analizador de redes durante varios días y evaluamos la demanda máxima, la cargabilidad del transformador, las sobrecargas, los armónicos y las demás variables definidas en el alcance.",
+      "keywords": [
+        "¿Cómo determinan si la instalación puede recibir cargadores eléctricos?",
+        "vehículos eléctricos",
+        "cargadores eléctricos",
+        "analizador de redes",
+        "demanda máxima",
+        "cargabilidad del transformador",
+        "viabilidad"
+      ],
+      "related_services": [
+        "vehiculos-electricos-y-cargadores"
+      ],
+      "url": "/servicios/vehiculos-electricos-y-cargadores.html"
+    },
+    {
+      "id": "service-vehiculos-electricos-y-cargadores-02",
+      "question": "¿Cuánto dura la medición para evaluar los cargadores?",
+      "answer": "Se mide durante varios días. La duración exacta se define según los ciclos operativos y la disponibilidad de la instalación para obtener un perfil representativo.",
+      "keywords": [
+        "¿Cuánto dura la medición para evaluar los cargadores?",
+        "vehículos eléctricos",
+        "cargadores eléctricos",
+        "varios días",
+        "periodo de medición",
+        "monitoreo continuo"
+      ],
+      "related_services": [
+        "vehiculos-electricos-y-cargadores"
+      ],
+      "url": "/servicios/vehiculos-electricos-y-cargadores.html"
+    },
+    {
+      "id": "service-vehiculos-electricos-y-cargadores-03",
+      "question": "¿Qué incluye el informe técnico de calidad de energía?",
+      "answer": "Incluye resultados medidos, tendencias, hallazgos, limitaciones y una evaluación técnica de la viabilidad para incorporar cargadores u otras nuevas cargas.",
+      "keywords": [
+        "¿Qué incluye el informe técnico de calidad de energía?",
+        "vehículos eléctricos",
+        "cargadores eléctricos",
+        "informe técnico",
+        "calidad de energía",
+        "armónicos",
+        "nuevas cargas"
+      ],
+      "related_services": [
+        "vehiculos-electricos-y-cargadores"
+      ],
+      "url": "/servicios/vehiculos-electricos-y-cargadores.html"
     }
   ]
 }
